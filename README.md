@@ -16,18 +16,17 @@
 指示灯：永久：💙   非永久：❤️
 
 #### 【Revenuecat系列】
-#001💙【Fileball】已下架，已购可下载
+#001💙【Fileball-网络播放器】已下架，已购可下载
 
 #002💙【VSCO-照片与视频编辑】https://t.cn/AiOSSyU9
 
 #003💙【1Blocker-广告拦截】https://t.cn/A6V7PAjE
 
-#004💙【图图记账】
-https://t.cn/A6JZS4a0
+#004💙【图图记账】https://t.cn/A6JZS4a0
 
 #005💙【手机硬件管家】https://t.cn/A659O6zK
 
-#006💙【Tiao】1.5.0以下版本
+#006💙【Tiao-剪贴板管理】自己下载1.5.0以下版本
 
 #007💙【Pillow-睡眠周期跟踪】https://t.cn/A6oupMnR
 
@@ -35,7 +34,7 @@ https://t.cn/A6JZS4a0
 
 #009💙【Anybox-跨平台书签管理】https://t.cn/A6oupXiC
 
-#010💙【APTV】https://t.cn/A6S06Lhg
+#010💙【APTV-直播流播放器】https://t.cn/A6S06Lhg
 
 #011💙【目标地图】https://t.cn/A6oeytwe
 
@@ -53,7 +52,7 @@ https://t.cn/A6JZS4a0
 
 #021💙【Grow-健康运动】https://t.cn/A6a6LKSV
 
-#022💙【Spark_mail-邮箱App】https://t.cn/A6KIVclG
+#022💙【Spark_Mail-邮箱管理】https://t.cn/A6KIVclG
 
 #023💙【白云天气】https://t.cn/A6IKeLj1
 
@@ -105,8 +104,7 @@ https://t.cn/A6JZS4a0
 
 #047💙【PipDoc-画中画】https://t.cn/A69Bt9ca
 
-#048💙【事线】
-https://t.cn/A696WVwt
+#048💙【事线-串事成线】https://t.cn/A696WVwt
 
 #049💙【物品指南】https://t.cn/A69BiAey
 
@@ -114,9 +112,9 @@ https://t.cn/A696WVwt
 
 #051💙【InPaper-创作壁纸】https://t.cn/A69DvQmn
 
-#052💙【奇妙组件】https://t.cn/A69DP9iE
+#052💙【奇妙组件-轻巧桌面小组件】https://t.cn/A69DP9iE
 
-#053💙【卡片馆】https://t.cn/A6aVq4er
+#053💙【卡片馆-精美相框与复古胶片】https://t.cn/A6aVq4er
 
 #### 【iTunes系列】
 #001💙【TextEditor-文件管理】https://t.cn/A6osqlkO
@@ -190,8 +188,7 @@ https://t.cn/A696WVwt
 
 #006❤️【彩云天气】https://t.cn/A66d95hV
 
-#007❤️【一言】
-https://t.cn/Aini0veg
+#007❤️【一言-记录字句，发现共鸣】https://t.cn/Aini0veg
 
 #008❤️【网速管家】https://t.cn/A6ou0r5U
 
@@ -211,10 +208,9 @@ https://t.cn/Aini0veg
 
 #016❤️【Picsart美易】https://t.cn/A6MxZ5q1
 
-#017❤️【起伏】
-https://t.cn/A6ouQzMi
+#017❤️【起伏-睡眠/冥想/白噪音】https://t.cn/A6ouQzMi
 
-#018❤️【布丁锁屏】https://t.cn/A6o11VGR
+#018❤️【布丁锁屏-给锁屏加个小组件】https://t.cn/A6o11VGR
 
 #019💙【Wallcraft-壁纸】http://t.cn/A6iO7Eht
 
@@ -222,8 +218,7 @@ https://t.cn/A6ouQzMi
 
 #021❤️【Spotify音乐播放器】https://t.cn/A6xkbHKA
 
-#022❤️【推糖】
-https://t.cn/Ai3pMcdl
+#022❤️【推糖-爱豆壁纸美图社区】https://t.cn/Ai3pMcdl
 
 #023❤️【Boom音乐播放器】https://t.cn/A6f1C1rG
 
@@ -237,14 +232,13 @@ https://t.cn/Ai3pMcdl
 
 #028❤️【傲软投屏】https://t.cn/A65nw9gx
 
-#029❤️【咖映】
-https://t.cn/A6o1lsFL
+#029❤️【咖映-虚拟直播助手】https://t.cn/A6o1lsFL
 
 #030❤️【轻闪PDF】https://t.cn/A6o1iiI2
 
 #031❤️【乃糖小组件】https://t.cn/A6o1iMdP
 
-#032❤️【佐糖】https://t.cn/A6o1iVTI
+#032❤️【佐糖-一键抠图换背景神器】https://t.cn/A6o1iVTI
 
 #033❤️【佐糖照片修复】https://t.cn/A6o1itzG
 
@@ -268,13 +262,11 @@ https://t.cn/A6o1lsFL
 
 #043❤️【早安打卡】https://t.cn/A6Kcuijk
 
-#044❤️【配音】
-https://t.cn/A6X4ZKqW
+#044❤️【配音-变音变声器】https://t.cn/A6X4ZKqW
 
-#045❤️【如期】
-https://t.cn/A6KVkB2y
+#045❤️【如期-记录保质期】https://t.cn/A6KVkB2y
 
-#046❤️【iLove PDF】https://t.cn/A62Xkhs6
+#046❤️【iLove PDF-编辑/扫描】https://t.cn/A62Xkhs6
 
 #047❤️【VN-视频剪辑】https://t.cn/A6f4hPxo
 
@@ -343,5 +335,3 @@ https://t.cn/A6KVkB2y
 #079❤️【青柠设计-P图抠图海报】https://t.cn/A69gPvA3
 
 #080❤️【配音秀】https://t.cn/A6hiqy80
-
-
