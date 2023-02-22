@@ -16,13 +16,17 @@
 指示灯：永久：💙   非永久：❤️
 
 #### 【Revenuecat系列】
-#001💙【Fileball】已下架，已购可下载
+💙 001：Fileball
+下载地址：已下架，已购可下载
 
-#002💙【VSCO-照片与视频编辑】https://t.cn/AiOSSyU9
+#002💙【VSCO-照片与视频编辑】
+下载地址：https://t.cn/AiOSSyU9
 
-#003💙【1Blocker-广告拦截】https://t.cn/A6V7PAjE
+#003💙【1Blocker-广告拦截】
+下载地址：https://t.cn/A6V7PAjE
 
-#004💙【图图记账】https://t.cn/A6JZS4a0
+#004💙【图图记账】
+下载地址：https://t.cn/A6JZS4a0
 
 #005💙【手机硬件管家】https://t.cn/A659O6zK
 
