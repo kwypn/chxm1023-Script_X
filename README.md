@@ -9,8 +9,6 @@
 
 # App解锁合集
 
-小火箭，色鸡地址：
-
 [Shadowrocket，Surge合集](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.sgmodule "悬停显示")
 
 使用方法：先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
