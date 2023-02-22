@@ -1,12 +1,13 @@
-## 访问量
+# 访问量
 
 ![](http://profile-counter.glitch.me/chxm1023_Script_X/count.svg)
 
-## 使用声明：
+
+# 使用声明：
 
 作者并未参与任何形式的金钱交易，仅限测试和学习，请勿转载与贩卖，下载使用后24小时请删除⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
 
-## App解锁合集
+# App解锁合集
 
 小火箭，色鸡地址：
 
@@ -18,7 +19,7 @@
 
 指示灯：永久：💙   非永久：❤️
 
-#### 【Revenuecat系列】
+### 【Revenuecat系列】
 #001💙【Fileball-网络播放器】<br/>已下架，已购可下载
 
 #002💙【VSCO-照片与视频编辑】https://t.cn/AiOSSyU9
@@ -119,7 +120,7 @@
 
 #053💙【卡片馆-精美相框与复古胶片】https://t.cn/A6aVq4er
 
-#### 【iTunes系列】
+### 【iTunes系列】
 #001💙【TextEditor-文件管理】https://t.cn/A6osqlkO
 
 #002❤️【Anki Note-备忘录】http://t.cn/A6oTR5RT
@@ -178,7 +179,7 @@
 
 #062❤️【图片PDF转换器】https://t.cn/A6CyLIXn
 
-#### 【其他解锁】
+### 【其他解锁】
 #001💙【Nicegram-第三方电报】https://t.cn/A6ou0MCe
 
 #002❤️【绘影字幕】https://t.cn/A6oe27Yx
