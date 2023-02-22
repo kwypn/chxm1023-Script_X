@@ -15,7 +15,7 @@
 
 指示灯：永久：💙   非永久：❤️
 
-####【Revenuecat系列】
+#### 【Revenuecat系列】
 #001💙【Fileball】已下架，已购可下载
 
 #002💙【VSCO-照片与视频编辑】https://t.cn/AiOSSyU9
@@ -116,7 +116,7 @@
 
 #053💙【卡片馆】https://t.cn/A6aVq4er
 
-####【iTunes系列】
+#### 【iTunes系列】
 #001💙【TextEditor-文件管理】https://t.cn/A6osqlkO
 
 #002❤️【Anki Note-备忘录】http://t.cn/A6oTR5RT
@@ -175,7 +175,7 @@
 
 #062❤️【图片PDF转换器】https://t.cn/A6CyLIXn
 
-####【其他解锁】
+#### 【其他解锁】
 #001💙【Nicegram-第三方电报】https://t.cn/A6ou0MCe
 
 #002❤️【绘影字幕】https://t.cn/A6oe27Yx
