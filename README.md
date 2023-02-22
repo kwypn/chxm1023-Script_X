@@ -64,7 +64,7 @@
 
 #025💙【AudioMack-音乐App】https://t.cn/A6KS2mvG
 
-#026💙【WidgetArt-自定义桌面小组件】https://t.cn/A6GugI9C
+#026💙【WidgetArt-自定义小组件】https://t.cn/A6GugI9C
 
 #027💙【Apollo-记录影视】https://t.cn/A6X7TuG8
 
