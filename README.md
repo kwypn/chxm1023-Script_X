@@ -16,7 +16,6 @@
 
 #### 【Revenuecat系列】
 #001💙【Fileball-网络播放器】
-
 已下架，已购可下载
 
 #002💙【VSCO-照片与视频编辑】https://t.cn/AiOSSyU9
@@ -28,7 +27,6 @@
 #005💙【手机硬件管家】https://t.cn/A659O6zK
 
 #006💙【Tiao-剪贴板管理】
-
 自己下载1.5.0以下版本
 
 #007💙【Pillow-睡眠周期跟踪】https://t.cn/A6oupMnR
