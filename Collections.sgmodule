@@ -11,6 +11,22 @@
 # 已解锁App下载地址：https://too.st/4X2
 
 #=============UserScript=============#
+[URL Rewrite]
+^https:\/\/app-measurement\.com\/config\/app\/1?(.*?)*$ - reject
+# 酷我音乐_AdBlock
+^https?:\/\/rich\.kuwo\.cn\/AdService\/kaiping\/.+ - reject
+# 酷我音乐_AdBlock
+^https?:\/\/.+\.kwcdn\.kuwo\.cn\/star\/upload\/.+ - reject
+# 酷我音乐_AdBlock
+^https?:\/\/mobilead\.kuwo\.cn\/EcomResourceServer\/Ad - reject
+# 酷我听书_Blockad
+https?:\/\/audiobookpay\.kuwo\.cn/a\.p\?op=get_advertright - reject-dict
+# 酷我听书_Blockad
+https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
+# 酷我音乐_添加已购音乐
+^https?:\/\/.*\.kuwo\.cn\/music\.pay\?uid\=\d+ http://musicpay.kuwo.cn/music.pay?uid=2 302
+
+
 
 [Script]
 # Revenuecat解锁系列
@@ -299,9 +315,5 @@ peiyinxiu = type=http-response,pattern=^https:\/\/iosapi\.peiyinxiu\.com,require
 
 
 
-
-
-
-
 [MITM]
-hostname = %APPEND% iosapi.peiyinxiu.com ,*.qingning6.com ,day-api.xixitime.com ,api.adapty.io ,api.mojidict.com ,dj.palmestore.com ,asia.gikken.co ,xianbeikeji.com ,*.meiyan.com ,api-*.meitu.com ,app.yidiansz.com ,www.40sishi.com ,mobile-api.adguard.org ,explorer.tratao.com ,top-widgets-api.xiaozujian.com ,iap.etm.tech ,api.open.loveclip.site ,www.skyjos.cn ,www2.tigeroom.com ,cn.czur.cc ,dashen-api.shuiyinyu.com ,*.imendon.com ,api2.vlognow.me ,service.ilovepdf.com ,www.freshhome.top ,*.dicallapp.com ,format-api.netpock.com ,widget-box-api.codefuture.top ,cubox.pro ,*.radio.cn ,accounts.agenda.com ,*.aoscdn.com ,apimboom2.globaldelight.net ,api.duitang.com ,spclient.wg.spotify.com ,scibug.com ,*.wallpaperscraft.com ,screen-lock.51wnl-cq.com ,api.risingfalling.com ,api.meiease.cn ,*.xiuxiu.meitu.com ,server.yoyiapp.com ,pan.baidu.com ,*.camscanner.com ,*.intsig.net ,mb3admin.com ,*.kuwo.cn ,*.kwcdn.kuwo.cn ,*.lrts.me ,iosv2.cjapi.5fun.com ,api-v3.speedtest.cn ,app.yiyan.art ,*.cyapi.cn ,*.caiyunapp.com ,wallpaper.soutushenqi.com ,api.bluepulse.cn ,restore-access.indream.app ,buy.itunes.apple.com, firebaseremoteconfig.googleapis.com ,api.revenuecat.com
+hostname = %APPEND% iosapi.peiyinxiu.com ,*.qingning6.com ,day-api.xixitime.com ,api.adapty.io ,api.mojidict.com ,dj.palmestore.com ,asia.gikken.co ,xianbeikeji.com ,*.meiyan.com ,api-*.meitu.com ,app.yidiansz.com ,www.40sishi.com ,mobile-api.adguard.org ,explorer.tratao.com ,top-widgets-api.xiaozujian.com ,iap.etm.tech ,api.open.loveclip.site ,www.skyjos.cn ,www2.tigeroom.com ,cn.czur.cc ,dashen-api.shuiyinyu.com ,*.imendon.com ,api2.vlognow.me ,service.ilovepdf.com ,www.freshhome.top ,*.dicallapp.com ,format-api.netpock.com ,widget-box-api.codefuture.top ,cubox.pro ,*.radio.cn ,accounts.agenda.com ,*.aoscdn.com ,apimboom2.globaldelight.net ,api.duitang.com ,spclient.wg.spotify.com ,scibug.com ,*.wallpaperscraft.com ,screen-lock.51wnl-cq.com ,api.risingfalling.com ,api.meiease.cn ,*.xiuxiu.meitu.com ,server.yoyiapp.com ,pan.baidu.com ,*.camscanner.com ,*.intsig.net ,mb3admin.com ,*.kuwo.cn ,*.kwcdn.kuwo.cn ,*.lrts.me ,iosv2.cjapi.5fun.com ,api-v3.speedtest.cn ,app.yiyan.art ,*.cyapi.cn ,*.caiyunapp.com ,wallpaper.soutushenqi.com ,api.bluepulse.cn ,restore-access.indream.app ,buy.itunes.apple.com, firebaseremoteconfig.googleapis.com , app-measurement.com ,api.revenuecat.com
