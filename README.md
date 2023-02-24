@@ -5,7 +5,7 @@
 
 # 使用声明：
 
-作者并未参与任何形式的金钱交易，仅限测试和学习，请勿转载与贩卖，下载使用后24小时请删除⚠️⚠️⚠️⚠️⚠️⚠️
+作者并未参与任何形式的金钱交易，仅限测试和学习，请勿转载与贩卖，下载使用后24小时请删除⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
 
 # App解锁合集
 **合集地址：**
@@ -16,12 +16,12 @@
 **使用方法：**
 先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
 
-**总数量累计：**197
+**总数量累计：** 197
 
 
-**指示灯：***永久*💙&emsp;&emsp;~~非永久~~❤️
+**指示灯：**  永久💙&emsp;&emsp;~~非永久~~❤️
 
-### Revenuecat系列】<br/>
+### 【Revenuecat系列】<br/>
 001💙【Fileball-网络播放器】<br/>已下架，已购还可下载
 
 #002💙【VSCO-照片与视频编辑】<br/>下载地址：https://t.cn/AiOSSyU9
@@ -78,11 +78,11 @@
 
 #031💙【Email Me-给自己发邮箱】<br/>下载地址：https://t.cn/A6Ke5PiP
 
-#032💙【Tangerine-习惯与情绪追踪应用】<br/>下载地址：https://t.cn/A6IXmXQj
+#032💙【Tangerine-习惯与情绪追踪】<br/>下载地址：https://t.cn/A6IXmXQj
 
 #033💙【Noto-笔记】<br/>下载地址：https://t.cn/A62GZOSF
 
-#034💙【ElementNote-手写笔记&PDF注释】<br/>下载地址：https://t.cn/A69b6yMa
+#034💙【ElementNote-笔记&PDF】<br/>下载地址：https://t.cn/A69b6yMa
 
 #035💙【小决定-选择困难症克星】<br/>下载地址：https://t.cn/AipMqprZ
 
@@ -220,7 +220,7 @@
 
 #017❤️【起伏-睡眠/冥想/白噪音】<br/>下载地址：https://t.cn/A6ouQzMi
 
-#018❤️【布丁锁屏-给锁屏加个小组件】<br/>下载地址：https://t.cn/A6o11VGR
+#018❤️【布丁锁屏】<br/>下载地址：https://t.cn/A6o11VGR
 
 #019💙【Wallcraft-壁纸】<br/>http://t.cn/A6iO7Eht
 
