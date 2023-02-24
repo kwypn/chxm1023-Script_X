@@ -144,7 +144,7 @@
 
 008💙【Panda Widget-小组件】<br/>下载地址：https://t.cn/A6oupKTt
 
-#9-42❤️【Air全家桶共33个App：计算器Air，立即翻译-键盘，立即翻译，QrScan，翻译照片，Find Air，填色本Air，Scanner Air，笔记Air，脚步Air，拼贴画Air，饥饿Air，BeLingual，Widgetbot，天气Air，OweMe，Pixit，H2O，字体Air，Speech Air，习惯Air，Quotes Air，循環Air，计划Air，PDF Air，Story Air，期刊 Air，用度 Air，植物 Air，密码 Air，字典空气 Air，传真Air，设计 Air】<br/>下载地址：https://t.cn/A6CP7ofw
+9-42❤️【Air全家桶共33个App：计算器Air，立即翻译-键盘，立即翻译，QrScan，翻译照片，Find Air，填色本Air，Scanner Air，笔记Air，脚步Air，拼贴画Air，饥饿Air，BeLingual，Widgetbot，天气Air，OweMe，Pixit，H2O，字体Air，Speech Air，习惯Air，Quotes Air，循環Air，计划Air，PDF Air，Story Air，期刊 Air，用度 Air，植物 Air，密码 Air，字典空气 Air，传真Air，设计 Air】<br/>下载地址：https://t.cn/A6CP7ofw
 
 043💙【压缩软件】<br/>下载地址：https://t.cn/A6KVDlFZ
 
