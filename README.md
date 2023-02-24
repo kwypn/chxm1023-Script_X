@@ -94,7 +94,7 @@
 
 #039💙【bluredit-模糊视频&照片】<br/>下载地址：https://t.cn/A69mnM1b
 
-#040💙【照片清理工具Photo Cleaner】<br/>下载地址：https://t.cn/A6qK2YhO
+#040💙【照片清理Photo Cleaner】<br/>下载地址：https://t.cn/A6qK2YhO
 
 #041💙【Brovacy-隐私浏览器】<br/>下载地址：https://t.cn/A69upwlg
 
@@ -120,7 +120,7 @@
 
 #052💙【奇妙组件-轻巧桌面小组件】<br/>下载地址：https://t.cn/A69DP9iE
 
-#053💙【卡片馆-精美相框与复古胶片】<br/>下载地址：https://t.cn/A6aVq4er
+#053💙【卡片馆-相框与复古胶片】<br/>下载地址：https://t.cn/A6aVq4er
 
 #054💙【Darkroom-照片/视频编辑】<br/>下载地址：https://t.cn/A6Cq2beF
 
@@ -143,7 +143,7 @@
 
 #008💙【Panda Widget-小组件】<br/>下载地址：https://t.cn/A6oupKTt
 
-#9-42❤️【Air全家桶共33个App：计算器Air，立即翻译-键盘，立即翻译，QrScan，翻译照片，Find Air，填色本Air，Scanner Air，笔记Air，脚步Air，拼贴画Air，饥饿Air，BeLingual，Widgetbot，天气Air，OweMe，Pixit，H2O，字体Air，Speech Air，习惯Air，Quotes Air，循環Air，计划Air，PDF Air，Story Air，期刊 Air，用度 Air，植物 Air，密码 Air，字典空气 Air，传真Air，设计 Air】下载地址：https://t.cn/A6CP7ofw
+#9-42❤️【Air全家桶共33个App：计算器Air，立即翻译-键盘，立即翻译，QrScan，翻译照片，Find Air，填色本Air，Scanner Air，笔记Air，脚步Air，拼贴画Air，饥饿Air，BeLingual，Widgetbot，天气Air，OweMe，Pixit，H2O，字体Air，Speech Air，习惯Air，Quotes Air，循環Air，计划Air，PDF Air，Story Air，期刊 Air，用度 Air，植物 Air，密码 Air，字典空气 Air，传真Air，设计 Air】<br/>下载地址：https://t.cn/A6CP7ofw
 
 #043💙【压缩软件】<br/>下载地址：https://t.cn/A6KVDlFZ
 
@@ -198,7 +198,7 @@
 
 #006❤️【彩云天气】<br/>下载地址：https://t.cn/A66d95hV
 
-#007❤️【一言-记录字句，发现共鸣】<br/>下载地址：https://t.cn/Aini0veg
+#007❤️【一言】<br/>下载地址：https://t.cn/Aini0veg
 
 #008❤️【网速管家】<br/>下载地址：https://t.cn/A6ou0r5U
 
@@ -212,7 +212,7 @@
 
 #013❤️【百度网盘】<br/>下载地址：https://t.cn/A6ouHDsJ
 
-#014💙【Fimo-复古胶片相机(不登录恢复购买)】下载地址：https://t.cn/A6ouHsIk
+#014💙【Fimo-胶片相机(不登录恢复购买)】下载地址：https://t.cn/A6ouHsIk
 
 #015❤️【美图秀秀】<br/>下载地址：https://t.cn/AiN3YLHl
 
@@ -248,7 +248,7 @@
 
 #031❤️【乃糖小组件】<br/>下载地址：https://t.cn/A6o1iMdP
 
-#032❤️【佐糖-一键抠图换背景神器】<br/>下载地址：https://t.cn/A6o1iVTI
+#032❤️【佐糖-一键抠图换背景】<br/>下载地址：https://t.cn/A6o1iVTI
 
 #033❤️【佐糖照片修复】<br/>下载地址：https://t.cn/A6o1itzG
 
