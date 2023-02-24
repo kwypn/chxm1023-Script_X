@@ -8,20 +8,21 @@
 作者并未参与任何形式的金钱交易，仅限测试和学习，请勿转载与贩卖，下载使用后24小时请删除⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
 
 # App解锁合集
-**合集地址：**
+* **合集地址：**
 [Quantumult_X合集](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.conf "悬停显示")
 [Shadowrocket合集、Surge合集](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.sgmodule "悬停显示")
 
 
-**使用方法：**
-先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
 
-**总数量累计：** 197
+* **使用方法：**
+==先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！==
+
+* **总数量累计：** 197
 
 
-**指示灯：**  永久💙&emsp;&emsp;~~非永久~~❤️
+* **指示灯：**  永久💙&emsp;&emsp;~~非永久~~❤️
 
-### 【Revenuecat系列】<br/>
+### Revenuecat系列<br/>
 001💙【Fileball-网络播放器】<br/>已下架，已购还可下载
 
 #002💙【VSCO-照片与视频编辑】<br/>下载地址：https://t.cn/AiOSSyU9
@@ -126,7 +127,7 @@
 
 #055💙【Personal Best-运动报告】<br/>下载地址：https://t.cn/A6qgtI88
 
-### 【iTunes系列】<br/>
+### iTunes系列<br/>
 #001💙【TextEditor-文件管理】<br/>下载地址：https://t.cn/A6osqlkO
 
 #002❤️【Anki Note-备忘录】<br/>http://t.cn/A6oTR5RT
@@ -185,7 +186,7 @@
 
 #062❤️【图片PDF转换器】<br/>下载地址：https://t.cn/A6CyLIXn
 
-### 【其他解锁】<br/>
+### 其他解锁<br/>
 #001💙【Nicegram-第三方电报】<br/>下载地址：https://t.cn/A6ou0MCe
 
 #002❤️【绘影字幕】<br/>下载地址：https://t.cn/A6oe27Yx
