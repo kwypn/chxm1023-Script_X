@@ -23,7 +23,7 @@
 * **指示灯：**  永久💙&emsp;&emsp;~~非永久~~❤️
 
 ### Revenuecat系列<br/>
-#001💙【Fileball-网络播放器】<br/>已下架，已购还可下载
+001💙【Fileball-网络播放器】<br/>已下架，已购还可下载
 
 #002💙【VSCO-照片与视频编辑】<br/>下载地址：https://t.cn/AiOSSyU9
 
@@ -53,7 +53,7 @@
 
 #015💙【花样文字】<br/>下载地址：https://t.cn/A6KxKtqG
 
-#16-19💙【NotBoring四件套：天气-习惯-计算器-时间】<br/>下载地址：https://t.cn/A6o1YcVv
+#16-19💙【NotBoring四件套】<br/>【天气，习惯，计算器，时间】<br/>下载地址：https://t.cn/A6o1YcVv
 
 #020💙【NotePlan】<br/>下载地址：https://t.cn/A6KVzj2S
 
@@ -130,7 +130,7 @@
 ### iTunes系列<br/>
 #001💙【TextEditor-文件管理】<br/>下载地址：https://t.cn/A6osqlkO
 
-#002❤️【Anki Note-备忘录】<br/>http://t.cn/A6oTR5RT
+#002❤️【Anki Note-备忘录】<br/>下载地址：http://t.cn/A6oTR5RT
 
 #003❤️【ProKnockOut-抠图修图P图】<br/>下载地址：https://t.cn/A6o0jEZ7
 
@@ -213,7 +213,7 @@
 
 #013❤️【百度网盘】<br/>下载地址：https://t.cn/A6ouHDsJ
 
-#014💙【Fimo-相机(不登录恢复购买)】下载地址：https://t.cn/A6ouHsIk
+#014💙【Fimo-相机(不登录恢复购买)】<br/>下载地址：https://t.cn/A6ouHsIk
 
 #015❤️【美图秀秀】<br/>下载地址：https://t.cn/AiN3YLHl
 
