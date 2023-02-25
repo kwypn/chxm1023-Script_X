@@ -3,14 +3,17 @@
 ![](http://profile-counter.glitch.me/chxm1023_Script_X/count.svg)
 ![图片描述](https://raw.githubusercontent.com/chxm1023/Task/main/icon/LP.PNG)
 
-# 使用声明：
+**项目作者：chxm1023**
+**电报频道：https://t.me/chxm1023**
+**Quantumult X配置：[长按复制链接](https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Script_X/main/Quantumult_X.conf)**
 
-作者并未参与任何形式的金钱交易，仅限测试和学习，请勿转载与贩卖，下载使用后24小时请删除⚠️⚠️⚠️⚠️⚠️⚠️
+# 使用声明：
+**作者并未参与任何形式的金钱交易，仅限测试和学习，请勿转载与贩卖，下载使用后24小时请删除⚠️⚠️⚠️⚠️⚠️⚠️**
 
 # App解锁合集
 * **合集地址：**
-[Quantumult_X合集](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.conf "悬停显示")
-[Shadowrocket合集、Surge合集](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.sgmodule "悬停显示")
+[Quantumult_X](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.conf "悬停显示")
+[Shadowrocket、Surge](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.sgmodule "悬停显示")
 
 
 * **使用方法：** 
@@ -144,7 +147,7 @@
 
 008💙【Panda Widget-小组件】<br/>下载地址：https://t.cn/A6oupKTt
 
-9-42❤️【Air全家桶共33个App：计算器Air，立即翻译-键盘，立即翻译，QrScan，翻译照片，Find Air，填色本Air，Scanner Air，笔记Air，脚步Air，拼贴画Air，饥饿Air，BeLingual，Widgetbot，天气Air，OweMe，Pixit，H2O，字体Air，Speech Air，习惯Air，Quotes Air，循環Air，计划Air，PDF Air，Story Air，期刊 Air，用度 Air，植物 Air，密码 Air，字典空气 Air，传真Air，设计 Air】<br/>下载地址：https://t.cn/A6CP7ofw
+#9-42❤️【Air全家桶共33个App：计算器Air，立即翻译-键盘，立即翻译，QrScan，翻译照片，Find Air，填色本Air，Scanner Air，笔记Air，脚步Air，拼贴画Air，饥饿Air，BeLingual，Widgetbot，天气Air，OweMe，Pixit，H2O，字体Air，Speech Air，习惯Air，Quotes Air，循環Air，计划Air，PDF Air，Story Air，期刊 Air，用度 Air，植物 Air，密码 Air，字典空气 Air，传真Air，设计 Air】<br/>下载地址：https://t.cn/A6CP7ofw
 
 043💙【压缩软件】<br/>下载地址：https://t.cn/A6KVDlFZ
 
