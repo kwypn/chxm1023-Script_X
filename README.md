@@ -3,9 +3,9 @@
 ![](http://profile-counter.glitch.me/chxm1023_Script_X/count.svg)
 ![图片描述](https://raw.githubusercontent.com/chxm1023/Task/main/icon/LP.PNG)
 
-**项目作者：chxm1023**
-**电报频道：https://t.me/chxm1023**
-**Quantumult X配置：[长按复制链接](https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Script_X/main/Quantumult_X.conf)**
+**项目作者：chxm1023**<br/>
+**电报频道：https://t.me/chxm1023**<br/>
+**Quantumult X配置：[长按复制链接](https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Script_X/main/Quantumult_X.conf)**<br/>
 
 # 使用声明：
 **作者并未参与任何形式的金钱交易，仅限测试和学习，请勿转载与贩卖，下载使用后24小时请删除⚠️⚠️⚠️⚠️⚠️⚠️**
