@@ -12,8 +12,8 @@
 
 # App解锁合集
 * **合集地址：**
-[Quantumult_X](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.conf "悬停显示")
-[Shadowrocket、Surge](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.sgmodule "悬停显示")
+[Quantumult_X](https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.conf "悬停显示")
+[Shadowrocket、Surge](https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.sgmodule "悬停显示")
 
 
 * **使用方法：** 
