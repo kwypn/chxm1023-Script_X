@@ -12,8 +12,8 @@
 
 # App解锁合集
 * **合集地址：**<br/>
-[长按复制Quantumult_X合集](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.conf "悬停显示")<br/>
-[长按复制Shadowrocket、Surge合集](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.sgmodule "悬停显示")
+[Quantumult_X合集](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.conf "悬停显示")<br/>
+[Shadowrocket、Surge合集](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.sgmodule "悬停显示")
 
 
 * **使用方法：** 
