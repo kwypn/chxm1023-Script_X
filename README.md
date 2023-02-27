@@ -12,8 +12,8 @@
 
 # App解锁合集
 * **合集地址：**<br/>
-[Quantumult_X合集](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.conf "悬停显示")<br/>
-[Shadowrocket、Surge合集](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.sgmodule "悬停显示")
+[Quantumult_X](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.conf "悬停显示")<br/>
+[Shadowrocket、Surge](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.sgmodule "悬停显示")
 
 
 * **使用方法：** 
@@ -143,7 +143,7 @@
 
 006💙【VPN unlimited】<br/>下载地址：https://t.cn/A6iC6kaY
 
-007💙【Picsew-截长图】<br/>http://t.cn/Aig753CC
+007💙【Picsew-截长图】<br/>下载地址：http://t.cn/Aig753CC
 
 008💙【Panda Widget-小组件】<br/>下载地址：https://t.cn/A6oupKTt
 
