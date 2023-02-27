@@ -12,15 +12,15 @@
 
 # App解锁合集
 * **合集地址：**
-[Quantumult_X](https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.conf "悬停显示")
-[Shadowrocket、Surge](https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.sgmodule "悬停显示")
+[长按复制Quantumult_X合集](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.conf "悬停显示")
+[长按复制Shadowrocket、Surge合集](https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.sgmodule "悬停显示")
 
 
 * **使用方法：** 
   >先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
 
 
-* **总数量累计：** 197
+* **总数量累计：** 200
 
 
 * **指示灯：**  永久💙&emsp;&emsp;~~非永久~~❤️
@@ -188,6 +188,12 @@
 061❤️【文字扫描】<br/>下载地址：https://t.cn/A6CyLxAF
 
 062❤️【图片PDF转换器】<br/>下载地址：https://t.cn/A6CyLIXn
+
+063❤️【Pro CCD-复古相机】<br/>下载地址：https://t.cn/A6CvQlEp
+
+064❤️【Koloro-滤镜君】<br/>下载地址：https://t.cn/A6M6toeO
+
+065❤️【Vlog Star-视频编辑器】<br/>下载地址：https://t.cn/A6CfULml
 
 ### 其他解锁<br/>
 001💙【Nicegram-第三方电报】<br/>下载地址：https://t.cn/A6ou0MCe
