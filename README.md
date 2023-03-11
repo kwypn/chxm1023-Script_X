@@ -14,7 +14,7 @@
 
 <table>
 <tr> <th> 项目 </th> <th> 应用 </th> <th> 链接 </th> </tr ><tr>
-<td rowspan="3"><strong>合集</strong></td>
+<td rowspan="3"><strong>解锁合集</strong></td>
 		 <td > Quantumult_X </td> <td ><a href="https://quantumult.app/x/open-app/add-resource?remote-resource=%7B%0A%20%20%22rewrite_remote%22%20%3A%20%5B%0A%20%20%20%20%22https%3A%2F%2Fghproxy.com%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fchxm1023%2FScript_X%2Fmain%2FCollections.conf%2C%20tag%3DAPP%E8%A7%A3%E9%94%81%E5%90%88%E9%9B%86%2C%20update-interval%3D172800%2C%20opt-parser%3Dfalse%2C%20enabled%3Dtrue%22%0A%20%20%5D%0A%7D"><em> 点击导入</em></a></td>
     </tr> 
     	<tr>
@@ -29,7 +29,7 @@
 * **使用方法：** 
   >先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
 
-* **总数量累计：** 212
+* **总数量累计：** 220
 
 * **指示灯：**  永久💙&emsp;&emsp;~~非永久~~❤️
 
@@ -386,11 +386,10 @@
 
 084❤️【计算器HD】<br/>下载地址：http://t.cn/A6xF7wam
 
-085❤️【万能播放器，万能变声器，塔罗牌，Art Widget(小组件)，memo(标签小组件)，NFC标签读写器工具】<br/>下载地址：https://t.cn/A6CojaZe
+85-90❤️【万能播放器，万能变声器，塔罗牌，Art Widget(小组件)，memo(标签小组件)，NFC标签读写器工具】<br/>下载地址：https://t.cn/A6CojaZe
 
+091❤️【薄荷健康】<br/>下载地址：https://t.cn/A69ull4r
 
+092❤️【菜谱大全】<br/>下载地址：https://t.cn/AijzV2It
 
-
-
-
-
+093❤️【烘培小屋】<br/>下载地址：https://t.cn/AipIBR88
