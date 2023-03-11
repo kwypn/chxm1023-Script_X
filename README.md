@@ -14,7 +14,7 @@
 
 <table>
 <tr> <th> 项目 </th> <th> 应用 </th> <th> 链接 </th> </tr ><tr>
-<td rowspan="3"><strong>解锁合集</strong></td>
+<td rowspan="3"><strong>合集</strong></td>
 		 <td > Quantumult_X </td> <td ><a href="https://quantumult.app/x/open-app/add-resource?remote-resource=%7B%0A%20%20%22rewrite_remote%22%20%3A%20%5B%0A%20%20%20%20%22https%3A%2F%2Fghproxy.com%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fchxm1023%2FScript_X%2Fmain%2FCollections.conf%2C%20tag%3DAPP%E8%A7%A3%E9%94%81%E5%90%88%E9%9B%86%2C%20update-interval%3D172800%2C%20opt-parser%3Dfalse%2C%20enabled%3Dtrue%22%0A%20%20%5D%0A%7D"><em> 点击导入</em></a></td>
     </tr> 
     	<tr>
