@@ -25,7 +25,8 @@ https?:\/\/audiobookpay\.kuwo\.cn/a\.p\?op=get_advertright - reject-dict
 https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
 # 酷我音乐_添加已购音乐
 ^https?:\/\/.*\.kuwo\.cn\/music\.pay\?uid\=\d+ http://musicpay.kuwo.cn/music.pay?uid=2 302
-
+# 蓝基因
+^https:\/\/tk\.lanjiyin\.com\.cn\/img - reject
 
 
 [Script]
