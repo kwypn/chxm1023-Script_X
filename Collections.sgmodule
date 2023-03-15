@@ -254,11 +254,6 @@ jjhl = type=http-response,pattern=^https:\/\/explorer\.tratao\.com\/api\/client\
 AdGuard = type=http-response,pattern=^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/AdGuard.js
 
 #************************************#
-# 计算器HD
-; hostname = www.40sishi.com
-jsqhd = type=http-response,pattern=^https?:\/\/www\.40sishi\.com\/(list|currency|calculator)\/user\/profile$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jsqhd.js
-
-#************************************#
 # 阅读记录
 ; hostname = app.yidiansz.com
 ydjl = type=http-response,pattern=^https:\/\/app\.yidiansz\.com\/api\/.+\/app\/user\/info?(.*?)*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ydjl.js
@@ -313,7 +308,44 @@ qnsj = type=http-response,pattern=^https:\/\/.*\.qingning6\.com\/api\/(user\/get
 ; hostname = iosapi.peiyinxiu.com
 peiyinxiu = type=http-response,pattern=^https:\/\/iosapi\.peiyinxiu\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/peiyinxiu.js
 
+#************************************#
+# 蓝基因
+; hostname = *.lanjiyin.com.cn
+lanjiyin = type=http-response,pattern=^https:\/\/(tk|course)\.lanjiyin\.com\.cn,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lanjiyin.js
+
+#************************************#
+# 一天阅读
+; hostname = novel.test.onedayapp.cn
+yitianyuedu = type=http-response,pattern=^https:\/\/novel\.test\.onedayapp\.cn\/login\/sync.+,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yitianyuedu.js
+
+#************************************#
+# 小时尚
+; hostname = kongque.twan.cn
+xiaoshishang = type=http-response,pattern=^https?:\/\/kongque\.twan\.cn\/index.+\/admin\/appberrycustomer.+,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xiaoshishang.js
+
+#************************************#
+# 计算器HD，万能播放器，万能变声器，塔罗牌，Art Widget(小组件)，memo(标签小组件)，NFC标签读写器工具，(一共解锁七个App)
+; hostname = www.40sishi.com
+40sishi = type=http-response,pattern=^http[s]?:\/\/www\.40sishi\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/40sishi.js
+
+#************************************#
+# 薄荷健康
+; hostname = api.boohee.com
+bohejiankang = type=http-response,pattern=^https?:\/\/api\.boohee\.com\/app-interface\/.+\/user\/user_info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/bohejiankang.js
+
+#************************************#
+# 菜谱大全，烘焙小屋，香哈菜谱
+; hostname = *.xiangha.com
+caipu = type=http-response,pattern=^https:\/\/api.*\.xiangha\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caipu.js
+
+
+
+
+
+
+
+
 
 
 [MITM]
-hostname = %APPEND% iosapi.peiyinxiu.com ,*.qingning6.com ,day-api.xixitime.com ,api.adapty.io ,api.mojidict.com ,dj.palmestore.com ,asia.gikken.co ,xianbeikeji.com ,*.meiyan.com ,api-*.meitu.com ,app.yidiansz.com ,www.40sishi.com ,mobile-api.adguard.org ,explorer.tratao.com ,top-widgets-api.xiaozujian.com ,iap.etm.tech ,api.open.loveclip.site ,www.skyjos.cn ,www2.tigeroom.com ,cn.czur.cc ,dashen-api.shuiyinyu.com ,*.imendon.com ,api2.vlognow.me ,service.ilovepdf.com ,www.freshhome.top ,*.dicallapp.com ,format-api.netpock.com ,widget-box-api.codefuture.top ,cubox.pro ,*.radio.cn ,accounts.agenda.com ,*.aoscdn.com ,apimboom2.globaldelight.net ,api.duitang.com ,spclient.wg.spotify.com ,scibug.com ,*.wallpaperscraft.com ,screen-lock.51wnl-cq.com ,api.risingfalling.com ,api.meiease.cn ,*.xiuxiu.meitu.com ,server.yoyiapp.com ,pan.baidu.com ,*.camscanner.com ,*.intsig.net ,mb3admin.com ,*.kuwo.cn ,*.kwcdn.kuwo.cn ,*.lrts.me ,iosv2.cjapi.5fun.com ,api-v3.speedtest.cn ,app.yiyan.art ,*.cyapi.cn ,*.caiyunapp.com ,wallpaper.soutushenqi.com ,api.bluepulse.cn ,restore-access.indream.app ,buy.itunes.apple.com, firebaseremoteconfig.googleapis.com , app-measurement.com ,api.revenuecat.com
+hostname = %APPEND% *.xiangha.com ,api.boohee.com ,www.40sishi.com ,kongque.twan.cn ,novel.test.onedayapp.cn ,*.lanjiyin.com.cn ,iosapi.peiyinxiu.com ,*.qingning6.com ,day-api.xixitime.com ,api.adapty.io ,api.mojidict.com ,dj.palmestore.com ,asia.gikken.co ,xianbeikeji.com ,*.meiyan.com ,api-*.meitu.com ,app.yidiansz.com ,mobile-api.adguard.org ,explorer.tratao.com ,top-widgets-api.xiaozujian.com ,iap.etm.tech ,api.open.loveclip.site ,www.skyjos.cn ,www2.tigeroom.com ,cn.czur.cc ,dashen-api.shuiyinyu.com ,*.imendon.com ,api2.vlognow.me ,service.ilovepdf.com ,www.freshhome.top ,*.dicallapp.com ,format-api.netpock.com ,widget-box-api.codefuture.top ,cubox.pro ,*.radio.cn ,accounts.agenda.com ,*.aoscdn.com ,apimboom2.globaldelight.net ,api.duitang.com ,spclient.wg.spotify.com ,scibug.com ,*.wallpaperscraft.com ,screen-lock.51wnl-cq.com ,api.risingfalling.com ,api.meiease.cn ,*.xiuxiu.meitu.com ,server.yoyiapp.com ,pan.baidu.com ,*.camscanner.com ,*.intsig.net ,mb3admin.com ,*.kuwo.cn ,*.kwcdn.kuwo.cn ,*.lrts.me ,iosv2.cjapi.5fun.com ,api-v3.speedtest.cn ,app.yiyan.art ,*.cyapi.cn ,*.caiyunapp.com ,wallpaper.soutushenqi.com ,api.bluepulse.cn ,restore-access.indream.app ,buy.itunes.apple.com, firebaseremoteconfig.googleapis.com , app-measurement.com ,api.revenuecat.com
