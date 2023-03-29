@@ -29,7 +29,7 @@
 * **使用方法：** 
   >先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
 
-* **总数量累计：** 221
+* **总数量累计：** 226
 
 * **指示灯：**  永久💙&emsp;&emsp;~~非永久~~❤️
 
@@ -171,7 +171,7 @@
 
 049💙【SaveTik】<br/>下载地址：https://t.cn/A6KoNtjG
 
-050💙【Social Saver-ins下载】<br/>下载地址：https://t.cn/A6KoNV6v
+050💙【Instant Saver-ins下载】<br/>下载地址：https://t.cn/A6KoNV6v
 
 051💙【仿手写】<br/>下载地址：https://t.cn/A6KVDYWi
 
@@ -217,6 +217,12 @@
 
 072❤️【谜底时钟】<br/>下载地址：https://t.cn/A6og4CvR
 
+073💙【高级恋爱话术】<br/>下载地址：https://t.cn/A6CERvg1
+
+074💙【Calendars-日历/计划】<br/>下载地址：https://t.cn/A6Kpq9a6
+
+075💙【3D Scanner-绘制/测量平面图】<br/>下载地址：https://t.cn/A6CCxxqJ
+
 ### 其他解锁<br/>
 001💙【Nicegram-第三方电报】<br/>下载地址：https://t.cn/A6ou0MCe
 
@@ -244,9 +250,9 @@
 
 013❤️【百度网盘】<br/>下载地址：https://t.cn/A6ouHDsJ
 
-014💙【Fimo-相机(不登录恢复购买)】<br/>下载地址：https://t.cn/A6ouHsIk
+014❤️【一刻相册】<br/>下载地址：https://t.cn/Ainbj7GV
 
-015❤️【美图秀秀】<br/>下载地址：https://t.cn/AiN3YLHl
+015❤️【阿里云盘】<br/>下载地址：https://t.cn/A6GqTACm
 
 016❤️【Picsart美易】<br/>下载地址：https://t.cn/A6MxZ5q1
 
@@ -362,36 +368,40 @@
 
 072❤️【美颜相机】<br/>下载地址：https://t.cn/A69cNPHr
 
-073❤️【小习惯-打卡App】<br/>下载地址：https://t.cn/A69lQVtI
+073❤️【美图秀秀】<br/>下载地址：https://t.cn/AiN3YLHl
 
-074❤️【Mate-翻译神器】<br/>下载地址：https://t.cn/A69OzKuZ
+074💙【Fimo-相机(不登录恢复购买)】<br/>下载地址：https://t.cn/A6ouHsIk
 
-075❤️【得间小说】<br/>下载地址：https://t.cn/A6i8BXBm
+075❤️【小习惯-打卡App】<br/>下载地址：https://t.cn/A69lQVtI
 
-076❤️【Moji辞书-学习日语】<br/>下载地址：https://t.cn/A6fK4RkD
+076❤️【Mate-翻译神器】<br/>下载地址：https://t.cn/A69OzKuZ
 
-077💙【Batched-多量图片编辑器】<br/>下载地址：https://t.cn/A69YGbhk
+077❤️【得间小说】<br/>下载地址：https://t.cn/A6i8BXBm
 
-078❤️【倒数纪念日】<br/>下载地址：https://t.cn/A6t6nFst
+078❤️【Moji辞书-学习日语】<br/>下载地址：https://t.cn/A6fK4RkD
 
-079❤️【青柠设计-P图抠图海报】<br/>下载地址：https://t.cn/A69gPvA3
+079💙【Batched-多量图片编辑器】<br/>下载地址：https://t.cn/A69YGbhk
 
-080❤️【配音秀】<br/>下载地址：https://t.cn/A6hiqy80
+080❤️【倒数纪念日】<br/>下载地址：https://t.cn/A6t6nFst
 
-081❤️【蓝基因】<br/>下载地址：https://t.cn/A6CMvGPe
+081❤️【青柠设计-P图抠图海报】<br/>下载地址：https://t.cn/A69gPvA3
 
-082❤️【一天阅读】<br/>下载地址：https://t.cn/A6C6jqJt
+082❤️【配音秀】<br/>下载地址：https://t.cn/A6hiqy80
 
-083❤️【小时尚】<br/>下载地址：https://t.cn/A6Xr4Kjn
+083❤️【蓝基因】<br/>下载地址：https://t.cn/A6CMvGPe
 
-084❤️【计算器HD】<br/>下载地址：http://t.cn/A6xF7wam
+084❤️【一天阅读】<br/>下载地址：https://t.cn/A6C6jqJt
 
-85-90❤️【万能播放器，万能变声器，塔罗牌，Art Widget(小组件)，memo(标签小组件)，NFC标签读写器工具】<br/>下载地址：https://t.cn/A6CojaZe
+085❤️【小时尚】<br/>下载地址：https://t.cn/A6Xr4Kjn
 
-091❤️【薄荷健康】<br/>下载地址：https://t.cn/A69ull4r
+086❤️【计算器HD】<br/>下载地址：http://t.cn/A6xF7wam
 
-092❤️【菜谱大全】<br/>下载地址：https://t.cn/AijzV2It
+87-92❤️【万能播放器，万能变声器，塔罗牌，Art Widget(小组件)，memo(标签小组件)，NFC标签读写器工具】<br/>下载地址：https://t.cn/A6CojaZe
 
-093❤️【烘培小屋】<br/>下载地址：https://t.cn/AipIBR88
+093❤️【薄荷健康】<br/>下载地址：https://t.cn/A69ull4r
 
-094❤️【香哈菜谱】<br/>下载地址：https://t.cn/AipUXQUl
+094❤️【菜谱大全】<br/>下载地址：https://t.cn/AijzV2It
+
+095❤️【烘培小屋】<br/>下载地址：https://t.cn/AipIBR88
+
+096❤️【香哈菜谱】<br/>下载地址：https://t.cn/AipUXQUl
