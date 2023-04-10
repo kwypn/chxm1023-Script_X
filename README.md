@@ -29,7 +29,7 @@
 * **使用方法：** 
   >先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
 
-* **总数量累计：** 227
+* **总数量累计：** 231
 
 * **指示灯：**  永久💙&emsp;&emsp;~~非永久~~❤️
 
@@ -138,6 +138,8 @@
 
 055💙【Personal Best-运动报告】<br/>下载地址：https://t.cn/A6qgtI88
 
+056💙【西江诗词】<br/>下载地址：https://t.cn/A6CFTG1l
+
 ### iTunes系列<br/>
 001💙【TextEditor-文件管理】<br/>下载地址：https://t.cn/A6osqlkO
 
@@ -222,6 +224,10 @@
 074💙【Calendars-日历/计划】<br/>下载地址：https://t.cn/A6Kpq9a6
 
 075💙【3D Scanner-绘制/测量平面图】<br/>下载地址：https://t.cn/A6CCxxqJ
+
+076💙【Colorful Widget—小组件】<br/>下载地址：https://t.cn/A6N4oF3J
+
+077💙【iScreen-桌面小组件主题美化】<br/>下载地址：https://t.cn/A6MsPY5O
 
 ### 其他解锁<br/>
 001💙【Nicegram-第三方电报】<br/>下载地址：https://t.cn/A6ou0MCe
@@ -407,3 +413,6 @@
 096❤️【香哈菜谱】<br/>下载地址：https://t.cn/AipUXQUl
 
 097❤️【排班日历】<br/>下载地址：https://t.cn/A6Nz3Zuo
+
+098💙【Xmind-思维导图】<br/>下载地址：https://t.cn/AipCL5zE
+
