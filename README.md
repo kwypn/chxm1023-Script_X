@@ -29,7 +29,7 @@
 * **使用方法：** 
   >先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
 
-* **总数量累计：** 231
+* **总数量累计：** 236
 
 * **指示灯：**  永久💙&emsp;&emsp;~~非永久~~❤️
 
@@ -140,6 +140,12 @@
 
 056💙【西江诗词】<br/>下载地址：https://t.cn/A6CFTG1l
 
+057💙【Lens智图-画质增强&AI作画】<br/>下载地址：https://t.cn/A6NIfo7O
+
+058💙【Imagex-AI图片改善图片画质】<br/>下载地址：https://t.cn/A6NI6KJY
+
+059💙【自动点击器-Auto Clicker】<br/>下载地址：https://t.cn/A6NIJZK9
+
 ### iTunes系列<br/>
 001💙【TextEditor-文件管理】<br/>下载地址：https://t.cn/A6osqlkO
 
@@ -228,6 +234,8 @@
 076💙【Colorful Widget—小组件】<br/>下载地址：https://t.cn/A6N4oF3J
 
 077💙【iScreen-桌面小组件主题美化】<br/>下载地址：https://t.cn/A6MsPY5O
+
+078❤️【aDiary-待办日记本】<br/>下载地址：https://t.cn/A6NiI4mt
 
 ### 其他解锁<br/>
 001💙【Nicegram-第三方电报】<br/>下载地址：https://t.cn/A6ou0MCe
@@ -416,3 +424,4 @@
 
 098💙【Xmind-思维导图】<br/>下载地址：https://t.cn/AipCL5zE
 
+099❤️【靓机汇】<br/>下载地址：https://t.cn/A6NMLjKA
