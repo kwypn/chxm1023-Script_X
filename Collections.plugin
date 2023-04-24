@@ -32,6 +32,9 @@ https?:\/\/audiobookpay\.kuwo\.cn/a\.p\?op=get_advertright - reject-dict
 https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
 # 酷我音乐_添加已购音乐
 ^https?:\/\/.*\.kuwo\.cn\/music\.pay\?uid\=\d+ http://musicpay.kuwo.cn/music.pay?uid=2 302
+^https?:\/\/ytmsout\.radio\.cn\/publish\/recScreen\/getLoadPage - reject-200
+
+
 
 [Script]
 
@@ -236,6 +239,13 @@ http-response ^https?:\/\/www\.xmind\.cn\/.+\/devices script-path=https://raw.gi
 
 
 http-response ^https?:\/\/guapi\.liangjihui\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/liangjihui.js, requires-body=true, tag=靓机汇
+
+
+
+
+
+
+
 
 
 
