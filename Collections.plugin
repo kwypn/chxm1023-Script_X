@@ -30,6 +30,9 @@
 https?:\/\/audiobookpay\.kuwo\.cn/a\.p\?op=get_advertright - reject-dict
 # 酷我听书_Blockad
 https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
+# 酷我音乐_添加已购音乐
+^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?uid\=\d+ header http://musicpay.kuwo.cn/music.pay?uid=2
+# 云听开屏广告/浮窗
 ^https?:\/\/ytmsout\.radio\.cn\/publish\/recScreen\/getLoadPage - reject-200
 
 
