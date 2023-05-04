@@ -1,0 +1,45 @@
+{"name": "自用图标库",
+ "description": "收集互联网公开图标文件，版权属于原作者和商标持有人。", 
+ "icons": [
+ {"name": "哆啦A梦",
+  "url": "https://raw.githubusercontent.com/chxm1023/Task/main/icon/ddm.png"},
+  
+ {"name": "boxjs",
+  "url": "https://raw.githubusercontent.com/chxm1023/Task/main/icon/box.png"},
+  
+ {"name": "Google Voice",
+  "url": "https://raw.githubusercontent.com/chxm1023/Task/main/icon/GV.PNG"},
+  
+ {"name": "Github",
+  "url": "https://raw.githubusercontent.com/chxm1023/Task/main/icon/github.png"},
+
+ {"name": "腾讯视频",
+  "url": "https://raw.githubusercontent.com/chxm1023/Task/main/icon/txvideo.png"},
+
+ {"name": "悟空",
+  "url": "https://raw.githubusercontent.com/chxm1023/Task/main/icon/wk.png"},
+
+ {"name": "TikTok",
+  "url": "https://raw.githubusercontent.com/chxm1023/Task/main/icon/TikTok.png"},
+
+ {"name": "Loon1",
+  "url": "https://raw.githubusercontent.com/chxm1023/Task/main/icon/Loon/Loon_1.png"},
+
+ {"name": "Loon2",
+  "url": "https://raw.githubusercontent.com/chxm1023/Task/main/icon/Loon/Loon_2.png"},
+
+ {"name": "Loon3",
+  "url": "https://raw.githubusercontent.com/chxm1023/Task/main/icon/Loon/Loon_3.png"},
+
+ {"name": "Loon4",
+  "url": "https://raw.githubusercontent.com/chxm1023/Task/main/icon/Loon/Loon_4.png"},
+
+ {"name": "Loon5",
+  "url": "https://raw.githubusercontent.com/chxm1023/Task/main/icon/Loon/Loon_5.png"},
+
+ {"name": "Loon6",
+  "url": "https://raw.githubusercontent.com/chxm1023/Task/main/icon/Loon/Loon_6.png"},
+
+ {"name": "Loon7",
+  "url": "https://raw.githubusercontent.com/chxm1023/Task/main/icon/Loon/Loon_7.png"}
+]}
