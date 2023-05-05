@@ -33,4 +33,4 @@
   >先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
 
 
-# [已解锁App下载地址传送门](https://github.com/chxm1023/Rewrite/blob/main/README.md#%E8%A7%A3%E9%94%81app%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80)
+## [已解锁App下载地址传送门](https://github.com/chxm1023/Rewrite/blob/main/README.md#%E8%A7%A3%E9%94%81app%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80)
