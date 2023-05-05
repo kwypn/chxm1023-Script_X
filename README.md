@@ -14,7 +14,7 @@
 
 <table>
 <tr> <th> 项目 </th> <th> 应用 </th> <th> 链接 </th> </tr ><tr>
-<td rowspan="4"><strong>A&emsp;解<br/>P&emsp;P锁<br/>&emsp;合<br/>&emsp;集</strong></td>
+<td rowspan="4"><strong>A&emsp;解<br/>P&emsp;锁<br/>P&emsp;合<br/>&emsp;集</strong></td>
 	 <td > 	&emsp;&emsp;Surge </td> <td ><a href="https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.sgmodule"><em>长按复制</em></a></td> 
     </tr>
 	<tr>
