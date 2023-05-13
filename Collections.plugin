@@ -55,7 +55,7 @@ http-response ^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile script-path=
 
 http-response ^https:\/\/biz\.(caiyunapp|cyapi)\.(com|cn) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js, requires-body=true, tag=彩云天气
 
-http-response ^https:\/\/app\.yiyan\.art\/yiyan\/ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yiyan.js, requires-body=true, tag=一言
+http-response ^https:\/\/app\.yiyan\.art\/yiyan script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yiyan.js, requires-body=true, tag=一言
 
 http-response ^https:\/\/api.*\.speedtest\.cn\/user\/info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/wsgj.js, requires-body=true, tag=网速管家
 
