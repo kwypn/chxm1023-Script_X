@@ -63,7 +63,7 @@ http-response http:\/\/iosv2\.cjapi\.5fun\.com script-path=https://raw.githubuse
 
 http-response ^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).* script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/kwyy.js, requires-body=true, tag=酷我音乐
 
-http-response ^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/embycrack.js, requires-body=true, tag=Emby(添加播放权限)
+http-response ^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/embycrack.js, requires-body=true, tag=Emby(解锁播放权限)
 
 http-response ^https:\/\/.*\.(intsig\.net|camscanner\.com) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js, requires-body=true, tag=全能扫描王
 
@@ -93,9 +93,9 @@ http-response ^https:\/\/accounts\.agenda\.com\/users\/.*\/license script-path=h
 
 http-response ^http[s]?:\/\/(getway|ytapi|ytmsout)\.radio\.cn script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yunting.js, requires-body=true, tag=云听
 
-http-response ^https:\/\/cubox\.pro\/c\/api\/userInfo script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Cb.js, requires-body=true, tag=Cubox-收藏阅读
+http-response ^https:\/\/cubox\.pro\/.+\/api\/userInfo script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Cb.js, requires-body=true, tag=Cubox-收藏阅读
 
-http-response ^https:\/\/widget-box-api\.codefuture\.top\/v1\/users\/me script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xzjhz.js, requires-body=true, tag=小组件盒子
+http-response ^https:\/\/widget-box-api\.codefuture\.top\/.+\/users\/me script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xzjhz.js, requires-body=true, tag=小组件盒子
 
 http-response http:\/\/format-api\.netpock\.com\/api\/user_info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/gszh.js, requires-body=true, tag=格式转换
 
@@ -103,17 +103,17 @@ http-response http:\/\/.*\.dicallapp\.com script-path=https://raw.githubusercont
 
 http-response ^https:\/\/www\.freshhome\.top script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/rq.js, requires-body=true, tag=如期
 
-http-response ^https:\/\/service\.ilovepdf\.com\/v1\/user script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ilove.js, requires-body=true, tag=iLove PDF
+http-response ^https:\/\/service\.ilovepdf\.com\/.+\/user script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ilove.js, requires-body=true, tag=iLove PDF
 
-http-response ^https:\/\/api2\.vlognow\.me\/vn-pay\/api\/v1\/public\/iap\/receipt\/status?(.*?)*$ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/vn.js, requires-body=true, tag=VN-视频剪辑
+http-response ^https:\/\/api2\.vlognow\.me\/vn-pay\/api\/.+\/public\/iap\/receipt\/status?(.*?)*$ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/vn.js, requires-body=true, tag=VN-视频剪辑
 
-http-response ^https:\/\/.*\.imendon\.com\/v2\/purchase\/vip\/verification script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lgxj.js, requires-body=true, tag=两个相机App
+http-response ^https:\/\/.*\.imendon\.com\/.+\/purchase\/vip\/verification script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lgxj.js, requires-body=true, tag=两个相机App
 
 http-response ^https:\/\/dashen-api\.shuiyinyu\.com\/m\/user\/get_user_info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dssy.js, requires-body=true, tag=大神水印
 
-http-response http:\/\/123\.56\.125\.184\/api\/v3\/user\/info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsj.js, requires-body=true, tag=电视家
+http-response http:\/\/123\.56\.125\.184\/api\/.+\/user\/info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsj.js, requires-body=true, tag=电视家
 
-http-response ^https:\/\/cn\.czur\.cc\/api\/v3\/User\/info?(.*?) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjsm.js, requires-body=true, tag=极简扫描
+http-response ^https:\/\/cn\.czur\.cc\/api\/.+\/User\/info?(.*?) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjsm.js, requires-body=true, tag=极简扫描
 
 http-response ^https:\/\/www2\.tigeroom\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/zpqlds.js, requires-body=true, tag=PhotoSlip-照片清理大师
 
@@ -139,7 +139,7 @@ http-response ^https:\/\/(api|community)\.meiyan\.com\/(vip|v\d)\/(user_center|u
 
 http-response ^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js, requires-body=true, tag=美图秀秀
 
-http-response ^https:\/\/server\.yoyiapp\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js, requires-body=true, tag=Fimo复古相机
+http-response ^https:\/\/server\.(yoyiapp|zbisq)\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js, requires-body=true, tag=Fimo复古相机
 
 http-response ^https:\/\/xianbeikeji\.com\/daily\/app\/user\/query script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xxg.js, requires-body=true, tag=小习惯-打卡App
 
@@ -184,4 +184,4 @@ http-response ^https?:\/\/drive.*\.quark\.cn\/.+\/clouddrive\/(member.+|distribu
 
 
 [MITM]
-hostname = drive*.quark.cn, yeguo.236api.com, jz.wacai.com, guapi.liangjihui.com, www.xmind.cn, schedule-api.julanling.com, *.xiangha.com, api.boohee.com, www.40sishi.com, kongque.twan.cn, ggs.manmeng168.com, novel.test.onedayapp.cn, *.lanjiyin.com.cn, iosapi.peiyinxiu.com, *.qingning6.com, day-api.xixitime.com, api.adapty.io, api.mojidict.com, dj.palmestore.com, asia.gikken.co, xianbeikeji.com, server.yoyiapp.com, *.xiuxiu.meitu.com, api.posters.meitu.com,api-*.meitu.com,  *.meiyan.com, app.yidiansz.com, mobile-api.adguard.org, explorer.tratao.com, top-widgets-api.xiaozujian.com, api.open.loveclip.site, www.skyjos.cn, www2.tigeroom.com, cn.czur.cc, dashen-api.shuiyinyu.com, *.imendon.com, api2.vlognow.me, service.ilovepdf.com, www.freshhome.top, *.dicallapp.com, format-api.netpock.com, widget-box-api.codefuture.top, cubox.pro, *.radio.cn, accounts.agenda.com, *.aoscdn.com, *.apsapp.cn, apimboom2.globaldelight.net, api.duitang.com, spclient.wg.spotify.com, scibug.com, *.wallpaperscraft.com, screen-lock.*.com, api.risingfalling.com, api.meiease.cn, *.aliyundrive.com, pan.baidu.com, *.camscanner.com, *.intsig.net, mb3admin.com, *.kuwo.cn, *.kwcdn.kuwo.cn, *.lrts.me, iosv2.cjapi.5fun.com, api-v3.speedtest.cn, app.yiyan.art, *.cyapi.cn, *.caiyunapp.com, lcs-mobile-cops.adobe.io, api.bluepulse.cn, fufei.fengyunsoft.cn, wallpaper.soutushenqi.com, wallpaper-api.cross2d.com, restore-access.indream.app, firebaseremoteconfig.googleapis.com, api.revenuecat.com, app-measurement.com, buy.itunes.apple.com
+hostname = drive*.quark.cn, yeguo.236api.com, jz.wacai.com, guapi.liangjihui.com, www.xmind.cn, schedule-api.julanling.com, *.xiangha.com, api.boohee.com, www.40sishi.com, kongque.twan.cn, ggs.manmeng168.com, novel.test.onedayapp.cn, *.lanjiyin.com.cn, iosapi.peiyinxiu.com, *.qingning6.com, day-api.xixitime.com, api.adapty.io, api.mojidict.com, dj.palmestore.com, asia.gikken.co, xianbeikeji.com, server.*.com, *.xiuxiu.meitu.com, api.posters.meitu.com,api-*.meitu.com,  *.meiyan.com, app.yidiansz.com, mobile-api.adguard.org, explorer.tratao.com, top-widgets-api.xiaozujian.com, api.open.loveclip.site, www.skyjos.cn, www2.tigeroom.com, cn.czur.cc, dashen*.shuiyinyu.com, *.imendon.com, api2.vlognow.me, service.ilovepdf.com, www.freshhome.top, *.dicallapp.com, format-api.netpock.com, widget-box-api.codefuture.top, cubox.pro, *.radio.cn, accounts.agenda.com, *.aoscdn.com, *.apsapp.cn, apimboom2.globaldelight.net, api.duitang.com, spclient.wg.spotify.com, scibug.com, *.wallpaperscraft.com, screen-lock.*.com, api.risingfalling.com, api.meiease.cn, *.aliyundrive.com, pan.baidu.com, *.camscanner.com, *.intsig.net, mb3admin.com, *.kuwo.cn, *.kwcdn.kuwo.cn, *.lrts.me, iosv2.cjapi.5fun.com, api-v3.speedtest.cn, app.yiyan.art, *.cyapi.cn, *.caiyunapp.com, lcs-mobile-cops.adobe.io, api.bluepulse.cn, fufei.fengyunsoft.cn, wallpaper.soutushenqi.com, wallpaper-api.cross2d.com, restore-access.indream.app, firebaseremoteconfig.googleapis.com, api.revenuecat.com, app-measurement.com, buy.itunes.apple.com
