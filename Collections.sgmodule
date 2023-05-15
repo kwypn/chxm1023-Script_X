@@ -148,8 +148,8 @@ boom = type=http-response,pattern=^https:\/\/apimboom2\.globaldelight\.net\/itun
 
 #************************************#
 # 傲软抠图，傲软扫描，傲软PDF转换，傲软PDF编辑，傲软投屏，咖映，轻闪PDF，乃糖小组件，佐糖，佐糖照片修复
-# hostname = *.aoscdn.com
-傲软全家桶 = type=http-response,pattern=^https?:\/\/.*\.aoscdn\.com\/base\/vip\/client\/authorizations,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/arqjt.js
+# hostname = *.aoscdn.com, *.apsapp.cn
+傲软全家桶 = type=http-response,pattern= ^https?:\/\/.*\.(aoscdn\.com|apsapp\.cn),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/arqjt.js
 
 #************************************#
 # Agenda
@@ -238,7 +238,7 @@ Collart = type=http-response,pattern=^https:\/\/iap\.etm\.tech\/receipts,require
 #************************************#
 # TopWidgets万能小组件
 # hostname = top-widgets-api.xiaozujian.com
-widgets = type=http-response,pattern=^https:\/\/top-widgets-api\.xiaozujian\.com\/api\/app\/config\/userConfig,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/widgets.js
+万能小组件 = type=http-response,pattern=^https:\/\/top-widgets-api\.xiaozujian\.com\/api\/app\/config\/userConfig,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/widgets.js
 
 #************************************#
 # 极简汇率
