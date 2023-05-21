@@ -1,1 +1,1 @@
-Quantumult X图标组
+Quantumult X图标集
