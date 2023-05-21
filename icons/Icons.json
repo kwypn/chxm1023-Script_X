@@ -1,0 +1,87 @@
+{"name": "自用图标库",
+ "description": "收集互联网公开图标文件，版权属于原作者和商标持有人。", 
+ "icons": [
+ {"name": "哆啦A梦",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/ddm.png"},
+
+ {"name": "Quantumult_X",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/QX/Quantumult_X.png"},
+
+ {"name": "Quantumult_X_1",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/QX/Quantumult_X_1.png"},
+
+ {"name": "Quantumult_X_2",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/QX/Quantumult_X_2.png"},
+
+ {"name": "Quantumult_X_3",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/QX/Quantumult_X_3.png"},
+
+ {"name": "Quantumult_X_4",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/QX/Quantumult_X_4.png"},
+
+ {"name": "Quantumult_X_5",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/QX/Quantumult_X_5.png"},
+
+ {"name": "Quantumult_X_6",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/QX/Quantumult_X_6.png"},
+
+ {"name": "Quantumult_X_7",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/QX/Quantumult_X_7.png"},
+
+ {"name": "Loon1",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/Loon/Loon_1.png"},
+
+ {"name": "Loon2",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/Loon/Loon_2.png"},
+
+ {"name": "Loon3",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/Loon/Loon_3.png"},
+
+ {"name": "Loon4",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/Loon/Loon_4.png"},
+
+ {"name": "Loon5",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/Loon/Loon_5.png"},
+
+ {"name": "Loon6",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/Loon/Loon_6.png"},
+
+ {"name": "Loon7",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/Loon/Loon_7.png"},
+  
+ {"name": "Loon8",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/Loon/Loon_8.png"},
+
+ {"name": "Loon9",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/Loon/Loon_9.png"},
+
+ {"name": "Loon10",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/Loon/Loon_10.png"},
+
+ {"name": "Loon11",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/Loon/Loon_11.png"},
+
+ {"name": "stash1",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/stash1.png"},
+
+ {"name": "stash2",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/stash2.png"},
+
+ {"name": "boxjs",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/box.png"},
+
+ {"name": "Google Voice",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/GV.PNG"},
+
+ {"name": "Github",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/github.png"},
+
+ {"name": "腾讯视频",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/txvideo.png"},
+
+ {"name": "悟空",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/wk.png"},
+
+ {"name": "TikTok",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icons/TikTok.png"}
+]}
