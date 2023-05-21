@@ -73,11 +73,47 @@
  {"name": "Google Voice",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/GV.PNG"},
 
+ {"name": "xbox",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/xbox.png"},
+
+ {"name": "微博",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/weibo.png"},
+
  {"name": "Github",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/github.png"},
 
  {"name": "腾讯视频",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/txvideo.png"},
+
+ {"name": "Microsoft",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/microsoft.png"},
+
+ {"name": "iCloud",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/iCloud.png"},
+
+ {"name": "Apple",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/Apple.png"},
+
+ {"name": "openai",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/openai.png"},
+
+ {"name": "AppStore",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/AppStore.png"},
+
+ {"name": "Safari",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/Safari.png"},
+
+ {"name": "substore",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/substore.png"},
+
+ {"name": "baidu",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/baidu.png"},
+
+ {"name": "wechat",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/wechat.png"},
+
+ {"name": "zhihu",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/zhihu.png"},
 
  {"name": "悟空",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/wk.png"},
