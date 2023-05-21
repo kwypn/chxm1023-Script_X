@@ -28,6 +28,9 @@
  {"name": "stash1",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/stash1.png"},
 
+ {"name": "stash2",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/stash2.png"},
+
  {"name": "boxjs",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/box.png"},
 
@@ -39,9 +42,6 @@
 
  {"name": "腾讯视频",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/txvideo.png"},
-
- {"name": "京东",
-  "url": "https://raw.githubusercontent.com/chxm1023/Task/main/JD/icons/jd.png"},
 
  {"name": "悟空",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/wk.png"},
