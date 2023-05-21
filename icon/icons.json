@@ -103,9 +103,11 @@
  {"name": "ChatGPT2",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/ChatGPT/ChatGPT2.png"},
 
-
  {"name": "ChatGPT3",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/ChatGPT/ChatGPT3.png"},
+
+ {"name": "ChatGPT4",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/ChatGPT/ChatGPT4.png"},
 
  {"name": "AppStore",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/AppStore.png"},
