@@ -94,9 +94,6 @@
  {"name": "Apple",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/Apple.png"},
 
- {"name": "openai",
-  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/openai.png"},
-
  {"name": "ChatGPT1",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/ChatGPT/ChatGPT1.png"},
 
@@ -108,6 +105,9 @@
 
  {"name": "ChatGPT4",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/ChatGPT/ChatGPT4.png"},
+
+ {"name": "ChatGPT5",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/ChatGPT/ChatGPT5.png"},
 
  {"name": "AppStore",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/AppStore.png"},
