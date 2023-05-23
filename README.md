@@ -1,7 +1,7 @@
 # 访问量
 
 ![](http://profile-counter.glitch.me/chxm1023_Script_X/count.svg)
-![图片描述](https://raw.githubusercontent.com/chxm1023/Task/main/icon/LP.PNG)
+![图片描述](https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/dlam.png)
 
 **项目作者：chxm1023**<br/>
 **电报频道：https://t.me/chxm1023**<br/>
