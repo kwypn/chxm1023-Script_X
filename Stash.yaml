@@ -88,6 +88,7 @@ dns:
     geoip-code: CN
     ipcidr:
     - 240.0.0.0/4
+  ipv6: false
   # DNS服务器
   nameserver:
     - https://dns.alidns.com/dns-query
@@ -150,7 +151,7 @@ proxy-groups:
     - 直连模式
   type: select
 # TikTok
-- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_1.png
+- icon: https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/TikTok_1.png
   name: TikTok
   proxies:
     - 香港节点
@@ -253,7 +254,8 @@ proxy-groups:
     - 全部节点
     - 策略选择
   type: select
-- icon: https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/ChatGPT/ChatGPT3.png
+# ChatGPT
+- icon: https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/ChatGPT/ChatGPT6.png
   name: ChatGPT
   proxies:
     - 美国节点
