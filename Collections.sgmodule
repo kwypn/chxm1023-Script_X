@@ -31,7 +31,6 @@ https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
 ^https:\/\/ljh\.dianxiaoman\.com\/ljh\/api\/home\/getHomeList - reject
 
 
-
 [Script]
 # Revenuecat解锁系列
 # hostname = api.revenuecat.com, app-measurement.com, firebaseremoteconfig.googleapis.com
