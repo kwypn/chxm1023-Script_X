@@ -27,6 +27,9 @@ https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
 ^https?:\/\/.*\.kuwo\.cn\/music\.pay\?uid\=\d+ http://musicpay.kuwo.cn/music.pay?uid=2 302
 # 蓝基因
 ^https:\/\/tk\.lanjiyin\.com\.cn\/img - reject
+# 靓机汇顶部滚屏
+^https:\/\/ljh\.dianxiaoman\.com\/ljh\/api\/home\/getHomeList - reject
+
 
 
 [Script]
