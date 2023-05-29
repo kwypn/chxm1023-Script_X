@@ -146,7 +146,7 @@ Spotify = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(boo
 #************************************#
 # Boom
 # hostname = apimboom2.globaldelight.net
-boom = type=http-response,pattern=^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/boom.js
+Boom = type=http-response,pattern=^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/boom.js
 
 #************************************#
 # 傲软抠图，傲软扫描，傲软PDF转换，傲软PDF编辑，傲软投屏，咖映，轻闪PDF，乃糖小组件，佐糖，佐糖照片修复
@@ -181,7 +181,7 @@ Cubox-收藏阅读 = type=http-response,pattern=^https:\/\/cubox\.pro\/c\/api\/u
 #************************************#
 # 手机扫描，图片编辑，九宫格切图，头像制作，早安打卡，配音
 # hostname = *.dicallapp.com
-zhfqjt = type=http-response,pattern=http:\/\/.*\.dicallapp\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/zhfqjt.js
+解锁6个App = type=http-response,pattern=http:\/\/.*\.dicallapp\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/zhfqjt.js
 
 #************************************#
 # 如期
@@ -235,7 +235,7 @@ PhotoSlip照片清理 = type=http-response,pattern=^https:\/\/www2\.tigeroom\.co
 #************************************#
 # 六个解锁合集（Collart，拼图趣，睡前故事大全，网速测速大师，测速管家，Pixelance）
 # hostname = iap.etm.tech
-Collart = type=http-response,pattern=^https:\/\/iap\.etm\.tech\/receipts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Collart.js
+解锁六个App = type=http-response,pattern=^https:\/\/iap\.etm\.tech\/receipts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Collart.js
 
 #************************************#
 # TopWidgets万能小组件
@@ -310,7 +310,7 @@ Batched = type=http-response,pattern=^https:\/\/api\.adapty\.io\/api\/.+\/sdk\/a
 #************************************#
 # 倒数纪念日
 # hostname = day-api.xixitime.com
-dsjnr = type=http-response,pattern=^https:\/\/day-api\.xixitime\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsjnr.js
+倒数纪念日 = type=http-response,pattern=^https:\/\/day-api\.xixitime\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsjnr.js
 
 #************************************#
 # 青柠设计-P图抠图海报
@@ -402,7 +402,12 @@ DailyArt(每日艺术) = type=http-response,pattern=^https?:\/\/api\.getdailyart
 # hostname = *.videoshowiosglobalserver.com, *.enjoy-mobi.com
 解锁4个App = type=http-response,pattern=^https^https?:\/\/.*\.(videoshowiosglobalserver|enjoy-mobi)\.com\/zone\/.+\/(iosPayClient\/(payVerify|imeiVerify)|startPageAd\/getAds),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/VideoShow.js
 
+#************************************#
+# iTranslate 翻译
+# hostname = ssl-api.itranslateapp.com
+iTranslate翻译 = type=http-response,pattern=^https^https?:\/\/ssl-api\.itranslateapp\.com\/accounts\/.+\/(subscriptions\/verify|marketing\/consent\/status),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/itranslate.js
+
 
 
 [MITM]
-hostname = %APPEND% *.videoshowiosglobalserver.com, *.enjoy-mobi.com, api.getdailyart.com, p.du.163.com, snailsleep.net, drive*.quark.cn, yeguo.236api.com, jz.wacai.com, ljh.dianxiaoman.com, guapi.liangjihui.com, www.xmind.cn, schedule-api.julanling.com, *.xiangha.com, api.boohee.com, www.40sishi.com, kongque.twan.cn, ggs.manmeng168.com, novel.test.onedayapp.cn, *.lanjiyin.com.cn, iosapi.peiyinxiu.com, *.qingning6.com, day-api.xixitime.com, api.adapty.io, api.mojidict.com, dj.palmestore.com, asia.gikken.co, xianbeikeji.com, server.*.com, *.xiuxiu.meitu.com, api.posters.meitu.com,api-*.meitu.com,  *.meiyan.com, app.yidiansz.com, mobile-api.adguard.org, explorer.tratao.com, top-widgets-api.xiaozujian.com, api.open.loveclip.site, www.skyjos.cn, www2.tigeroom.com, cn.czur.cc, dashen*.shuiyinyu.com, *.imendon.com, api2.vlognow.me, service.ilovepdf.com, www.freshhome.top, *.dicallapp.com, format-api.netpock.com, widget-box-api.codefuture.top, cubox.pro, *.radio.cn, accounts.agenda.com, *.aoscdn.com, *.apsapp.cn, apimboom2.globaldelight.net, *.duitang.com, spclient.wg.spotify.com, scibug.com, *.wallpaperscraft.com, screen-lock.*.com, api.risingfalling.com, api.meiease.cn, *.aliyundrive.com, pan.baidu.com, *.camscanner.com, *.intsig.net, mb3admin.com, *.kuwo.cn, *.kwcdn.kuwo.cn, *.lrts.me, iosv2.cjapi.5fun.com, api*.speedtest.cn, app.yiyan.art, *.cyapi.cn, *.caiyunapp.com, lcs-mobile-cops.adobe.io, api.bluepulse.cn, fufei.fengyunsoft.cn, wallpaper.soutushenqi.com, wallpaper-api.cross2d.com, restore-access.indream.app, firebaseremoteconfig.googleapis.com, api.revenuecat.com, app-measurement.com, buy.itunes.apple.com
+hostname = %APPEND% ssl-api.itranslateapp.com, *.videoshowiosglobalserver.com, *.enjoy-mobi.com, api.getdailyart.com, p.du.163.com, snailsleep.net, drive*.quark.cn, yeguo.236api.com, jz.wacai.com, ljh.dianxiaoman.com, guapi.liangjihui.com, www.xmind.cn, schedule-api.julanling.com, *.xiangha.com, api.boohee.com, www.40sishi.com, kongque.twan.cn, ggs.manmeng168.com, novel.test.onedayapp.cn, *.lanjiyin.com.cn, iosapi.peiyinxiu.com, *.qingning6.com, day-api.xixitime.com, api.adapty.io, api.mojidict.com, dj.palmestore.com, asia.gikken.co, xianbeikeji.com, server.*.com, *.xiuxiu.meitu.com, api.posters.meitu.com,api-*.meitu.com,  *.meiyan.com, app.yidiansz.com, mobile-api.adguard.org, explorer.tratao.com, top-widgets-api.xiaozujian.com, api.open.loveclip.site, www.skyjos.cn, www2.tigeroom.com, cn.czur.cc, dashen*.shuiyinyu.com, *.imendon.com, api2.vlognow.me, service.ilovepdf.com, www.freshhome.top, *.dicallapp.com, format-api.netpock.com, widget-box-api.codefuture.top, cubox.pro, *.radio.cn, accounts.agenda.com, *.aoscdn.com, *.apsapp.cn, apimboom2.globaldelight.net, *.duitang.com, spclient.wg.spotify.com, scibug.com, *.wallpaperscraft.com, screen-lock.*.com, api.risingfalling.com, api.meiease.cn, *.aliyundrive.com, pan.baidu.com, *.camscanner.com, *.intsig.net, mb3admin.com, *.kuwo.cn, *.kwcdn.kuwo.cn, *.lrts.me, iosv2.cjapi.5fun.com, api*.speedtest.cn, app.yiyan.art, *.cyapi.cn, *.caiyunapp.com, lcs-mobile-cops.adobe.io, api.bluepulse.cn, fufei.fengyunsoft.cn, wallpaper.soutushenqi.com, wallpaper-api.cross2d.com, restore-access.indream.app, firebaseremoteconfig.googleapis.com, api.revenuecat.com, app-measurement.com, buy.itunes.apple.com
