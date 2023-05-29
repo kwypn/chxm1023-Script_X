@@ -11,13 +11,11 @@
 
 # 使用方法：先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
 
-# 已解锁App下载地址：https://too.st/4X2
+# 已解锁App下载地址：https://too.st/chxm1023
 
 #=============UserScript=============#
 
 [URL Rewrite]
-# 屏蔽检测
-^https:\/\/app-measurement\.com\/config\/app\/?(.*?)*$ - reject
 # 彩云天气广告
 ^https:\/\/ad\.caiyunapp\.com - reject
 # 酷我音乐_AdBlock
@@ -39,158 +37,381 @@ https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
 
 
 [Script]
-
+# Revenuecat解锁系列
+# hostname = api.revenuecat.com
 http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=true, tag=Revenuecat解锁系列
 http-request ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=false, tag=Reheji
-http-response ^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/.*\/?(.*?)*$ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/sjyz.js, requires-body=true, tag=sjyz
 
+#************************************#
+# iTunes解锁系列
+# hostname = buy.itunes.apple.com
 http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js, requires-body=true, tag=iTunes解锁系列
 
+#************************************#
+# Nicegram
+# hostname = restore-access.indream.app
 http-request ^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$ script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Nicegram/Script/Nicegram.js, timeout=10, tag=Nicegram解锁会员
 
+#************************************#
+# 绘影字幕
+# hostname = api.bluepulse.cn
 http-response ^https:\/\/api\.bluepulse\.cn\/bluepulse-caption-server-front\/api\/.+\/user\/app-vip-info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/hyzm.js, requires-body=true, tag=绘影字幕
 
+#************************************#
+# 搜图神器
+# hostname = wallpaper.soutushenqi.com
 http-response ^http:\/\/wallpaper\.soutushenqi\.com\/api\/.+\/account\/token script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/soutu.js, requires-body=true, tag=搜图神器
 
+#************************************#
+# PS 图片编辑
+# hostname = lcs-mobile-cops.adobe.io
 http-response ^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ps.js, requires-body=true, tag=Photoshop Express图片编辑
 
+#************************************#
+# 彩云天气
+# hostname = *.cyapi.cn, *.caiyunapp.com
 http-response ^https:\/\/biz\.(caiyunapp|cyapi)\.(com|cn) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js, requires-body=true, tag=彩云天气
 
+#************************************#
+# 一言
+# hostname = app.yiyan.art
 http-response ^https:\/\/app\.yiyan\.art\/yiyan script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yiyan.js, requires-body=true, tag=一言
 
+#************************************#
+# 网速管家
+# hostname = api*.speedtest.cn
 http-response ^https:\/\/api.*\.speedtest\.cn\/user\/info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/wsgj.js, requires-body=true, tag=网速管家
 
+#************************************#
+# 悟饭掌悦
+# hostname = iosv2.cjapi.5fun.com
 http-response http:\/\/iosv2\.cjapi\.5fun\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/wfzy.js, requires-body=true, tag=悟饭掌悦
 
+#************************************#
+# 酷我音乐
+# hostname = *.kuwo.cn, *.kwcdn.kuwo.cn, *.lrts.me
 http-response ^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).* script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/kwyy.js, requires-body=true, tag=酷我音乐
 
+#************************************#
+# Emby(解锁播放权限)
+# hostname = mb3admin.com
 http-response ^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/embycrack.js, requires-body=true, tag=Emby(解锁播放权限)
 
+#************************************#
+# 扫描全能王
+# hostname = *.camscanner.com, *.intsig.net
 http-response ^https:\/\/.*\.(intsig\.net|camscanner\.com) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js, requires-body=true, tag=全能扫描王
 
+#************************************#
+# 百度网盘，一刻相册 解锁部分功能
+# hostname = pan.baidu.com
 http-response ^https?:\/\/pan\.baidu\.com\/(youai\/(user\/.+\/getminfo|membership\/.+\/adswitch)|(rest\/.+\/membership\/user|act\/.+\/(bchannel|welfare)\/list|api\/usercfg)) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdcloud.js, requires-body=true, tag=百度网盘
 
+#************************************#
+# 阿里云盘 净化/解锁SVIP
+# hostname = *.aliyundrive.com
 http-response ^https?:\/\/(api|member)\.aliyundrive\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js, requires-body=true, tag=阿里网盘
 
+#************************************#
+# Picsart美易_图片视频编辑器
+# hostname = api.meiease.cn
 http-response ^https?:\/\/api\.meiease\.cn\/shop\/subscription\/validate script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/picsart.js, requires-body=true, tag=Picsart美易
 
+#************************************#
+# 起伏
+# hostname = api.risingfalling.com
 http-response https?:\/\/api\.risingfalling\.com\/api\/vip\/detail script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/qifu.js, requires-body=true, tag=起伏
 
+#************************************#
+# 布丁锁屏
+# hostname = screen-lock.*.com
 http-response ^https?:\/\/screen-lock\.(sm-check|51wnl-cq)\.com\/userApi\/saveUser.+ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdsp.js, requires-body=true, tag=布丁锁屏
 
+#************************************#
+# Wallcraft-动态壁纸
+# hostname = *.wallpaperscraft.com
 http-response ^https?:\/\/billing-ios\.wallpaperscraft\.com\/verify_receipt\/remove_ads$ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Wall.js, requires-body=true, tag= Wallcraft-动态壁纸
 
+#************************************#
+# Symbolab(需要登录)
+# hostname = scibug.com
 http-response ^https?:\/\/scibug\.com\/appleSubscriptionValidate$ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Syjsq.js, requires-body=true, tag=Symbolab(需要登录)
 
+#************************************#
+# Spotify (不能超高音质)
+# hostname = spclient.wg.spotify.com
 http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js, requires-body=true, tag=Spotify (不能超高音质)
 
+#************************************#
+# 堆糖
+# hostname = *.duitang.com
 http-response ^https:\/\/.*\.duitang\.com\/napi script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/duitang.js, requires-body=true, tag=堆糖
 
+#************************************#
+# Boom
+# hostname = apimboom2.globaldelight.net
 http-response ^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/boom.js, requires-body=true, tag=Boom
 
+#************************************#
+# 傲软抠图，傲软扫描，傲软PDF转换，傲软PDF编辑，傲软投屏，咖映，轻闪PDF，乃糖小组件，佐糖，佐糖照片修复
+# hostname = *.aoscdn.com, *.apsapp.cn
 http-response ^https?:\/\/.*\.(aoscdn\.com|apsapp\.cn) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/arqjt.js, requires-body=true, tag=傲软系列解锁
 
+#************************************#
+# Agenda
+# hostname = accounts.agenda.com
 http-response ^https:\/\/accounts\.agenda\.com\/users\/.*\/license script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ag.js, requires-body=true, tag=Agenda
 
+#************************************#
+# 云听-全国电台/有声听书
+# hostname = *.radio.cn
 http-response ^http[s]?:\/\/(getway|ytapi|ytmsout)\.radio\.cn script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yunting.js, requires-body=true, tag=云听
 
+#************************************#
+# Cubox-收藏阅读
+# hostname = cubox.pro
 http-response ^https:\/\/cubox\.pro\/.+\/api\/userInfo script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Cb.js, requires-body=true, tag=Cubox-收藏阅读
 
+#************************************#
+# 小组件盒子
+# hostname = widget-box-api.codefuture.top
 http-response ^https:\/\/widget-box-api\.codefuture\.top\/.+\/users\/me script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xzjhz.js, requires-body=true, tag=小组件盒子
 
+#************************************#
+# 格式转换
+# hostname = format-api.netpock.com
 http-response http:\/\/format-api\.netpock\.com\/api\/user_info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/gszh.js, requires-body=true, tag=格式转换
 
+#************************************#
+# 手机扫描，图片编辑，九宫格切图，头像制作，早安打卡，配音
+# hostname = *.dicallapp.com
 http-response http:\/\/.*\.dicallapp\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/zhfqjt.js, requires-body=true, tag=解锁6个App
 
+#************************************#
+# 如期
+# hostname = www.freshhome.top
 http-response ^https:\/\/www\.freshhome\.top script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/rq.js, requires-body=true, tag=如期
 
+#************************************#
+# iLove PDF
+# hostname = service.ilovepdf.com
 http-response ^https:\/\/service\.ilovepdf\.com\/.+\/user script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ilove.js, requires-body=true, tag=iLove PDF
 
+#************************************#
+# VN-视频剪辑
+# hostname = api2.vlognow.me
 http-response ^https:\/\/api2\.vlognow\.me\/vn-pay\/api\/.+\/public\/iap\/receipt\/status?(.*?)*$ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/vn.js, requires-body=true, tag=VN-视频剪辑
 
+#************************************#
+# 日杂相机，fomz相机
+# hostname = *.imendon.com
 http-response ^https:\/\/.*\.imendon\.com\/.+\/purchase\/vip\/verification script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lgxj.js, requires-body=true, tag=两个相机App
 
+#************************************#
+# 大神水印
+# hostname = dashen-api.shuiyinyu.com
 http-response ^https:\/\/dashen-api\.shuiyinyu\.com\/m\/user\/get_user_info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dssy.js, requires-body=true, tag=大神水印
 
+#************************************#
+# 电视家
 http-response http:\/\/123\.56\.125\.184\/api\/.+\/user\/info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsj.js, requires-body=true, tag=电视家
 
+#************************************#
+# 极简扫描
+# hostname = cn.czur.cc
 http-response ^https:\/\/cn\.czur\.cc\/api\/.+\/User\/info?(.*?) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjsm.js, requires-body=true, tag=极简扫描
 
+#************************************#
+# PhotoSlip-照片清理大师
+# hostname = www2.tigeroom.com
 http-response ^https:\/\/www2\.tigeroom\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/zpqlds.js, requires-body=true, tag=PhotoSlip-照片清理大师
 
+#************************************#
+# 猫头鹰文件管理
+# hostname = www.skyjos.cn
 http-response ^https:\/\/www\.skyjos\.cn script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtywj.js, requires-body=true, tag=猫头鹰文件管理
 
+#************************************#
+# 爱剪辑
+# hostname = api.open.loveclip.site
 http-response ^https?:\/\/api\.open\.loveclip\.site\/UserInfo\/(UserPersonalCoreAsync|GetUserDetail) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ajj.js, requires-body=true, tag=爱剪辑
 
+#************************************#
+# 六个解锁合集（Collart，拼图趣，睡前故事大全，网速测速大师，测速管家，Pixelance）
+# hostname = iap.etm.tech
 http-response ^https:\/\/iap\.etm\.tech\/receipts script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Collart.js, requires-body=true, tag=六个解锁合集
 
+#************************************#
+# TopWidgets万能小组件
+# hostname = top-widgets-api.xiaozujian.com
 http-response ^https:\/\/top-widgets-api\.xiaozujian\.com\/api\/app\/config\/userConfig script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/widgets.js, requires-body=true, tag=TopWidgets万能小组件
 
+#************************************#
+# 极简汇率
+# hostname = explorer.tratao.com
 http-response ^https:\/\/explorer\.tratao\.com\/api\/client\/xtool\/vip script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjhl.js, requires-body=true, tag=极简汇率
 
+#************************************#
+# AdGuard
+# hostname = mobile-api.adguard.org
 http-response ^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/AdGuard.js, requires-body=true, tag=AdGuard
 
+#************************************#
+# 番薯小说
+# hostname = ggs.manmeng168.com
 http-response ^https:\/\/ggs\.manmeng168\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fanshuxiaoshuo.js, requires-body=true, tag=番薯小说
 
+#************************************#
+# 阅读记录
+# hostname = app.yidiansz.com
 http-response ^https:\/\/app\.yidiansz\.com\/api\/.+\/app\/user\/info?(.*?)*$ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ydjl.js, requires-body=true, tag=阅读记录
 
+#************************************#
+# Wink，蛋啵，潮自拍，海报工厂，Chic
+# hostname = api-*.meitu.com
 http-response ^https:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxl.js, requires-body=true, tag=美图系列
 
+#************************************#
+# 美颜相机
+# hostname = *.meiyan.com
 http-response ^https:\/\/(api|community)\.meiyan\.com\/(vip|v\d)\/(user_center|user_info|user\/(.*?)) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/myxj.js, requires-body=true, tag=美颜相机
 
+#************************************#
+# 美图秀秀
+# hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com
 http-response ^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js, requires-body=true, tag=美图秀秀
 
+#************************************#
+# Fimo_复古胶片相机
+# hostname = server.*.
 http-response ^https:\/\/server\.(yoyiapp|zbisq)\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js, requires-body=true, tag=Fimo复古相机
 
+#************************************#
+# 小习惯-打卡App
+# hostname = xianbeikeji.com
 http-response ^https:\/\/xianbeikeji\.com\/daily\/app\/user\/query script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xxg.js, requires-body=true, tag=小习惯-打卡App
 
+#************************************#
+# Mate-翻译神器
+# hostname = asia.gikken.co
 http-response ^https:\/\/asia\.gikken\.co\/matesync\/(subscription|login|register_user|check_user) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mate.js, requires-body=true, tag=Mate-翻译神器
 
+#************************************#
+# 得间小说
+# hostname = dj.palmestore.com
 http-response ^https:\/\/dj\.palmestore\.com\/zyuc\/api\/user\/accountInfo script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dejianxiaoshuo.js, requires-body=true, tag=得间小说
 
+#************************************#
+# Moji辞书-学习日语
+# hostname = api.mojidict.com
 http-response ^https:\/\/api\.mojidict\.com\/parse\/functions\/getNPrivileges script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojics.js, requires-body=true, tag=Moji辞书
 
+#************************************#
+# Batched-多量图片编辑器
+# hostname = api.adapty.io
 http-response ^https:\/\/api\.adapty\.io\/api\/.+\/sdk\/analytics\/profiles\/(.*?)\/ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Batched.js, requires-body=true, tag=Batched-图片编辑
 
+#************************************#
+# 倒数纪念日
+# hostname = day-api.xixitime.com
 http-response ^https:\/\/day-api\.xixitime\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsjnr.js, requires-body=true, tag=倒数纪念日
 
+#************************************#
+# 青柠设计-P图抠图海报
+# hostname = *.qingning6.com
 http-response ^https:\/\/.*\.qingning6\.com\/api\/(user\/getUserInfo|team\/teamInfo) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/qnsj.js, requires-body=true, tag=青柠设计
 
+#************************************#
+# 配音秀
+# hostname = iosapi.peiyinxiu.com
 http-response ^https:\/\/iosapi\.peiyinxiu\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/peiyinxiu.js, requires-body=true, tag=配音秀
 
+#************************************#
+# 蓝基因
+# hostname = *.lanjiyin.com.cn
 http-response ^https:\/\/(tk|course)\.lanjiyin\.com\.cn script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lanjiyin.js, requires-body=true, tag=蓝基因
 
+#************************************#
+# 一天阅读(新版已失效)
+# hostname = novel.test.onedayapp.cn
 http-response ^https:\/\/novel\.test\.onedayapp\.cn\/login\/sync.+ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yitianyuedu.js, requires-body=true, tag=一天阅读(新版失效)
 
+#************************************#
+# 小时尚
+# hostname = kongque.twan.cn
 http-response ^https?:\/\/kongque\.twan\.cn\/index.+\/admin\/appberrycustomer.+ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xiaoshishang.js, requires-body=true, tag=小时尚
 
+#************************************#
+# 计算器HD，万能播放器，万能变声器，塔罗牌，Art Widget(小组件)，memo(标签小组件)，NFC标签读写器工具，(一共解锁七个App)
+# hostname = www.40sishi.com
 http-response ^http[s]?:\/\/www\.40sishi\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/40sishi.js, requires-body=true, tag=解锁7个App
 
+#************************************#
+# 薄荷健康
+# hostname = api.boohee.com
 http-response ^https?:\/\/api\.boohee\.com\/app-interface\/.+\/user\/user_info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/bohejiankang.js, requires-body=true, tag=薄荷健康
 
+#************************************#
+# 菜谱大全，烘焙小屋，香哈菜谱
+# hostname = *.xiangha.com
 http-response ^https:\/\/api.*\.xiangha\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caipu.js, requires-body=true, tag=菜谱大全系列
 
+#************************************#
+# 排班日历-倒班助手
+# hostname = schedule-api.julanling.com
 http-response ^https?:\/\/schedule-api\.julanling\.com\/api\/(get_member_info|vip_detail) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/paibanrili.js, requires-body=true, tag=排班日历
 
+#************************************#
+# Xmind-思维导图
+# hostname = www.xmind.cn
 http-response ^https?:\/\/www\.xmind\.cn\/.+\/devices script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Xmind.js, requires-body=true, tag=Xmind-思维导图
 
+#************************************#
+# 靓机汇
+# hostname = guapi.liangjihui.com, ljh.dianxiaoman.com
 http-response ^https?:\/\/guapi\.liangjihui\.com\/front\/(quote\/look.+|user\/memberInfo) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/liangjihui.js, requires-body=true, tag=靓机汇
 
+#************************************#
+# 挖财记账
+# hostname = jz.wacai.com
 http-response ^https?:\/\/jz\.wacai\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/wacaijizhang.js, requires-body=true, tag=挖财记账
 
+#************************************#
+# 野果阅读
+# hostname = yeguo.236api.com
 http-response ^https?:\/\/yeguo\.236api\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yeguoyuedu.js, requires-body=true, tag=野果阅读
 
+#************************************#
+# 夸克
+# hostname = drive*.quark.cn
 http-response ^https?:\/\/drive.*\.quark\.cn\/.+\/clouddrive\/(member.+|distribute\/detail.+|capacity\/growth\/info) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/kuake.js, requires-body=true, tag=夸克
 
+#************************************#
+# 蜗牛睡眠
+# hostname = snailsleep.net
 http-response ^https?:\/\/snailsleep\.net\/snail\/v\d\/profile\/get.+ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/woniushuimian.js, requires-body=true, tag=蜗牛睡眠
 
+#************************************#
+# 网易蜗牛读书
+# hostname = p.du.163.com
 http-response ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/wywnds.js, requires-body=true, tag=网易蜗牛读书
 
+#************************************#
+# DailyArt(每日艺术)
+# hostname = api.getdailyart.com
 http-response ^https^https?:\/\/api\.getdailyart\.com\/api\/(subscription\/verified|auth\/login|check-logged) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/DailyArt.js, requires-body=true, tag=DailyArt(每日艺术)
 
+#************************************#
+# 录屏，大神P图，乐秀，多功能视频剪辑
+# hostname = *.videoshowiosglobalserver.com, *.enjoy-mobi.com
 http-response ^https^https?:\/\/.*\.(videoshowiosglobalserver|enjoy-mobi)\.com\/zone\/.+\/(iosPayClient\/(payVerify|imeiVerify)|startPageAd\/getAds) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/VideoShow.js, requires-body=true, tag=解锁4个App
+
+#************************************#
+# iTranslate 翻译
+# hostname = ssl-api.itranslateapp.com
+http-response ^https^https?:\/\/ssl-api\.itranslateapp\.com\/accounts\/.+\/(subscriptions\/verify|marketing\/consent\/status) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/itranslate.js, requires-body=true, tag=iTranslate翻译
 
 
 
 [MITM]
-hostname = *.videoshowiosglobalserver.com, *.enjoy-mobi.com, api.getdailyart.com, p.du.163.com, snailsleep.net, drive*.quark.cn, yeguo.236api.com, jz.wacai.com, ljh.dianxiaoman.com, guapi.liangjihui.com, www.xmind.cn, schedule-api.julanling.com, *.xiangha.com, api.boohee.com, www.40sishi.com, kongque.twan.cn, ggs.manmeng168.com, novel.test.onedayapp.cn, *.lanjiyin.com.cn, iosapi.peiyinxiu.com, *.qingning6.com, day-api.xixitime.com, api.adapty.io, api.mojidict.com, dj.palmestore.com, asia.gikken.co, xianbeikeji.com, server.*.com, *.xiuxiu.meitu.com, api.posters.meitu.com,api-*.meitu.com,  *.meiyan.com, app.yidiansz.com, mobile-api.adguard.org, explorer.tratao.com, top-widgets-api.xiaozujian.com, api.open.loveclip.site, www.skyjos.cn, www2.tigeroom.com, cn.czur.cc, dashen*.shuiyinyu.com, *.imendon.com, api2.vlognow.me, service.ilovepdf.com, www.freshhome.top, *.dicallapp.com, format-api.netpock.com, widget-box-api.codefuture.top, cubox.pro, *.radio.cn, accounts.agenda.com, *.aoscdn.com, *.apsapp.cn, apimboom2.globaldelight.net, *.duitang.com, spclient.wg.spotify.com, scibug.com, *.wallpaperscraft.com, screen-lock.*.com, api.risingfalling.com, api.meiease.cn, *.aliyundrive.com, pan.baidu.com, *.camscanner.com, *.intsig.net, mb3admin.com, *.kuwo.cn, *.kwcdn.kuwo.cn, *.lrts.me, iosv2.cjapi.5fun.com, api*.speedtest.cn, app.yiyan.art, *.cyapi.cn, *.caiyunapp.com, lcs-mobile-cops.adobe.io, api.bluepulse.cn, fufei.fengyunsoft.cn, wallpaper.soutushenqi.com, wallpaper-api.cross2d.com, restore-access.indream.app, firebaseremoteconfig.googleapis.com, api.revenuecat.com, app-measurement.com, buy.itunes.apple.com
+hostname = ssl-api.itranslateapp.com, *.videoshowiosglobalserver.com, *.enjoy-mobi.com, api.getdailyart.com, p.du.163.com, snailsleep.net, drive*.quark.cn, yeguo.236api.com, jz.wacai.com, ljh.dianxiaoman.com, guapi.liangjihui.com, www.xmind.cn, schedule-api.julanling.com, *.xiangha.com, api.boohee.com, www.40sishi.com, kongque.twan.cn, ggs.manmeng168.com, novel.test.onedayapp.cn, *.lanjiyin.com.cn, iosapi.peiyinxiu.com, *.qingning6.com, day-api.xixitime.com, api.adapty.io, api.mojidict.com, dj.palmestore.com, asia.gikken.co, xianbeikeji.com, server.*.com, *.xiuxiu.meitu.com, api.posters.meitu.com,api-*.meitu.com,  *.meiyan.com, app.yidiansz.com, mobile-api.adguard.org, explorer.tratao.com, top-widgets-api.xiaozujian.com, api.open.loveclip.site, www.skyjos.cn, www2.tigeroom.com, cn.czur.cc, dashen*.shuiyinyu.com, *.imendon.com, api2.vlognow.me, service.ilovepdf.com, www.freshhome.top, *.dicallapp.com, format-api.netpock.com, widget-box-api.codefuture.top, cubox.pro, *.radio.cn, accounts.agenda.com, *.aoscdn.com, *.apsapp.cn, apimboom2.globaldelight.net, *.duitang.com, spclient.wg.spotify.com, scibug.com, *.wallpaperscraft.com, screen-lock.*.com, api.risingfalling.com, api.meiease.cn, *.aliyundrive.com, pan.baidu.com, *.camscanner.com, *.intsig.net, mb3admin.com, *.kuwo.cn, *.kwcdn.kuwo.cn, *.lrts.me, iosv2.cjapi.5fun.com, api*.speedtest.cn, app.yiyan.art, *.cyapi.cn, *.caiyunapp.com, lcs-mobile-cops.adobe.io, api.bluepulse.cn, fufei.fengyunsoft.cn, wallpaper.soutushenqi.com, wallpaper-api.cross2d.com, restore-access.indream.app, buy.itunes.apple.com, api.revenuecat.com
