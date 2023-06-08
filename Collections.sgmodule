@@ -45,7 +45,7 @@ iTunes = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyRe
 #************************************#
 # Nicegram
 # hostname = restore-access.indream.app
-Nicegram = type=http-response,pattern=^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$ ,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Nicegram/Script/Nicegram.js, requires-body=1
+Nicegram = type=http-request,pattern=^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Nicegram/Script/Nicegram.js
 
 #************************************#
 # 绘影字幕
