@@ -144,17 +144,24 @@ http:
       type: response
       require-body: true
       timeout: 10
+
     # Symbolab
     - match: ^https?:\/\/scibug\.com\/appleSubscriptionValidate$
       name: Symbolab
       type: response
       require-body: true
       timeout: 10
+
     # Spotify
     - match: ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$
-      name: Spotify
+      name: smile_spotify
       type: response
       require-body: true
+      binary-mode: true
+      timeout: 10
+    - match: ^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/
+      name: smile_spotify_json
+      type: request
       timeout: 10
     # 堆糖
     - match: ^https:\/\/.*\.duitang\.com\/napi
@@ -486,7 +493,12 @@ http:
       type: response
       require-body: true
       timeout: 10
-
+    # Calendars 日历/计划
+    - match: ^https:\/\/license\.pdfexpert\.com\/api\/.+\/calendarslite\/subscription\/refresh
+      name: Calendars
+      type: response
+      require-body: true
+      timeout: 10
 
 
   mitm:
@@ -573,7 +585,7 @@ http:
     - 'ssl-api.itranslateapp.com'
     - 'api.yonekura.cn'
     - 'api.tuzhitong.com'
-
+    - 'license.pdfexpert.com'
 
 
 script-providers:
@@ -634,8 +646,11 @@ script-providers:
   Symbolab:
     url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Syjsq.js
     interval: 86400
-  Spotify:
+  smile_spotify:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+    interval: 86400
+  smile_spotify_json:
+    url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
     interval: 86400
   堆糖:
     url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/duitang.js
@@ -802,5 +817,7 @@ script-providers:
   图纸通:
     url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/tuzhitong.js
     interval: 86400
-
+  Calendars:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/calendars.js
+    interval: 86400
 
