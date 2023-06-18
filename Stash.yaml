@@ -2,6 +2,7 @@
 # @Autor        chxm1023
 # @TgChannel    https://t.me/chxm1023
 #===================================#
+# 更新日期： 2023-06-18
 
 # 本配置地址：https://raw.githubusercontent.com/chxm1023/Script_X/main/Stash.yaml
 
@@ -26,11 +27,11 @@ log-level: info
 # 允许局域网
 allow-lan: true
 # 监听IP白名单，可绑定单个IPv4和v6地址，"*" 为绑定所有IP地址，仅在将allow-lan设置为true时适用
-bind-address: "*"
+# bind-address: "*"
 # 混合端口，HTTP和SOCKS5用一个端口
-mixed-port: 7890                   
+# mixed-port: 7890                   
 # 外部控制器监听地址，可以使用 RESTful API 来控制你的 clash 内核
-external-controller: 127.0.0.1:9090
+# external-controller: 127.0.0.1:9090
 # IPV6解析(开启 true|关闭 false)
 ipv6: false
 
@@ -41,6 +42,8 @@ ipv6: false
 dns:
   # 关闭将使用系统 DNS
   enable: true
+  # IPV6解析开关；如果为false，将返回ipv6结果为空
+  ipv6: false
   # 模式：redir-host或fake-ip
   enhanced-mode: fake-ip
   # DNS 监听地址
@@ -88,7 +91,6 @@ dns:
     geoip-code: CN
     ipcidr:
     - 240.0.0.0/4
-  ipv6: false
   # DNS服务器
   nameserver:
     - https://dns.alidns.com/dns-query
@@ -100,14 +102,18 @@ dns:
 
 #===================================#
 # 远程订阅相关
-p: &p {type: http, interval: 42300, health-check: {enable: true}}
+p: &p {type: http, interval: 172800, health-check: {enable: true}}
 # 远程代理集
 proxy-providers:
 # 1.请使用Clash类型订阅链接填入引号url:""内使用
 # 2.或可使用通用订阅链接通过Sub-Store进行订阅转换(用于Stash)
   
   Subscribe: {<<: *p, url: "复制订阅地址到这里"}
+
   临时节点: {<<: *p, url: "https://api.subcloud.xyz/sub?target=clash&url=https%3A%2F%2Fpastebin.com%2Fraw%2FGxR5pELe&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=false&tfo=false&scv=true&fdn=true&sort=true&udp=true&new_name=true"}
+
+  Subscribe1: {<<: *p, url: "https://sub.xsus.me/api/v1/client/subscribe?token=c205292b196ddb609800993674b66b43"}
+  Subscribe2: {<<: *p, url: "https://cm-sub.pz.pe/subscribe/4OKRN8NXB2T1B32X?node=ssr"}
   网易云节点: {<<: *p, url: "https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/NeteaseMusic/AgentNode/Stash.yaml"}
 
 
@@ -255,7 +261,7 @@ proxy-groups:
     - 策略选择
   type: select
 # ChatGPT
-- icon: https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/ChatGPT/ChatGPT6.png
+- icon: https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/ChatGPT/ChatGPT4.png
   name: ChatGPT
   proxies:
     - 美国节点
@@ -315,14 +321,28 @@ proxy-groups:
   name: 网易云节点
   proxies: []
   type: select
+# 微软服务
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
+  name: 微软服务
+  proxies:
+    - 直连模式
+    - 策略选择
+    - 香港节点
+    - 台湾节点
+    - 日本节点
+    - 韩国节点
+    - 狮城节点
+    - 美国节点
+    - 全部节点
+  type: select
 # 苹果服务
-- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
   name: 苹果服务
   proxies:
     - 直连模式
     - 策略选择
   type: select
-# 屏蔽系统更新
+# 系统更新
 - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Update.png
   name: 系统更新
   proxies:
@@ -334,13 +354,14 @@ proxy-groups:
   name: 全球加速
   proxies:
     - 策略选择
+    - 直连模式
     - 香港节点
     - 台湾节点
     - 日本节点
     - 韩国节点
     - 狮城节点
     - 美国节点
-    - 直连模式
+    - 全部节点
   type: select
 # 国际代理
 - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
@@ -353,6 +374,7 @@ proxy-groups:
     - 韩国节点
     - 狮城节点
     - 美国节点
+    - 直连模式
   type: select
 # 延迟最低
 - filter: "^((?!(网易|网易云|网易云音乐|音乐|云音乐|官网|流量|加群|订阅|获取|刷新|鸡场|机场|订购|购买|套餐|重置|分享|网址|邀请|公众号|Netease|Music|\U0001D40C\U0001D42E\U0001D42C\U0001D422\U0001D41C|Unbolck|Update|music|\U0001F3B5|\U0001F3B6|\U0001F3A7)).)*$"
@@ -462,118 +484,128 @@ proxy-groups:
 #===================================#
 # 远程规则集
 rule-providers:
-  AdvertisingLite:
-    behavior: classical
-    interval: 86400
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite.yaml
-  AdvertisingLite_Domain:
-    behavior: domain
-    interval: 86400
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite_Domain.yaml
   Anti-AD:
     behavior: domain-text
-    interval: 86400
+    interval: 172800
     url: https://anti-ad.net/surge.txt
+  AdRule-rule:
+    behavior: domain-text
+    interval: 172800
+    url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRule.list
+  Hijacking-rule:
+    behavior: classical
+    interval: 172800
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Hijacking/Hijacking.yaml
   Emby-rule:
     behavior: classical
-    interval: 86400
+    interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Emby/Emby.yaml
   TikTok-rule:
     behavior: classical
-    interval: 86400
+    interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
   Github-rule:
     behavior: classical
-    interval: 86400
+    interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml
   Google-rule:
     behavior: classical
-    interval: 86400
+    interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
   Spotify-rule:
     behavior: classical
-    interval: 86400
+    interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml
   Twitter-rule:
     behavior: classical
-    interval: 86400
+    interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml
   Netflix-rule:
     behavior: classical
-    interval: 86400
+    interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
   Disney-rule:
     behavior: classical
-    interval: 86400
+    interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml
   YouTube-rule:
     behavior: classical
-    interval: 86400
+    interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
   ChatGPT-rule:
     behavior: classical
-    interval: 86400
+    interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
   Telegram-rule:
     behavior: classical
-    interval: 86400
+    interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
   Instagram-rule:
     behavior: classical
-    interval: 86400
+    interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Instagram/Instagram.yaml
   Facebook-rule:
     behavior: classical
-    interval: 86400
+    interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Facebook/Facebook.yaml
   NetEaseMusic-rule:
     behavior: classical
-    interval: 86400
+    interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/NetEaseMusic/NetEaseMusic.yaml
+  Microsoft-rule:
+    behavior: classical
+    interval: 172800
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
   Apple-rule:
     behavior: classical
-    interval: 86400
+    interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml
-  iCloud-rule:
-    behavior: classical
-    interval: 86400
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/iCloud/iCloud.yaml
-  Proxy-rule:
-    behavior: classical
-    interval: 86400
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy.yaml
-  Proxy_Domain-rule:
+  Apple_Domain:
     behavior: domain
-    interval: 86400
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Domain.yaml
-  Global_Domain-rule:
-    behavior: classical
-    interval: 86400
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global.yaml
-  Lan-rule:
-    behavior: classical
-    interval: 86400
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
-  ChinaMedia:
-    behavior: classical
-    interval: 86400
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml
+    interval: 172800
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Domain.yaml
   China:
     behavior: classical
-    interval: 86400
+    interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China.yaml
   ChinaIPs:
     behavior: ipcidr
-    interval: 86400
+    interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml
-  Download:
+  Lan-rule:
     behavior: classical
-    interval: 86400
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml
-  ASN-rules: 
+    interval: 172800
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
+  ChinaCompanyIp:
+    behavior: domain-text
+    interval: 172800
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+  ChinaDomain:
+    behavior: domain-text
+    interval: 172800
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+  ChinaMedia:
     behavior: classical
-    interval: 86400
-    url: https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.yaml
+    interval: 172800
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml
+  ProxyMedia:
+    behavior: domain-text
+    interval: 172800
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+  Streaming:
+    behavior: domain-text
+    interval: 172800
+    url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list
+  #全球加速
+  Global:
+    behavior: classical
+    interval: 172800
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global.yaml
+  Global_Domain:
+    behavior: domain
+    interval: 172800
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global_Domain.yaml
+
 
 #===================================#
 # 规则集
@@ -583,13 +615,25 @@ rules:
     - DOMAIN-KEYWORD,pglstatp,拦截模式
     - DOMAIN-KEYWORD,adview,拦截模式
     - DOMAIN-SUFFIX,gdt.qq.com,拦截模式
+    # 网易云音乐广告拦截
+    - DOMAIN,admusicpic.music.126.net,拦截模式
+    - DOMAIN,iadmat.nosdn.127.net,拦截模式
+    - DOMAIN,iadmusicmat.music.126.net,拦截模式
+    - DOMAIN,iadmusicmatvideo.music.126.net,拦截模式
+    # 掌上公交去广告
     - DOMAIN,quanguo.mygolbs.com,拦截模式
     - DOMAIN,cpu-openapi.baidu.com,拦截模式
+    # HDOBOX影视App去广告
     - DOMAIN-SUFFIX,applovin.com,拦截模式
     - DOMAIN-SUFFIX,applvn.com,拦截模式
-    - RULE-SET,AdvertisingLite,拦截模式
-    - RULE-SET,AdvertisingLite_Domain,拦截模式
+    # Anti-AD
     - RULE-SET,Anti-AD,拦截模式
+    # Advertising
+    - DOMAIN-KEYWORD,adservice,拦截模式
+    # 拦截广告
+    - RULE-SET,AdRule-rule,拦截模式
+    # 运营劫持
+    - RULE-SET,Hijacking-rule,拦截模式
     # Emby
     - RULE-SET,Emby-rule,Emby
     - GEOSITE,emby,Emby
@@ -646,9 +690,21 @@ rules:
     - DOMAIN-KEYWORD,Facebook,Facebook
     # 网易云音乐
     - RULE-SET,NetEaseMusic-rule,网易云音乐
+    # Microsoft微软服务
+    - RULE-SET,Microsoft-rule,微软服务
+    - GEOSITE,microsoft,微软服务
+    - DOMAIN-KEYWORD,microsoft,微软服务
+    # 系统更新
+    - DOMAIN,appstoreconnect.apple.com,系统更新
+    - DOMAIN,iosapps-ssl.itunes.apple.com, 系统更新
+    - DOMAIN,itcmobile.itunes.apple.com,系统更新
+    - DOMAIN,mesu.apple.com,系统更新
+    - DOMAIN,gdmf.apple.com,系统更新
+    - DOMAIN,updates-http.cdn-apple.com,系统更新
+    - DOMAIN,xp.apple.com,系统更新
     # 苹果服务
     - RULE-SET,Apple-rule,苹果服务
-    - RULE-SET,iCloud-rule,苹果服务
+    - RULE-SET,Apple_Domain,苹果服务
     - DOMAIN,apps.apple.com,苹果服务
     - DOMAIN,itunes.apple.com,苹果服务
     - DOMAIN,beta.apple.com,苹果服务
@@ -657,27 +713,36 @@ rules:
     - DOMAIN-KEYWORD,testflight,苹果服务
     - DOMAIN-KEYWORD,icloud,苹果服务
     - GEOSITE,apple,苹果服务
-    # 全球加速
-    - RULE-SET,Proxy-rule,全球加速
-    - RULE-SET,Proxy_Domain-rule,全球加速
-    - RULE-SET,Global_Domain-rule,全球加速
-    # 国际代理
-    - GEOSITE,microsoft@cn,DIRECT
-    - DOMAIN-KEYWORD,microsoft,国际代理
-    - DOMAIN-SUFFIX,tapbots.com,国际代理
-    - GEOSITE,steam@cn,DIRECT
-    - DOMAIN,steam,国际代理
-    - DOMAIN,trustd,国际代理
-    - DOMAIN,xbox,国际代理
-    # 直连模式
-    - RULE-SET,Lan-rule,直连模式
-    - RULE-SET,ChinaMedia,直连模式
+    # China
     - RULE-SET,China,直连模式
+    # ChinaIPs
     - RULE-SET,ChinaIPs,直连模式
-    - RULE-SET,Download,直连模式
+    # China公司
+    - RULE-SET,ChinaCompanyIp,直连模式
+    # 局域网地址
+    - RULE-SET,Lan-rule,直连模式
     - GEOSITE,LAN,直连模式
-    # ASN直连
-    - RULE-SET,ASN-rules,直连模式
+    # China域名
+    - RULE-SET,ChinaDomain,直连模式
+    # ChinaMedia
+    - RULE-SET,ChinaMedia,直连模式
+    # 搜狗
+    - DOMAIN-KEYWORD,sogou,直连模式
+    # 京东
+    - DOMAIN-SUFFIX,jd.com,直连模式
+    # 美团
+    - DOMAIN-KEYWORD,meituan,直连模式
+    # 百度
+    - DOMAIN-KEYWORD, baidu, 直连模式
+    # 国际代理
+    - GEOSITE,steam@cn,直连模式
+    - DOMAIN-KEYWORD,steam,国际代理
+    - DOMAIN-KEYWORD,xbox,国际代理
+    - RULE-SET,ProxyMedia,国际代理
+    - RULE-SET,Streaming,国际代理
+    # 全球加速
+    - RULE-SET,Global,全球加速
+    - RULE-SET,Global_Domain,全球加速
     # GeoIP China，直连
     - GEOIP,CN,直连模式
     # 不在上述规则中(远程以及本地)的剩余请求，将走MATCH 指定的节点/策略，这里即是 → 全球加速, 请根据自己的需求来选择直连或节点、策略
