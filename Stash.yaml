@@ -112,8 +112,6 @@ proxy-providers:
 
   临时节点: {<<: *p, url: "https://api.subcloud.xyz/sub?target=clash&url=https%3A%2F%2Fpastebin.com%2Fraw%2FGxR5pELe&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=false&tfo=false&scv=true&fdn=true&sort=true&udp=true&new_name=true"}
 
-  Subscribe1: {<<: *p, url: "https://sub.xsus.me/api/v1/client/subscribe?token=c205292b196ddb609800993674b66b43"}
-  Subscribe2: {<<: *p, url: "https://cm-sub.pz.pe/subscribe/4OKRN8NXB2T1B32X?node=ssr"}
   网易云节点: {<<: *p, url: "https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/NeteaseMusic/AgentNode/Stash.yaml"}
 
 
