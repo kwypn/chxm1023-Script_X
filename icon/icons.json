@@ -94,6 +94,9 @@
  {"name": "Microsoft",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/microsoft.png"},
 
+ {"name": "OneDrive",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/onedrive.png"},
+
  {"name": "iCloud",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/iCloud.png"},
 
@@ -156,9 +159,6 @@
 
  {"name": "Notion2",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/notion2.png"},
-
- {"name": "OneDrive",
-  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/onedrive.png"},
 
  {"name": "aws",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/aws.png"},
