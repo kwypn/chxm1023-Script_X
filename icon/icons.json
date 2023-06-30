@@ -82,6 +82,12 @@
  {"name": "Github",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/github.png"},
 
+ {"name": "Gitlab1",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/gitlab1.png"},
+
+ {"name": "Gitlab2",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/gitlab2.png"},
+  
  {"name": "腾讯视频",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/txvideo.png"},
 
@@ -144,6 +150,18 @@
 
  {"name": "小红书",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/xiaohongshu.png"},
+
+ {"name": "Notion1",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/notion1.png"},
+
+ {"name": "Notion2",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/notion2.png"},
+
+ {"name": "OneDrive",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/onedrive.png"},
+
+ {"name": "aws",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/aws.png"},
 
  {"name": "smbc",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/smbc.png"}
