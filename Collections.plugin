@@ -33,6 +33,8 @@ https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
 ^https?:\/\/ytmsout\.radio\.cn\/publish\/recScreen\/getLoadPage - reject-200
 # 靓机汇顶部滚屏
 ^https:\/\/ljh\.dianxiaoman\.com\/ljh\/api\/home\/getHomeList - reject
+# 墨迹天气横幅广告
+^http?:\/\/oss4bpc\.moji\.com\/.\d+\/.\d+\/.\d+\/.+\.jpg - reject
 
 
 
