@@ -16,7 +16,7 @@
 
 [URL Rewrite]
 # 彩云天气广告
-^https:\/\/ad\.caiyunapp\.com - reject
+^https?:\/\/ad\.caiyunapp\.com - reject
 # 酷我音乐_AdBlock
 ^https?:\/\/rich\.kuwo\.cn\/AdService\/kaiping\/.+ - reject
 # 酷我音乐_AdBlock
@@ -32,7 +32,7 @@ https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
 # 云听开屏广告/浮窗
 ^https?:\/\/ytmsout\.radio\.cn\/publish\/recScreen\/getLoadPage - reject-200
 # 靓机汇顶部滚屏
-^https:\/\/ljh\.dianxiaoman\.com\/ljh\/api\/home\/getHomeList - reject
+^https?:\/\/ljh\.dianxiaoman\.com\/ljh\/api\/home\/getHomeList - reject
 # 墨迹天气横幅广告
 ^http?:\/\/oss4bpc\.moji\.com\/.\d+\/.\d+\/.\d+\/.+\.jpg - reject
 
@@ -41,13 +41,13 @@ https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
 [Script]
 # Revenuecat解锁系列
 # hostname = api.revenuecat.com
-http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=true, tag=Revenuecat解锁系列
-http-request ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=false, tag=Reheji
+http-response ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=true, tag=Revenuecat解锁系列
+http-request ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=false, tag=Reheji
 
 #************************************#
 # iTunes解锁系列
 # hostname = buy.itunes.apple.com
-http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js, requires-body=true, tag=iTunes解锁系列
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js, requires-body=true, tag=iTunes解锁系列
 
 #************************************#
 # Nicegram
@@ -57,7 +57,7 @@ http-request ^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$ sc
 #************************************#
 # 绘影字幕
 # hostname = api.bluepulse.cn
-http-response ^https:\/\/api\.bluepulse\.cn\/bluepulse-caption-server-front\/api\/.+\/user\/app-vip-info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/hyzm.js, requires-body=true, tag=绘影字幕
+http-response ^https?:\/\/api\.bluepulse\.cn\/bluepulse-caption-server-front\/api\/.+\/user\/app-vip-info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/hyzm.js, requires-body=true, tag=绘影字幕
 
 #************************************#
 # 搜图神器
@@ -67,22 +67,22 @@ http-response ^http:\/\/wallpaper\.soutushenqi\.com\/api\/.+\/account\/token scr
 #************************************#
 # PS 图片编辑
 # hostname = lcs-mobile-cops.adobe.io
-http-response ^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ps.js, requires-body=true, tag=Photoshop Express图片编辑
+http-response ^https?:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ps.js, requires-body=true, tag=Photoshop Express图片编辑
 
 #************************************#
 # 彩云天气
 # hostname = *.cyapi.cn, *.caiyunapp.com
-http-response ^https:\/\/biz\.(caiyunapp|cyapi)\.(com|cn) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js, requires-body=true, tag=彩云天气
+http-response ^https?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js, requires-body=true, tag=彩云天气
 
 #************************************#
 # 一言
 # hostname = app.yiyan.art
-http-response ^https:\/\/app\.yiyan\.art\/yiyan script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yiyan.js, requires-body=true, tag=一言
+http-response ^https?:\/\/app\.yiyan\.art\/yiyan script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yiyan.js, requires-body=true, tag=一言
 
 #************************************#
 # 网速管家
 # hostname = api*.speedtest.cn
-http-response ^https:\/\/api.*\.speedtest\.cn\/user\/info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/wsgj.js, requires-body=true, tag=网速管家
+http-response ^https?:\/\/api.*\.speedtest\.cn\/user\/info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/wsgj.js, requires-body=true, tag=网速管家
 
 #************************************#
 # 悟饭掌悦
@@ -97,12 +97,12 @@ http-response ^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|e
 #************************************#
 # Emby(解锁播放权限)
 # hostname = mb3admin.com
-http-response ^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/embycrack.js, requires-body=true, tag=Emby(解锁播放权限)
+http-response ^https?:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/embycrack.js, requires-body=true, tag=Emby(解锁播放权限)
 
 #************************************#
 # 扫描全能王
 # hostname = *.camscanner.com, *.intsig.net
-http-response ^https:\/\/.*\.(intsig\.net|camscanner\.com) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js, requires-body=true, tag=全能扫描王
+http-response ^https?:\/\/.*\.(intsig\.net|camscanner\.com) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js, requires-body=true, tag=全能扫描王
 
 #************************************#
 # 百度网盘，一刻相册 解锁部分功能
@@ -142,18 +142,18 @@ http-response ^https?:\/\/scibug\.com\/appleSubscriptionValidate$ script-path=ht
 #************************************#
 # Spotify (不能超高音质)
 # hostname = spclient.wg.spotify.com
-http-request ^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/ script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js, timeout=10, tag=Spotify-Json
-http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js, requires-body=true, binary-body-mode=true, timeout=10, tag=Spotify-Proto
+http-request ^https?:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/ script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js, timeout=10, tag=Spotify-Json
+http-response ^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js, requires-body=true, binary-body-mode=true, timeout=10, tag=Spotify-Proto
 
 #************************************#
 # 堆糖
 # hostname = *.duitang.com
-http-response ^https:\/\/.*\.duitang\.com\/napi script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/duitang.js, requires-body=true, tag=堆糖
+http-response ^http[s]?:\/\/.*\.duitang\.com\/napi script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/duitang.js, requires-body=true, tag=堆糖
 
 #************************************#
 # Boom
 # hostname = apimboom2.globaldelight.net
-http-response ^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/boom.js, requires-body=true, tag=Boom
+http-response ^https?:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/boom.js, requires-body=true, tag=Boom
 
 #************************************#
 # 傲软抠图，傲软扫描，傲软PDF转换，傲软PDF编辑，傲软投屏，咖映，轻闪PDF，乃糖小组件，佐糖，佐糖照片修复
@@ -163,7 +163,7 @@ http-response ^https?:\/\/.*\.(aoscdn\.com|apsapp\.cn) script-path=https://raw.g
 #************************************#
 # Agenda
 # hostname = accounts.agenda.com
-http-response ^https:\/\/accounts\.agenda\.com\/users\/.*\/license script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ag.js, requires-body=true, tag=Agenda
+http-response ^https?:\/\/accounts\.agenda\.com\/users\/.*\/license script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ag.js, requires-body=true, tag=Agenda
 
 #************************************#
 # 云听-全国电台/有声听书
@@ -173,12 +173,12 @@ http-response ^http[s]?:\/\/(getway|ytapi|ytmsout)\.radio\.cn script-path=https:
 #************************************#
 # Cubox-收藏阅读
 # hostname = cubox.pro
-http-response ^https:\/\/cubox\.pro\/.+\/api\/userInfo script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Cb.js, requires-body=true, tag=Cubox-收藏阅读
+http-response ^https?:\/\/cubox\.pro\/.+\/api\/userInfo script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Cb.js, requires-body=true, tag=Cubox-收藏阅读
 
 #************************************#
 # 小组件盒子
 # hostname = widget-box-api.codefuture.top
-http-response ^https:\/\/widget-box-api\.codefuture\.top\/.+\/users\/me script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xzjhz.js, requires-body=true, tag=小组件盒子
+http-response ^https?:\/\/widget-box-api\.codefuture\.top\/.+\/users\/me script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xzjhz.js, requires-body=true, tag=小组件盒子
 
 #************************************#
 # 格式转换
@@ -193,27 +193,27 @@ http-response http:\/\/.*\.dicallapp\.com script-path=https://raw.githubusercont
 #************************************#
 # 如期
 # hostname = www.freshhome.top
-http-response ^https:\/\/www\.freshhome\.top script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/rq.js, requires-body=true, tag=如期
+http-response ^https?:\/\/www\.freshhome\.top script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/rq.js, requires-body=true, tag=如期
 
 #************************************#
 # iLove PDF
 # hostname = service.ilovepdf.com
-http-response ^https:\/\/service\.ilovepdf\.com\/.+\/user script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ilove.js, requires-body=true, tag=iLove PDF
+http-response ^https?:\/\/service\.ilovepdf\.com\/.+\/user script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ilove.js, requires-body=true, tag=iLove PDF
 
 #************************************#
 # VN-视频剪辑
 # hostname = api2.vlognow.me
-http-response ^https:\/\/api2\.vlognow\.me\/vn-pay\/api\/.+\/public\/iap\/receipt\/status?(.*?)*$ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/vn.js, requires-body=true, tag=VN-视频剪辑
+http-response ^https?:\/\/api2\.vlognow\.me\/vn-pay\/api\/.+\/public\/iap\/receipt\/status?(.*?)*$ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/vn.js, requires-body=true, tag=VN-视频剪辑
 
 #************************************#
 # 日杂相机，fomz相机
 # hostname = *.imendon.com
-http-response ^https:\/\/.*\.imendon\.com\/.+\/purchase\/vip\/verification script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lgxj.js, requires-body=true, tag=两个相机App
+http-response ^https?:\/\/.*\.imendon\.com\/.+\/purchase\/vip\/verification script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lgxj.js, requires-body=true, tag=两个相机App
 
 #************************************#
 # 大神水印
 # hostname = dashen-api.shuiyinyu.com
-http-response ^https:\/\/dashen-api\.shuiyinyu\.com\/m\/user\/get_user_info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dssy.js, requires-body=true, tag=大神水印
+http-response ^https?:\/\/dashen-api\.shuiyinyu\.com\/m\/user\/get_user_info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dssy.js, requires-body=true, tag=大神水印
 
 #************************************#
 # 电视家
@@ -223,17 +223,17 @@ http-response ^http[s]?:\/\/(share\.dianshihome\.com\/api\/user\/base\/info|123\
 #************************************#
 # 极简扫描
 # hostname = cn.czur.cc
-http-response ^https:\/\/cn\.czur\.cc\/api\/.+\/User\/info?(.*?) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjsm.js, requires-body=true, tag=极简扫描
+http-response ^https?:\/\/cn\.czur\.cc\/api\/.+\/User\/info?(.*?) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjsm.js, requires-body=true, tag=极简扫描
 
 #************************************#
 # PhotoSlip-照片清理大师
 # hostname = www2.tigeroom.com
-http-response ^https:\/\/www2\.tigeroom\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/zpqlds.js, requires-body=true, tag=PhotoSlip-照片清理大师
+http-response ^https?:\/\/www2\.tigeroom\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/zpqlds.js, requires-body=true, tag=PhotoSlip-照片清理大师
 
 #************************************#
 # 猫头鹰文件管理
 # hostname = www.skyjos.cn
-http-response ^https:\/\/www\.skyjos\.cn script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtywj.js, requires-body=true, tag=猫头鹰文件管理
+http-response ^https?:\/\/www\.skyjos\.cn script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtywj.js, requires-body=true, tag=猫头鹰文件管理
 
 #************************************#
 # 爱剪辑
@@ -243,42 +243,42 @@ http-response ^https?:\/\/api\.open\.loveclip\.site\/UserInfo\/(UserPersonalCore
 #************************************#
 # 六个解锁合集（Collart，拼图趣，睡前故事大全，网速测速大师，测速管家，Pixelance）
 # hostname = iap.etm.tech
-http-response ^https:\/\/iap\.etm\.tech\/receipts script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Collart.js, requires-body=true, tag=六个解锁合集
+http-response ^https?:\/\/iap\.etm\.tech\/receipts script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Collart.js, requires-body=true, tag=六个解锁合集
 
 #************************************#
 # TopWidgets万能小组件
 # hostname = top-widgets-api.xiaozujian.com
-http-response ^https:\/\/top-widgets-api\.xiaozujian\.com\/api\/app\/config\/userConfig script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/widgets.js, requires-body=true, tag=TopWidgets万能小组件
+http-response ^https?:\/\/top-widgets-api\.xiaozujian\.com\/api\/app\/config\/userConfig script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/widgets.js, requires-body=true, tag=TopWidgets万能小组件
 
 #************************************#
 # 极简汇率
 # hostname = explorer.tratao.com
-http-response ^https:\/\/explorer\.tratao\.com\/api\/client\/xtool\/vip script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjhl.js, requires-body=true, tag=极简汇率
+http-response ^https?:\/\/explorer\.tratao\.com\/api\/client\/xtool\/vip script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjhl.js, requires-body=true, tag=极简汇率
 
 #************************************#
 # AdGuard
 # hostname = mobile-api.adguard.org
-http-response ^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/AdGuard.js, requires-body=true, tag=AdGuard
+http-response ^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/AdGuard.js, requires-body=true, tag=AdGuard
 
 #************************************#
 # 番薯小说
 # hostname = ggs.manmeng168.com
-http-response ^https:\/\/ggs\.manmeng168\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fanshuxiaoshuo.js, requires-body=true, tag=番薯小说
+http-response ^https?:\/\/ggs\.manmeng168\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fanshuxiaoshuo.js, requires-body=true, tag=番薯小说
 
 #************************************#
 # 阅读记录
 # hostname = app.yidiansz.com
-http-response ^https:\/\/app\.yidiansz\.com\/api\/.+\/app\/user\/info?(.*?)*$ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ydjl.js, requires-body=true, tag=阅读记录
+http-response ^https?:\/\/app\.yidiansz\.com\/api\/.+\/app\/user\/info?(.*?)*$ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ydjl.js, requires-body=true, tag=阅读记录
 
 #************************************#
 # Wink，蛋啵，潮自拍，海报工厂，Chic
 # hostname = api-*.meitu.com
-http-response ^https:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxl.js, requires-body=true, tag=美图系列
+http-response ^https?:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxl.js, requires-body=true, tag=美图系列
 
 #************************************#
 # 美颜相机
 # hostname = *.meiyan.com
-http-response ^https:\/\/(api|community)\.meiyan\.com\/(vip|v\d)\/(user_center|user_info|user\/(.*?)) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/myxj.js, requires-body=true, tag=美颜相机
+http-response ^https?:\/\/(api|community)\.meiyan\.com\/(vip|v\d)\/(user_center|user_info|user\/(.*?)) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/myxj.js, requires-body=true, tag=美颜相机
 
 #************************************#
 # 美图秀秀
@@ -288,57 +288,57 @@ http-response ^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.
 #************************************#
 # Fimo_复古胶片相机
 # hostname = server.*.
-http-response ^https:\/\/server\.(yoyiapp|zbisq)\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js, requires-body=true, tag=Fimo复古相机
+http-response ^https?:\/\/server\.(yoyiapp|zbisq)\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js, requires-body=true, tag=Fimo复古相机
 
 #************************************#
 # 小习惯-打卡App
 # hostname = xianbeikeji.com
-http-response ^https:\/\/xianbeikeji\.com\/daily\/app\/user\/query script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xxg.js, requires-body=true, tag=小习惯-打卡App
+http-response ^https?:\/\/xianbeikeji\.com\/daily\/app\/user\/query script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xxg.js, requires-body=true, tag=小习惯-打卡App
 
 #************************************#
 # Mate-翻译神器
 # hostname = asia.gikken.co
-http-response ^https:\/\/asia\.gikken\.co\/matesync\/(subscription|login|register_user|check_user) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mate.js, requires-body=true, tag=Mate-翻译神器
+http-response ^https?:\/\/asia\.gikken\.co\/matesync\/(subscription|login|register_user|check_user) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mate.js, requires-body=true, tag=Mate-翻译神器
 
 #************************************#
 # 得间小说
 # hostname = dj.palmestore.com
-http-response ^https:\/\/dj\.palmestore\.com\/zyuc\/api\/user\/accountInfo script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dejianxiaoshuo.js, requires-body=true, tag=得间小说
+http-response ^https?:\/\/dj\.palmestore\.com\/zyuc\/api\/user\/accountInfo script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dejianxiaoshuo.js, requires-body=true, tag=得间小说
 
 #************************************#
 # Moji辞书-学习日语
 # hostname = api.mojidict.com
-http-response ^https:\/\/api\.mojidict\.com\/parse\/functions\/getNPrivileges script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojics.js, requires-body=true, tag=Moji辞书
+http-response ^https?:\/\/api\.mojidict\.com\/parse\/functions\/getNPrivileges script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojics.js, requires-body=true, tag=Moji辞书
 
 #************************************#
 # Batched-多量图片编辑器
 # hostname = api.adapty.io
-http-response ^https:\/\/api\.adapty\.io\/api\/.+\/sdk\/analytics\/profiles\/(.*?)\/ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Batched.js, requires-body=true, tag=Batched-图片编辑
+http-response ^https?:\/\/api\.adapty\.io\/api\/.+\/sdk\/analytics\/profiles\/(.*?)\/ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Batched.js, requires-body=true, tag=Batched-图片编辑
 
 #************************************#
 # 倒数纪念日
 # hostname = day-api.xixitime.com
-http-response ^https:\/\/day-api\.xixitime\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsjnr.js, requires-body=true, tag=倒数纪念日
+http-response ^https?:\/\/day-api\.xixitime\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsjnr.js, requires-body=true, tag=倒数纪念日
 
 #************************************#
 # 青柠设计-P图抠图海报
 # hostname = *.qingning6.com
-http-response ^https:\/\/.*\.qingning6\.com\/api\/(user\/getUserInfo|team\/teamInfo) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/qnsj.js, requires-body=true, tag=青柠设计
+http-response ^https?:\/\/.*\.qingning6\.com\/api\/(user\/getUserInfo|team\/teamInfo) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/qnsj.js, requires-body=true, tag=青柠设计
 
 #************************************#
 # 配音秀
 # hostname = iosapi.peiyinxiu.com
-http-response ^https:\/\/iosapi\.peiyinxiu\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/peiyinxiu.js, requires-body=true, tag=配音秀
+http-response ^https?:\/\/iosapi\.peiyinxiu\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/peiyinxiu.js, requires-body=true, tag=配音秀
 
 #************************************#
 # 蓝基因
 # hostname = *.lanjiyin.com.cn
-http-response ^https:\/\/(tk|course)\.lanjiyin\.com\.cn script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lanjiyin.js, requires-body=true, tag=蓝基因
+http-response ^https?:\/\/(tk|course)\.lanjiyin\.com\.cn script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lanjiyin.js, requires-body=true, tag=蓝基因
 
 #************************************#
 # 一天阅读(新版已失效)
 # hostname = novel.test.onedayapp.cn
-http-response ^https:\/\/novel\.test\.onedayapp\.cn\/login\/sync.+ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yitianyuedu.js, requires-body=true, tag=一天阅读(新版失效)
+http-response ^https?:\/\/novel\.test\.onedayapp\.cn\/login\/sync.+ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yitianyuedu.js, requires-body=true, tag=一天阅读(新版失效)
 
 #************************************#
 # 小时尚
@@ -358,7 +358,7 @@ http-response ^https?:\/\/api\.boohee\.com\/app-interface\/.+\/user\/user_info s
 #************************************#
 # 菜谱大全，烘焙小屋，香哈菜谱
 # hostname = *.xiangha.com
-http-response ^https:\/\/api.*\.xiangha\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caipu.js, requires-body=true, tag=菜谱大全系列
+http-response ^https?:\/\/api.*\.xiangha\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caipu.js, requires-body=true, tag=菜谱大全系列
 
 #************************************#
 # 排班日历-倒班助手
@@ -428,7 +428,7 @@ http-response ^https?:\/\/api\.tuzhitong\.com\/api\/User\/GetUserVipInfo script-
 #************************************#
 # Calendars 日历/计划
 # hostname = license.pdfexpert.com
-http-response ^https:\/\/license\.pdfexpert\.com\/api\/.+\/calendarslite\/subscription\/refresh script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/calendars.js, requires-body=true, tag=Calendars
+http-response ^https?:\/\/license\.pdfexpert\.com\/api\/.+\/calendarslite\/subscription\/refresh script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/calendars.js, requires-body=true, tag=Calendars
 
 #************************************#
 # 微信听书
