@@ -25,11 +25,11 @@ https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
 # 酷我音乐_添加已购音乐
 ^https?:\/\/.*\.kuwo\.cn\/music\.pay\?uid\=\d+ http://musicpay.kuwo.cn/music.pay?uid=2 302
 # 蓝基因
-^https:\/\/tk\.lanjiyin\.com\.cn\/img - reject
+^https?:\/\/tk\.lanjiyin\.com\.cn\/img - reject
 # 云听开屏广告/浮窗
 ^https?:\/\/ytmsout\.radio\.cn\/publish\/recScreen\/getLoadPage - reject-200
 # 靓机汇顶部滚屏
-^https:\/\/ljh\.dianxiaoman\.com\/ljh\/api\/home\/getHomeList - reject
+^https?:\/\/ljh\.dianxiaoman\.com\/ljh\/api\/home\/getHomeList - reject
 # 墨迹天气横幅广告
 ^http?:\/\/oss4bpc\.moji\.com\/.\d+\/.\d+\/.\d+\/.+\.jpg - reject
 
@@ -38,14 +38,14 @@ https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
 [Script]
 # Revenuecat解锁系列
 # hostname = api.revenuecat.com
-revenuecat1 = type=http-response,pattern= ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$),requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
-revenuecat2 = type=http-request,pattern= ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$),requires-body=0,max-size=0,script-path= https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js,script-update-interval=0
+revenuecat1 = type=http-response,pattern= ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$),requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
+revenuecat2 = type=http-request,pattern= ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$),requires-body=0,max-size=0,script-path= https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js,script-update-interval=0
 
 
 #************************************#
 # iTunes解锁系列
 # hostname = buy.itunes.apple.com
-iTunes = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js
+iTunes = type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js
 
 #************************************#
 # Nicegram
@@ -55,7 +55,7 @@ Nicegram = type=http-response,pattern=^https?:\/\/restore-access\.indream\.app\/
 #************************************#
 # 绘影字幕
 # hostname = api.bluepulse.cn
-绘影字幕 = type=http-response,pattern=^https:\/\/api\.bluepulse\.cn\/bluepulse-caption-server-front\/api\/.+\/user\/app-vip-info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/hyzm.js
+绘影字幕 = type=http-response,pattern=^https?:\/\/api\.bluepulse\.cn\/bluepulse-caption-server-front\/api\/.+\/user\/app-vip-info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/hyzm.js
 
 #************************************#
 # 搜图神器
@@ -65,22 +65,22 @@ Nicegram = type=http-response,pattern=^https?:\/\/restore-access\.indream\.app\/
 #************************************#
 # PS 图片编辑
 # hostname = lcs-mobile-cops.adobe.io
-Ps = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ps.js
+Ps = type=http-response,pattern=^https?:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ps.js
 
 #************************************#
 # 彩云天气
 # hostname = *.cyapi.cn, *.caiyunapp.com
-彩云天气 = type=http-response,pattern=^https:\/\/biz\.(caiyunapp|cyapi)\.(com|cn),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js
+彩云天气 = type=http-response,pattern=^https?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js
 
 #************************************#
 # 一言
 # hostname = app.yiyan.art
-一言 = type=http-response,pattern=^https:\/\/app\.yiyan\.art\/yiyan,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yiyan.js
+一言 = type=http-response,pattern=^https?:\/\/app\.yiyan\.art\/yiyan,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yiyan.js
 
 #************************************#
 # 网速管家
 # hostname = api*.speedtest.cn
-网速管家 = type=http-response,pattern=^https:\/\/api.*\.speedtest\.cn\/user\/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/wsgj.js
+网速管家 = type=http-response,pattern=^https?:\/\/api.*\.speedtest\.cn\/user\/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/wsgj.js
 
 #************************************#
 # 悟饭掌悦
@@ -95,12 +95,12 @@ Ps = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_pr
 #************************************#
 # Emby(解锁播放权限)
 # hostname = mb3admin.com
-Emby解锁播放权限 = type=http-request,pattern=^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey),requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/embycrack.js
+Emby解锁播放权限 = type=http-request,pattern=^https?:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey),requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/embycrack.js
 
 #************************************#
 # 扫描全能王
 # hostname = *.camscanner.com, *.intsig.net
-扫描全能王 = type=http-response,pattern=^https:\/\/.*\.(intsig\.net|camscanner\.com),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js
+扫描全能王 = type=http-response,pattern=^https?:\/\/.*\.(intsig\.net|camscanner\.com),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js
 
 #************************************#
 # 百度网盘_在线视频倍率/清晰度
@@ -140,18 +140,18 @@ Symbolab = type=http-response,pattern=^https?:\/\/scibug\.com\/appleSubscription
 #************************************#
 # Spotify (不能超高音质)
 # hostname = spclient.wg.spotify.com
-Spotify-json = type=http-request,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
-Spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
+Spotify-json = type=http-request,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
+Spotify-proto = type=http-response,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
 
 #************************************#
 # 堆糖
 # hostname = *.duitang.com
-堆糖 = type=http-response,pattern=^https:\/\/.*\.duitang\.com\/napi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/duitang.js
+堆糖 = type=http-response,pattern=^http[s]?:\/\/.*\.duitang\.com\/napi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/duitang.js
 
 #************************************#
 # Boom
 # hostname = apimboom2.globaldelight.net
-Boom = type=http-response,pattern=^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/boom.js
+Boom = type=http-response,pattern=^https?:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/boom.js
 
 #************************************#
 # 傲软抠图，傲软扫描，傲软PDF转换，傲软PDF编辑，傲软投屏，咖映，轻闪PDF，乃糖小组件，佐糖，佐糖照片修复
@@ -161,7 +161,7 @@ Boom = type=http-response,pattern=^https:\/\/apimboom2\.globaldelight\.net\/itun
 #************************************#
 # Agenda
 # hostname = accounts.agenda.com
-Agenda = type=http-response,pattern=^https:\/\/accounts\.agenda\.com\/users\/.*\/license,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ag.js
+Agenda = type=http-response,pattern=^https?:\/\/accounts\.agenda\.com\/users\/.*\/license,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ag.js
 
 #************************************#
 # 云听
@@ -171,12 +171,12 @@ Agenda = type=http-response,pattern=^https:\/\/accounts\.agenda\.com\/users\/.*\
 #************************************#
 # Cubox-收藏阅读
 # hostname = cubox.pro
-Cubox-收藏阅读 = type=http-response,pattern=^https:\/\/cubox\.pro\/c\/api\/userInfo,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Cb.js
+Cubox-收藏阅读 = type=http-response,pattern=^https?:\/\/cubox\.pro\/c\/api\/userInfo,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Cb.js
 
 #************************************#
 # 小组件盒子
 # hostname = widget-box-api.codefuture.top
-小组件盒子 = type=http-response,pattern=^https:\/\/widget-box-api\.codefuture\.top\/.+\/users\/me,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xzjhz.js
+小组件盒子 = type=http-response,pattern=^https?:\/\/widget-box-api\.codefuture\.top\/.+\/users\/me,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xzjhz.js
 
 #************************************#
 # 格式转换
@@ -191,27 +191,27 @@ Cubox-收藏阅读 = type=http-response,pattern=^https:\/\/cubox\.pro\/c\/api\/u
 #************************************#
 # 如期
 # hostname = www.freshhome.top
-如期 = type=http-response,pattern=^https:\/\/www\.freshhome\.top,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/rq.js
+如期 = type=http-response,pattern=^https?:\/\/www\.freshhome\.top,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/rq.js
 
 #************************************#
 # iLove PDF
 # hostname = service.ilovepdf.com
-iLove PDF = type=http-response,pattern=^https:\/\/service\.ilovepdf\.com\/.+\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ilove.js
+iLove PDF = type=http-response,pattern=^https?:\/\/service\.ilovepdf\.com\/.+\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ilove.js
 
 #************************************#
 # VN-视频剪辑
 # hostname = api2.vlognow.me
-VN-视频剪辑 = type=http-response,pattern=^https:\/\/api2\.vlognow\.me\/vn-pay\/api\/.+\/public\/iap\/receipt\/status?(.*?)*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/vn.js
+VN-视频剪辑 = type=http-response,pattern=^https?:\/\/api2\.vlognow\.me\/vn-pay\/api\/.+\/public\/iap\/receipt\/status?(.*?)*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/vn.js
 
 #************************************#
 # 日杂相机，fomz相机
 # hostname = *.imendon.com
-两个相机解锁 = type=http-response,pattern=^https:\/\/.*\.imendon\.com\/.+\/purchase\/vip\/verification,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lgxj.js
+两个相机解锁 = type=http-response,pattern=^https?:\/\/.*\.imendon\.com\/.+\/purchase\/vip\/verification,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lgxj.js
 
 #************************************#
 # 大神水印
 # hostname = dashen-api.shuiyinyu.com
-大神水印 = type=http-response,pattern=^https:\/\/dashen-api\.shuiyinyu\.com\/.+\/user\/get_user_info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dssy.js
+大神水印 = type=http-response,pattern=^https?:\/\/dashen-api\.shuiyinyu\.com\/.+\/user\/get_user_info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dssy.js
 
 #************************************#
 # 电视家
@@ -221,17 +221,17 @@ VN-视频剪辑 = type=http-response,pattern=^https:\/\/api2\.vlognow\.me\/vn-pa
 #************************************#
 # 极简扫描
 # hostname = cn.czur.cc
-极简扫描 = type=http-response,pattern=^https:\/\/cn\.czur\.cc\/api\/.+\/User\/info?(.*?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjsm.js
+极简扫描 = type=http-response,pattern=^https?:\/\/cn\.czur\.cc\/api\/.+\/User\/info?(.*?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjsm.js
 
 #************************************#
 # PhotoSlip-照片清理大师
 # hostname = www2.tigeroom.com
-PhotoSlip照片清理 = type=http-response,pattern=^https:\/\/www2\.tigeroom\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/zpqlds.js
+PhotoSlip照片清理 = type=http-response,pattern=^https?:\/\/www2\.tigeroom\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/zpqlds.js
 
 #************************************#
 # 猫头鹰文件管理
 # hostname = www.skyjos.cn
-猫头鹰文件管理 = type=http-response,pattern=^https:\/\/www\.skyjos\.cn,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtywj.js
+猫头鹰文件管理 = type=http-response,pattern=^https?:\/\/www\.skyjos\.cn,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtywj.js
 
 #************************************#
 # 爱剪辑
@@ -241,42 +241,42 @@ PhotoSlip照片清理 = type=http-response,pattern=^https:\/\/www2\.tigeroom\.co
 #************************************#
 # 六个解锁合集（Collart，拼图趣，睡前故事大全，网速测速大师，测速管家，Pixelance）
 # hostname = iap.etm.tech
-解锁六个App = type=http-response,pattern=^https:\/\/iap\.etm\.tech\/receipts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Collart.js
+解锁六个App = type=http-response,pattern=^https?:\/\/iap\.etm\.tech\/receipts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Collart.js
 
 #************************************#
 # TopWidgets万能小组件
 # hostname = top-widgets-api.xiaozujian.com
-万能小组件 = type=http-response,pattern=^https:\/\/top-widgets-api\.xiaozujian\.com\/api\/app\/config\/userConfig,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/widgets.js
+万能小组件 = type=http-response,pattern=^https?:\/\/top-widgets-api\.xiaozujian\.com\/api\/app\/config\/userConfig,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/widgets.js
 
 #************************************#
 # 极简汇率
 # hostname = explorer.tratao.com
-极简汇率 = type=http-response,pattern=^https:\/\/explorer\.tratao\.com\/api\/client\/xtool\/vip,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjhl.js
+极简汇率 = type=http-response,pattern=^https?:\/\/explorer\.tratao\.com\/api\/client\/xtool\/vip,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjhl.js
 
 #************************************#
 # AdGuard
 # hostname = mobile-api.adguard.org
-AdGuard = type=http-response,pattern=^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/AdGuard.js
+AdGuard = type=http-response,pattern=^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/AdGuard.js
 
 #************************************#
 # 番薯小说
 # hostname = ggs.manmeng168.com
-番薯小说 = type=http-response,pattern=^https:\/\/ggs\.manmeng168\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fanshuxiaoshuo.js
+番薯小说 = type=http-response,pattern=^https?:\/\/ggs\.manmeng168\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fanshuxiaoshuo.js
 
 #************************************#
 # 阅读记录
 # hostname = app.yidiansz.com
-阅读记录 = type=http-response,pattern=^https:\/\/app\.yidiansz\.com\/api\/.+\/app\/user\/info?(.*?)*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ydjl.js
+阅读记录 = type=http-response,pattern=^https?:\/\/app\.yidiansz\.com\/api\/.+\/app\/user\/info?(.*?)*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ydjl.js
 
 #************************************#
 # Wink，蛋啵，潮自拍，海报工厂，Chic
 # hostname = api-*.meitu.com
-美图系列 = type=http-response,pattern=^https:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxl.js
+美图系列 = type=http-response,pattern=^https?:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxl.js
 
 #************************************#
 # 美颜相机
 # hostname = *.meiyan.com
-美颜相机 = type=http-response,pattern=^https:\/\/(api|community)\.meiyan\.com\/(vip|v\d)\/(user_center|user_info|user\/(.*?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/myxj.js
+美颜相机 = type=http-response,pattern=^https?:\/\/(api|community)\.meiyan\.com\/(vip|v\d)\/(user_center|user_info|user\/(.*?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/myxj.js
 
 #************************************#
 # 美图秀秀
@@ -286,57 +286,57 @@ AdGuard = type=http-response,pattern=^https:\/\/mobile-api\.adguard\.org\/api\/.
 #************************************#
 # Fimo_复古胶片相机
 # hostname = server.*.com
-Fimo复古相机 = type=http-response,pattern=^https:\/\/server\.(yoyiapp|zbisq)\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js
+Fimo复古相机 = type=http-response,pattern=^https?:\/\/server\.(yoyiapp|zbisq)\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js
 
 #************************************#
 # 小习惯-打卡App
 # hostname = xianbeikeji.com
-小习惯 = type=http-response,pattern=^https:\/\/xianbeikeji\.com\/daily\/app\/user\/query,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xxg.js
+小习惯 = type=http-response,pattern=^https?:\/\/xianbeikeji\.com\/daily\/app\/user\/query,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xxg.js
 
 #************************************#
 # Mate-翻译神器
 # hostname = asia.gikken.co
-Mate-翻译 = type=http-response,pattern=^https:\/\/asia\.gikken\.co\/matesync\/(subscription|login|register_user|check_user),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mate.js
+Mate-翻译 = type=http-response,pattern=^https?:\/\/asia\.gikken\.co\/matesync\/(subscription|login|register_user|check_user),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mate.js
 
 #************************************#
 # 得间小说
 # hostname = dj.palmestore.com
-得间小说 = type=http-response,pattern=^https:\/\/dj\.palmestore\.com\/zyuc\/api\/user\/accountInfo,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dejianxiaoshuo.js
+得间小说 = type=http-response,pattern=^https?:\/\/dj\.palmestore\.com\/zyuc\/api\/user\/accountInfo,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dejianxiaoshuo.js
 
 #************************************#
 # Moji辞书-学习日语
 # hostname = api.mojidict.com
-Moji辞书 = type=http-response,pattern=^https:\/\/api\.mojidict\.com\/parse\/functions\/getNPrivileges,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojics.js
+Moji辞书 = type=http-response,pattern=^https?:\/\/api\.mojidict\.com\/parse\/functions\/getNPrivileges,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojics.js
 
 #************************************#
 # Batched-多量图片编辑器
 # hostname = api.adapty.io
-Batched = type=http-response,pattern=^https:\/\/api\.adapty\.io\/api\/.+\/sdk\/analytics\/profiles\/(.*?)\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Batched.js
+Batched = type=http-response,pattern=^https?:\/\/api\.adapty\.io\/api\/.+\/sdk\/analytics\/profiles\/(.*?)\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Batched.js
 
 #************************************#
 # 倒数纪念日
 # hostname = day-api.xixitime.com
-倒数纪念日 = type=http-response,pattern=^https:\/\/day-api\.xixitime\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsjnr.js
+倒数纪念日 = type=http-response,pattern=^https?:\/\/day-api\.xixitime\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsjnr.js
 
 #************************************#
 # 青柠设计-P图抠图海报
 # hostname = *.qingning6.com
-青柠设计 = type=http-response,pattern=^https:\/\/.*\.qingning6\.com\/api\/(user\/getUserInfo|team\/teamInfo),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/qnsj.js
+青柠设计 = type=http-response,pattern=^https?:\/\/.*\.qingning6\.com\/api\/(user\/getUserInfo|team\/teamInfo),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/qnsj.js
 
 #************************************#
 # 配音秀
 # hostname = iosapi.peiyinxiu.com
-配音秀 = type=http-response,pattern=^https:\/\/iosapi\.peiyinxiu\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/peiyinxiu.js
+配音秀 = type=http-response,pattern=^https?:\/\/iosapi\.peiyinxiu\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/peiyinxiu.js
 
 #************************************#
 # 蓝基因
 # hostname = *.lanjiyin.com.cn
-蓝基因 = type=http-response,pattern=^https:\/\/(tk|course)\.lanjiyin\.com\.cn,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lanjiyin.js
+蓝基因 = type=http-response,pattern=^https?:\/\/(tk|course)\.lanjiyin\.com\.cn,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lanjiyin.js
 
 #************************************#
 # 一天阅读(新版已失效)
 # hostname = novel.test.onedayapp.cn
-一天阅读 = type=http-response,pattern=^https:\/\/novel\.test\.onedayapp\.cn\/login\/sync.+,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yitianyuedu.js
+一天阅读 = type=http-response,pattern=^https?:\/\/novel\.test\.onedayapp\.cn\/login\/sync.+,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yitianyuedu.js
 
 #************************************#
 # 小时尚
@@ -356,7 +356,7 @@ Batched = type=http-response,pattern=^https:\/\/api\.adapty\.io\/api\/.+\/sdk\/a
 #************************************#
 # 菜谱大全，烘焙小屋，香哈菜谱
 # hostname = *.xiangha.com
-菜谱大全系列 = type=http-response,pattern=^https:\/\/api.*\.xiangha\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caipu.js
+菜谱大全系列 = type=http-response,pattern=^https?:\/\/api.*\.xiangha\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caipu.js
 
 #************************************#
 # 排班日历-倒班助手
@@ -426,7 +426,7 @@ yonekura合集 = type=http-response,pattern=^https?:\/\/api\.yonekura\.cn\/.+\/u
 #************************************#
 # Calendars 日历/计划
 # hostname = license.pdfexpert.com
-Calendars = type=http-response,pattern=^https^https:\/\/license\.pdfexpert\.com\/api\/.+\/calendarslite\/subscription\/refresh,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/calendars.js
+Calendars = type=http-response,pattern=^https^https?:\/\/license\.pdfexpert\.com\/api\/.+\/calendarslite\/subscription\/refresh,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/calendars.js
 
 #************************************#
 # 微信听书
