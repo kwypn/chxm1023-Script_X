@@ -501,6 +501,31 @@ http:
       type: response
       require-body: true
       timeout: 10
+    # 微信听书
+    - match: ^https?:\/\/i\.at\.qq\.com\/pay\/memberinfo.+
+      name: 微信听书
+      type: response
+      require-body: true
+      timeout: 10
+    # 冥想星球
+    - match: ^https?:\/\/kc\.xinli001\.com
+      name: 冥想星球
+      type: response
+      require-body: true
+      timeout: 10
+    # WPS
+    - match: ^https?:\/\/(vas|account|drive)\.wps\.cn\/(query\/api\/.+\/list_purchase_info|api\/(v\d\/spaces|users\/.+\/overview))
+      name: WPS
+      type: response
+      require-body: true
+      timeout: 10
+    # 墨迹天气
+    - match: ^https?:\/\/.*\.api\.moji\.com\/(sns\/json\/profile\/get_info_.+|json\/member_new\/homepage_info.+|user\/personal\/json\/profile_.+|flycard\/novice|shortvideo\/.+)
+      name: 墨迹天气
+      type: response
+      require-body: true
+      timeout: 10
+
 
 
   mitm:
@@ -588,6 +613,11 @@ http:
     - 'api.yonekura.cn'
     - 'api.tuzhitong.com'
     - 'license.pdfexpert.com'
+    - 'i.at.qq.com'
+    - 'kc.xinli001.com'
+    - '*.wps.cn'
+    - '*.api.moji.com'
+
 
 
 script-providers:
@@ -822,4 +852,15 @@ script-providers:
   Calendars:
     url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/calendars.js
     interval: 86400
-
+  微信听书:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wxts.js
+    interval: 86400
+  冥想星球:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/mingxiangxingqiu.js
+    interval: 86400
+  WPS:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/WPS.js
+    interval: 86400
+  墨迹天气:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojitianqi.js
+    interval: 86400
