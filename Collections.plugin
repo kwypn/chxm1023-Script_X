@@ -173,7 +173,7 @@ http-response ^http[s]?:\/\/(getway|ytapi|ytmsout)\.radio\.cn script-path=https:
 #************************************#
 # Cubox-收藏阅读
 # hostname = cubox.*
-http-response ^https?:\/\/cubox\.(pro|app)\/.+\/api\/userInfo script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Cb.js, requires-body=true, tag=Cubox-收藏阅读
+http-response ^https?:\/\/cubox\.(pro|cc)\/.+\/api\/userInfo script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Cb.js, requires-body=true, tag=Cubox-收藏阅读
 
 #************************************#
 # 小组件盒子
