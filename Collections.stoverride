@@ -148,14 +148,12 @@ http:
       type: response
       require-body: true
       timeout: 10
-
     # Symbolab
     - match: ^https?:\/\/scibug\.com\/appleSubscriptionValidate$
       name: Symbolab
       type: response
       require-body: true
       timeout: 10
-
     # Spotify
     - match: ^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$
       name: smile_spotify
