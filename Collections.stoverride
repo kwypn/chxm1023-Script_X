@@ -198,7 +198,7 @@ http:
       require-body: true
       timeout: 10
     # Cubox-收藏阅读
-    - match: ^https?:\/\/cubox\.pro\/.+\/api\/userInfo
+    - match: ^https?:\/\/cubox\.(pro|app)\/.+\/api\/userInfo
       name: Cubox
       type: response
       require-body: true
@@ -426,7 +426,7 @@ http:
       require-body: true
       timeout: 10
     # Xmind-思维导图
-    - match: ^https?:\/\/www\.xmind\.cn\/.+\/devices
+    - match: ^https?:\/\/www\.xmind\.(cn|app)\/.+\/devices
       name: Xmind
       type: response
       require-body: true
@@ -559,7 +559,7 @@ http:
     - '*.apsapp.cn'
     - 'accounts.agenda.com'
     - '*.radio.cn'
-    - 'cubox.pro'
+    - 'cubox.*'
     - 'widget-box-api.codefuture.top'
     - 'format-api.netpock.com'
     - '*.dicallapp.com'
@@ -600,7 +600,7 @@ http:
     - 'api.boohee.com'
     - '*.xiangha.com'
     - 'schedule-api.julanling.com'
-    - 'www.xmind.cn'
+    - 'www.xmind.*'
     - 'guapi.liangjihui.com'
     - 'ljh.dianxiaoman.com'
     - 'jz.wacai.com'
