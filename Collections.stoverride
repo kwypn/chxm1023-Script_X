@@ -198,7 +198,7 @@ http:
       require-body: true
       timeout: 10
     # Cubox-收藏阅读
-    - match: ^https?:\/\/cubox\.(pro|app)\/.+\/api\/userInfo
+    - match: ^https?:\/\/cubox\.(pro|cc)\/.+\/api\/userInfo
       name: Cubox
       type: response
       require-body: true
