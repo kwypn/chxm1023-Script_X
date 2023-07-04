@@ -171,7 +171,7 @@ Agenda = type=http-response,pattern=^https?:\/\/accounts\.agenda\.com\/users\/.*
 #************************************#
 # Cubox-收藏阅读
 # hostname = cubox.*
-Cubox-收藏阅读 = type=http-response,pattern=^https?:\/\/cubox\.(pro|app)\/c\/api\/userInfo,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Cb.js
+Cubox-收藏阅读 = type=http-response,pattern=^https?:\/\/cubox\.(pro|cc)\/c\/api\/userInfo,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Cb.js
 
 #************************************#
 # 小组件盒子
