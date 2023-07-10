@@ -525,8 +525,18 @@ http:
       type: response
       require-body: true
       timeout: 10
-
-
+    # Pixelup AI照片增强器
+    - match: ^https?:\/\/receipt-verifier\.cdwapi\.com\/receipt
+      name: Pixelup
+      type: response
+      require-body: true
+      timeout: 10
+    # iScreen小组件-辅助解锁
+    - match: ^https?:\/\/cs\.kuso\.xyz\/configs.+
+      name: iScreen辅助
+      type: response
+      require-body: true
+      timeout: 10
 
   mitm:
     - "api.revenuecat.com"
@@ -617,6 +627,8 @@ http:
     - 'kc.xinli001.com'
     - '*.wps.cn'
     - '*.api.moji.com'
+    - 'receipt-verifier.cdwapi.com'
+    - 'cs.kuso.xyz'
 
 
 
@@ -863,4 +875,10 @@ script-providers:
     interval: 86400
   墨迹天气:
     url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojitianqi.js
+    interval: 86400
+  Pixelup:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Pixelup.js
+    interval: 86400
+  iScreen辅助:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/iscreenfz.js
     interval: 86400
