@@ -164,5 +164,14 @@
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/aws.png"},
 
  {"name": "smbc",
-  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/smbc.png"}
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/smbc.png"},
+
+ {"name": "Duckduckgo",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/Duckduckgo.png"},
+
+ {"name": "outlook",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/outlook.png"},
+
+ {"name": "gmail",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/gmail.png"}
 ]}
