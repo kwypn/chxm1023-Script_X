@@ -1,1 +1,12 @@
-Banner
+{"name": "国旗图标库",
+ "description": "自用图标库…", 
+ "icons": [
+ {"name": "意大利",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/Banner/it.png"},
+
+ {"name": "荷兰",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/Banner/nl.png"}
+]}
+
+
+
