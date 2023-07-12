@@ -173,5 +173,11 @@
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/outlook.png"},
 
  {"name": "gmail",
-  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/gmail.png"}
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/gmail.png"},
+
+ {"name": "ebay1",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/ebay.png"},
+
+ {"name": "ebay2",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/ebay1.png"}
 ]}
