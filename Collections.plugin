@@ -463,7 +463,7 @@ http-response ^https?:\/\/cs\.kuso\.xyz\/configs.+ script-path=https://raw.githu
 #************************************#
 # 旅途随身听
 # hostname = www.1314zhilv.com
-http-response ^https?:\/\/www\.1314zhilv\.com\/ltsstnew\/(user\/getInfo|guideScenic\/getScenicAllMarkerList) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ltsst.js, requires-body=true, tag=旅途随身听
+http-response ^https?:\/\/www\.1314zhilv\.com\/ltsstnew\/(user.*\/getInfo|guideScenic) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ltsst.js, requires-body=true, tag=旅途随身听
 
 
 
