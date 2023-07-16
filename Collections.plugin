@@ -368,7 +368,7 @@ http-response ^https?:\/\/schedule-api\.julanling\.com\/api\/(get_member_info|vi
 #************************************#
 # Xmind-思维导图
 # hostname = www.xmind.*
-http-response ^https?:\/\/www\.xmind\.(cn|app)\/.+\/devices script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Xmind.js, requires-body=true, tag=Xmind-思维导图
+http-response ^https?:\/\/www\.xmind\.(cn|net|app)\/.+\/devices script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Xmind.js, requires-body=true, tag=Xmind-思维导图
 
 #************************************#
 # 靓机汇
