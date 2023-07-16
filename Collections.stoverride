@@ -424,7 +424,7 @@ http:
       require-body: true
       timeout: 10
     # Xmind-思维导图
-    - match: ^https?:\/\/www\.xmind\.(cn|app)\/.+\/devices
+    - match: ^https?:\/\/www\.xmind\.(cn|net|app)\/.+\/devices
       name: Xmind
       type: response
       require-body: true
