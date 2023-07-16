@@ -538,7 +538,7 @@ http:
       require-body: true
       timeout: 10
     # 旅途随身听
-    - match: ^https?:\/\/www\.1314zhilv\.com\/ltsstnew\/(user\/getInfo|guideScenic\/getScenicAllMarkerList)
+    - match: ^https?:\/\/www\.1314zhilv\.com\/ltsstnew\/(user.*\/getInfo|guideScenic)
       name: 旅途随身听
       type: response
       require-body: true
