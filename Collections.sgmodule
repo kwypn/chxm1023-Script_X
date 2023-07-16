@@ -461,7 +461,7 @@ iscreen辅助 = type=http-response,pattern=^https?:\/\/cs\.kuso\.xyz\/configs.+,
 #************************************#
 # 旅途随身听
 # hostname = www.1314zhilv.com
-旅途随身听 = type=http-response,pattern=^https?:\/\/www\.1314zhilv\.com\/ltsstnew\/(user\/getInfo|guideScenic\/getScenicAllMarkerList),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ltsst.js
+旅途随身听 = type=http-response,pattern=^https?:\/\/www\.1314zhilv\.com\/ltsstnew\/(user.*\/getInfo|guideScenic),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ltsst.js
 
 
 
