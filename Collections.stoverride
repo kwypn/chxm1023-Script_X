@@ -537,6 +537,12 @@ http:
       type: response
       require-body: true
       timeout: 10
+    # 旅途随身听
+    - match: ^https?:\/\/www\.1314zhilv\.com\/ltsstnew\/(user\/getInfo|guideScenic\/getScenicAllMarkerList)
+      name: 旅途随身听
+      type: response
+      require-body: true
+      timeout: 10
 
   mitm:
     - "api.revenuecat.com"
@@ -629,8 +635,7 @@ http:
     - '*.api.moji.com'
     - 'receipt-verifier.cdwapi.com'
     - 'cs.kuso.xyz'
-
-
+    - 'www.1314zhilv.com'
 
 script-providers:
   Reheji:
@@ -881,4 +886,7 @@ script-providers:
     interval: 86400
   iScreen辅助:
     url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/iscreenfz.js
+    interval: 86400
+  旅途随身听:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/ltsst.js
     interval: 86400
