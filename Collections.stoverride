@@ -549,6 +549,12 @@ http:
       type: response
       require-body: true
       timeout: 10
+    # 经济学人·商论
+    - match: ^https:\/\/api\.hummingbird\.businessreview\.global\/api\/subscriptions\/get_active
+      name: 经济学人
+      type: response
+      require-body: true
+      timeout: 10
 
   mitm:
     - "api.revenuecat.com"
@@ -642,6 +648,7 @@ http:
     - 'receipt-verifier.cdwapi.com'
     - 'cs.kuso.xyz'
     - 'www.1314zhilv.com'
+    - 'api.hummingbird.businessreview.global'
 
 script-providers:
   Reheji:
@@ -898,4 +905,7 @@ script-providers:
     interval: 86400
   问真排盘:
     url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wenzhenpaipan.js
+    interval: 86400
+  经济学人:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjxrsl.js
     interval: 86400
