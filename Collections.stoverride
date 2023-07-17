@@ -543,6 +543,12 @@ http:
       type: response
       require-body: true
       timeout: 10
+    # 问真排盘
+    - match: ^https?:\/\/bzpp2\.iwzbz\.com\/api\/.+\/(user\/getvipinfo|User\/getWXPW)
+      name: 问真排盘
+      type: response
+      require-body: true
+      timeout: 10
 
   mitm:
     - "api.revenuecat.com"
@@ -889,4 +895,7 @@ script-providers:
     interval: 86400
   旅途随身听:
     url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/ltsst.js
+    interval: 86400
+  问真排盘:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wenzhenpaipan.js
     interval: 86400
