@@ -18,20 +18,22 @@
 ^https?:\/\/.+\.kwcdn\.kuwo\.cn\/star\/upload\/.+ - reject
 # 酷我音乐_AdBlock
 ^https?:\/\/mobilead\.kuwo\.cn\/EcomResourceServer\/Ad - reject
-# 酷我听书_Blockad
-https?:\/\/audiobookpay\.kuwo\.cn/a\.p\?op=get_advertright - reject-dict
-# 酷我听书_Blockad
-https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
 # 酷我音乐_添加已购音乐
 ^https?:\/\/.*\.kuwo\.cn\/music\.pay\?uid\=\d+ http://musicpay.kuwo.cn/music.pay?uid=2 302
 # 蓝基因
 ^https?:\/\/tk\.lanjiyin\.com\.cn\/img - reject
-# 云听开屏广告/浮窗
-^https?:\/\/ytmsout\.radio\.cn\/publish\/recScreen\/getLoadPage - reject-200
 # 靓机汇顶部滚屏
 ^https?:\/\/ljh\.dianxiaoman\.com\/ljh\/api\/home\/getHomeList - reject
 # 墨迹天气横幅广告
 ^http?:\/\/oss4bpc\.moji\.com\/.\d+\/.\d+\/.\d+\/.+\.jpg - reject
+
+[Map Local]
+# 酷我听书_Blockad
+https?:\/\/audiobookpay\.kuwo\.cn/a\.p\?op=get_advertright data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# 酷我听书_Blockad
+https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# 云听开屏广告/浮窗
+^https?:\/\/ytmsout\.radio\.cn\/publish\/recScreen\/getLoadPage data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
 
 
 
