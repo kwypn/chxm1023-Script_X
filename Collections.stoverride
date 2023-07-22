@@ -11,6 +11,9 @@ desc: 作者：chxm1023
 #=============UserScript=============#
 http:
   rewrite:
+    # 彩云天气去广告
+    - ^https?:\/\/ad\.caiyunapp\.com\/ - reject
+    - ^http:\/\/adx\.sogaha\.cn\/sdk\/ad\/get - reject-200
     # 酷我音乐_AdBlock
     - ^https?:\/\/rich\.kuwo\.cn\/AdService\/kaiping\/.+ - reject
     # 酷我音乐_AdBlock
@@ -77,7 +80,7 @@ http:
       require-body: true
       timeout: 10
     # 彩云天气
-    - match: ^https?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn)
+    - match: ^https?:\/\/(biz|wrapper)\.cyapi\.cn\/(.+\/(user.+|visitors|activity)|p\/v\d\/vip_info)
       name: 彩云天气
       type: response
       require-body: true
@@ -555,6 +558,32 @@ http:
       type: response
       require-body: true
       timeout: 10
+    # 有谱么
+    - match: ^https?:\/\/yopu\.co\/api\/user\/info
+      name: 有谱么
+      type: response
+      require-body: true
+      timeout: 10
+    # CAD快速看图
+    - match: ^https?:\/\/cad\.glodon\.com\/(account|authorize\/query|alipay\/auth)
+      name: CAD快速看图
+      type: response
+      require-body: true
+      timeout: 10
+    # 过期啦
+    - match: ^https:\/\/api\.guoqi365\.com\/.+\/functions\/getUserInfo
+      name: 过期啦
+      type: response
+      require-body: true
+      timeout: 10
+    # flomo
+    - match: ^https:\/\/flomoapp\.com\/api\/v1\/user\/me
+      name: flomo
+      type: response
+      require-body: true
+      timeout: 10
+
+
 
   mitm:
     - "api.revenuecat.com"
@@ -565,6 +594,7 @@ http:
     - 'lcs-mobile-cops.adobe.io'
     - '*.cyapi.cn'
     - '*.caiyunapp.com'
+    - 'adx.sogaha.cn'
     - 'app.yiyan.art'
     - 'api*.speedtest.cn'
     - 'iosv2.cjapi.5fun.com'
@@ -651,6 +681,12 @@ http:
     - 'cs.kuso.xyz'
     - 'www.1314zhilv.com'
     - 'api.hummingbird.businessreview.global'
+    - 'yopu.co'
+    - 'cad.glodon.com'
+    - 'api.guoqi365.com'
+    - 'flomoapp.com'
+
+
 
 script-providers:
   Reheji:
@@ -910,4 +946,16 @@ script-providers:
     interval: 86400
   经济学人:
     url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjxrsl.js
+    interval: 86400
+  有谱么:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/youpume.js
+    interval: 86400
+  CAD快速看图:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/cad.js
+    interval: 86400
+  过期啦:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/guoqila.js
+    interval: 86400
+  flomo:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/flomo.js
     interval: 86400
