@@ -6,6 +6,8 @@ desc: 作者：chxm1023
 
 # 使用方法：先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
 
+# 更新日期：2023-07-29
+
 # 项目解锁App下载地址：https://too.st/chxm1023
 
 #=============UserScript=============#
@@ -58,6 +60,12 @@ http:
     # Nicegram
     - match: ^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$
       name: Nicegram
+      type: response
+      require-body: true
+      timeout: 10
+    # Focos相机
+    - ^https?:\/\/focos\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify)
+      name: Focos
       type: response
       require-body: true
       timeout: 10
@@ -576,9 +584,33 @@ http:
       type: response
       require-body: true
       timeout: 10
-    # flomo
-    - match: ^https:\/\/flomoapp\.com\/api\/v1\/user\/me
-      name: flomo
+    # flapp
+    - match: ^https:\/\/fl.*app\.com\/api\/v\d\/user\/me
+      name: flapp
+      type: response
+      require-body: true
+      timeout: 10
+    # Hyperweb
+    - match: ^https?:\/\/zy6kcqa01a\.execute-api\.us-east-2\.amazonaws\.com\/prod\/verifyReceipt
+      name: Hyperweb
+      type: response
+      require-body: true
+      timeout: 10
+    # TimeTree
+    - ^https?:\/\/api\.timetreeapp\.com\/.+\/user\/.+
+      name: TimeTree
+      type: response
+      require-body: true
+      timeout: 10
+    # 日历假期
+    - match: ^https?:\/\/calendar\.aiyohoo\.com\/api\/.+\/(user\/device|calendar\/dev_auth)
+      name: 日历假期
+      type: response
+      require-body: true
+      timeout: 10
+    # MorpholioTrace
+    - match: ^https:\/\/www\.mymorpholio\.com\/api\/index\.php\/rest_iap\/receipt
+      name: MorpholioTrace
       type: response
       require-body: true
       timeout: 10
@@ -589,6 +621,7 @@ http:
     - "api.revenuecat.com"
     - "buy.itunes.apple.com"
     - 'restore-access.indream.app'
+    - 'focos.oracle.bendingspoonsapps.com'
     - 'api.bluepulse.cn'
     - 'wallpaper.soutushenqi.com'
     - 'lcs-mobile-cops.adobe.io'
@@ -684,7 +717,11 @@ http:
     - 'yopu.co'
     - 'cad.glodon.com'
     - 'api.guoqi365.com'
-    - 'flomoapp.com'
+    - 'fl*app.com'
+    - 'zy6kcqa01a.execute-api.us-east-2.amazonaws.com'
+    - 'api.timetreeapp.com'
+    - 'calendar.aiyohoo.com'
+    - 'www.mymorpholio.com'
 
 
 
@@ -697,6 +734,9 @@ script-providers:
     interval: 86400
   Nicegram:
     url: https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Nicegram/Script/Nicegram.js
+    interval: 86400
+  Focos:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Focos.js
     interval: 86400
   绘影字幕:
     url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/hyzm.js
@@ -956,6 +996,18 @@ script-providers:
   过期啦:
     url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/guoqila.js
     interval: 86400
-  flomo:
-    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/flomo.js
+  flapp:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/lofo.js
+    interval: 86400
+  Hyperweb:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Hyperweb.js
+    interval: 86400
+  TimeTree:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/TimeTree.js
+  日历假期:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/rljq.js
+    interval: 86400
+    interval: 86400
+  MorpholioTrace:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/MorpholioTrace.js
     interval: 86400
