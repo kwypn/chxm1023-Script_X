@@ -492,12 +492,32 @@ http-response ^https?:\/\/cad\.glodon\.com\/(account|authorize\/query|alipay\/au
 http-response ^https:\/\/api\.guoqi365\.com\/.+\/functions\/getUserInfo script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/guoqila.js, requires-body=true, tag=过期啦
 
 #************************************#
-# flomo
-# hostname = flomoapp.com
-http-response ^https:\/\/flomoapp\.com\/api\/v1\/user\/me script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/flomo.js, requires-body=true, tag=flomo
+# flapp
+# hostname = fl*app.com
+http-response ^https:\/\/fl.*app\.com\/api\/v\d\/user\/me script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/flomo.js, requires-body=true, tag=flapp
+
+#************************************#
+# Hyperweb Safari浏览器扩展
+# hostname = zy6kcqa01a.execute-api.us-east-2.amazonaws.com
+http-response ^https?:\/\/zy6kcqa01a\.execute-api\.us-east-2\.amazonaws\.com\/prod\/verifyReceipt script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Hyperweb.js, requires-body=true, tag=Hyperweb
+
+#************************************#
+# TimeTree日历
+# hostname = api.timetreeapp.com
+http-response ^https?:\/\/api\.timetreeapp\.com\/.+\/user\/.+ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/TimeTree.js, requires-body=true, tag=TimeTree
+
+#************************************#
+# 日历假期
+# hostname = calendar.aiyohoo.com
+http-response ^https?:\/\/calendar\.aiyohoo\.com\/api\/.+\/(user\/device|calendar\/dev_auth) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/rljq.js, requires-body=true, tag=日历假期
+
+#************************************#
+# MorpholidTrace-CAD草图设计
+# hostname = www.mymorpholio.com
+http-response ^https:\/\/www\.mymorpholio\.com\/api\/index\.php\/rest_iap\/receipt script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/MorpholioTrace.js, requires-body=true, tag=MorpholioTrace
 
 
 
 #************************************#
 [MITM]
-hostname = flomoapp.com, api.guoqi365.com, cad.glodon.com, yopu.co, api.hummingbird.businessreview.global, bzpp2.iwzbz.com, www.1314zhilv.com, cs.kuso.xyz, receipt-verifier.cdwapi.com, *.api.moji.com, *.wps.cn, kc.xinli001.com, i.at.qq.com, license.pdfexpert.com, api.tuzhitong.com, api.yonekura.cn, ssl-api.itranslateapp.com, *.videoshowiosglobalserver.com, *.enjoy-mobi.com, api.getdailyart.com, p.du.163.com, snailsleep.net, drive*.quark.cn, yeguo.236api.com, jz.wacai.com, ljh.dianxiaoman.com, guapi.liangjihui.com, www.xmind.*, schedule-api.julanling.com, *.xiangha.com, api.boohee.com, www.40sishi.com, kongque.twan.cn, ggs.manmeng168.com, novel.test.onedayapp.cn, *.lanjiyin.com.cn, iosapi.peiyinxiu.com, *.qingning6.com, day-api.xixitime.com, api.adapty.io, api.mojidict.com, dj.palmestore.com, asia.gikken.co, xianbeikeji.com, server.*.com, *.xiuxiu.meitu.com, api.posters.meitu.com,api-*.meitu.com,  *.meiyan.com, app.yidiansz.com, mobile-api.adguard.org, explorer.tratao.com, top-widgets-api.xiaozujian.com, iap.etm.tech, api.open.loveclip.site, www.skyjos.cn, www2.tigeroom.com, cn.czur.cc, share.dianshihome.com, api.gaoqingdianshi.com, 123.56.125.184, dashen*.shuiyinyu.com, *.imendon.com, api2.vlognow.me, service.ilovepdf.com, www.freshhome.top, *.dicallapp.com, format-api.netpock.com, widget-box-api.codefuture.top, cubox.*, *.radio.cn, 60.205.171.165, accounts.agenda.com, *.aoscdn.com, *.apsapp.cn, apimboom2.globaldelight.net, *.duitang.com, spclient.wg.spotify.com, scibug.com, *.wallpaperscraft.com, screen-lock.*.com, api.risingfalling.com, api.meiease.cn, *.aliyundrive.com, pan.baidu.com, *.camscanner.com, *.intsig.net, mb3admin.com, *.kuwo.cn, *.kwcdn.kuwo.cn, *.lrts.me, iosv2.cjapi.5fun.com, api*.speedtest.cn, app.yiyan.art, *.cyapi.cn, *.caiyunapp.com, adx.sogaha.cn, lcs-mobile-cops.adobe.io, api.bluepulse.cn, fufei.fengyunsoft.cn, wallpaper.soutushenqi.com, wallpaper-api.cross2d.com, restore-access.indream.app, buy.itunes.apple.com, api.revenuecat.com
+hostname = www.mymorpholio.com, calendar.aiyohoo.com, api.timetreeapp.com, zy6kcqa01a.execute-api.us-east-2.amazonaws.com, fl*app.com, api.guoqi365.com, cad.glodon.com, yopu.co, api.hummingbird.businessreview.global, bzpp2.iwzbz.com, www.1314zhilv.com, cs.kuso.xyz, receipt-verifier.cdwapi.com, *.api.moji.com, *.wps.cn, kc.xinli001.com, i.at.qq.com, license.pdfexpert.com, api.tuzhitong.com, api.yonekura.cn, ssl-api.itranslateapp.com, *.videoshowiosglobalserver.com, *.enjoy-mobi.com, api.getdailyart.com, p.du.163.com, snailsleep.net, drive*.quark.cn, yeguo.236api.com, jz.wacai.com, ljh.dianxiaoman.com, guapi.liangjihui.com, www.xmind.*, schedule-api.julanling.com, *.xiangha.com, api.boohee.com, www.40sishi.com, kongque.twan.cn, ggs.manmeng168.com, novel.test.onedayapp.cn, *.lanjiyin.com.cn, iosapi.peiyinxiu.com, *.qingning6.com, day-api.xixitime.com, api.adapty.io, api.mojidict.com, dj.palmestore.com, asia.gikken.co, xianbeikeji.com, server.*.com, *.xiuxiu.meitu.com, api.posters.meitu.com,api-*.meitu.com,  *.meiyan.com, app.yidiansz.com, mobile-api.adguard.org, explorer.tratao.com, top-widgets-api.xiaozujian.com, iap.etm.tech, api.open.loveclip.site, www.skyjos.cn, www2.tigeroom.com, cn.czur.cc, share.dianshihome.com, api.gaoqingdianshi.com, 123.56.125.184, dashen*.shuiyinyu.com, *.imendon.com, api2.vlognow.me, service.ilovepdf.com, www.freshhome.top, *.dicallapp.com, format-api.netpock.com, widget-box-api.codefuture.top, cubox.*, *.radio.cn, 60.205.171.165, accounts.agenda.com, *.aoscdn.com, *.apsapp.cn, apimboom2.globaldelight.net, *.duitang.com, spclient.wg.spotify.com, scibug.com, *.wallpaperscraft.com, screen-lock.*.com, api.risingfalling.com, api.meiease.cn, *.aliyundrive.com, pan.baidu.com, *.camscanner.com, *.intsig.net, mb3admin.com, *.kuwo.cn, *.kwcdn.kuwo.cn, *.lrts.me, iosv2.cjapi.5fun.com, api*.speedtest.cn, app.yiyan.art, *.cyapi.cn, *.caiyunapp.com, adx.sogaha.cn, lcs-mobile-cops.adobe.io, api.bluepulse.cn, fufei.fengyunsoft.cn, wallpaper.soutushenqi.com, focos.oracle.bendingspoonsapps.com, restore-access.indream.app, buy.itunes.apple.com, api.revenuecat.com
