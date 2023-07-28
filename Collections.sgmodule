@@ -61,6 +61,11 @@ iTunes = type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyR
 Nicegram = type=http-response,pattern=^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$ ,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Nicegram/Script/Nicegram.js, requires-body=1
 
 #************************************#
+# Focos相机
+# hostname = focos.oracle.bendingspoonsapps.com
+Focos = type=http-response,pattern=^https?:\/\/focos\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Focos.js
+
+#************************************#
 # 绘影字幕
 # hostname = api.bluepulse.cn
 绘影字幕 = type=http-response,pattern=^https?:\/\/api\.bluepulse\.cn\/bluepulse-caption-server-front\/api\/.+\/user\/app-vip-info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/hyzm.js
