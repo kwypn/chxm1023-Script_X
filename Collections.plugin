@@ -58,6 +58,11 @@ http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=ht
 http-request ^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$ script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Nicegram/Script/Nicegram.js, timeout=10, tag=Nicegram解锁会员
 
 #************************************#
+# Focos相机
+# hostname = focos.oracle.bendingspoonsapps.com
+http-response ^https?:\/\/focos\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Focos.js, requires-body=true, tag=Focos
+
+#************************************#
 # 绘影字幕
 # hostname = api.bluepulse.cn
 http-response ^https?:\/\/api\.bluepulse\.cn\/bluepulse-caption-server-front\/api\/.+\/user\/app-vip-info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/hyzm.js, requires-body=true, tag=绘影字幕
