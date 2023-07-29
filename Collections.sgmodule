@@ -502,9 +502,9 @@ CAD快速看图 = type=http-response,pattern=^https?:\/\/cad\.glodon\.com\/(acco
 过期啦 = type=http-response,pattern=^https:\/\/api\.guoqi365\.com\/.+\/functions\/getUserInfo,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/guoqila.js
 
 #************************************#
-# flomo
+# flapp
 # hostname = fl*app.com
-flomo = type=http-response,pattern=^https:\/\/fl.*app\.com\/api\/v1\/user\/me,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/flomo.js
+flomo = type=http-response,pattern=^https:\/\/fl.*app\.com\/api\/v\d\/user\/me,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lofo.js
 
 #************************************#
 # Hyperweb Safari浏览器扩展
