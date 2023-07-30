@@ -1004,9 +1004,9 @@ script-providers:
     interval: 86400
   TimeTree:
     url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/TimeTree.js
+    interval: 86400
   日历假期:
     url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/rljq.js
-    interval: 86400
     interval: 86400
   MorpholioTrace:
     url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/MorpholioTrace.js
