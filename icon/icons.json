@@ -154,6 +154,9 @@
  {"name": "小红书",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/xiaohongshu.png"},
 
+ {"name": "起点",
+  "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/qidian.png"},
+
  {"name": "Notion1",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/notion1.png"},
 
@@ -174,7 +177,7 @@
 
  {"name": "gmail",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/gmail.png"},
-
+  
  {"name": "ebay1",
   "url": "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/ebay.png"},
 
