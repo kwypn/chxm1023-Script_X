@@ -64,7 +64,7 @@ http:
       require-body: true
       timeout: 10
     # Focos相机
-    - ^https?:\/\/focos\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify)
+    - match: ^https?:\/\/focos\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify)
       name: Focos
       type: response
       require-body: true
@@ -597,7 +597,7 @@ http:
       require-body: true
       timeout: 10
     # TimeTree
-    - ^https?:\/\/api\.timetreeapp\.com\/.+\/user\/.+
+    - match: ^https?:\/\/api\.timetreeapp\.com\/.+\/user\/.+
       name: TimeTree
       type: response
       require-body: true
