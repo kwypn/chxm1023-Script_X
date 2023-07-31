@@ -1,3 +1,4 @@
+#SUBSCRIBED https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.stoverride
 name: App解锁合集
 desc: 作者：chxm1023
 
@@ -6,7 +7,7 @@ desc: 作者：chxm1023
 
 # 使用方法：先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
 
-# 更新日期：2023-07-29
+# 更新日期：2023-07-31
 
 # 项目解锁App下载地址：https://too.st/chxm1023
 
@@ -614,6 +615,12 @@ http:
       type: response
       require-body: true
       timeout: 10
+    # Notability
+    - match: https?:\/\/notability\.com\/(global|subscriptions)
+      name: Notability
+      type: response
+      require-body: true
+      timeout: 10
 
 
 
@@ -722,6 +729,7 @@ http:
     - 'api.timetreeapp.com'
     - 'calendar.aiyohoo.com'
     - 'www.mymorpholio.com'
+    - 'notability.com'
 
 
 
@@ -1010,4 +1018,7 @@ script-providers:
     interval: 86400
   MorpholioTrace:
     url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/MorpholioTrace.js
+    interval: 86400
+  Notability:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/notability.js
     interval: 86400
