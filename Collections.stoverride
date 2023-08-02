@@ -7,7 +7,7 @@ desc: 作者：chxm1023
 
 # 使用方法：先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
 
-# 更新日期：2023-07-31
+# 更新日期：2023-08-03
 
 # 项目解锁App下载地址：https://too.st/chxm1023
 
@@ -61,12 +61,6 @@ http:
     # Nicegram
     - match: ^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$
       name: Nicegram
-      type: response
-      require-body: true
-      timeout: 10
-    # Focos相机
-    - match: ^https?:\/\/focos\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify)
-      name: Focos
       type: response
       require-body: true
       timeout: 10
@@ -621,6 +615,24 @@ http:
       type: response
       require-body: true
       timeout: 10
+    # 解锁10个APP，包含APP：Filmicpro，Focos，Focos live，Splice，30 Day Fitness，Sleep，Remini，Yoga Wave，Firstlight，Doubletake
+    - match: ^https?:\/\/.*\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/.+|purchases\/verify)
+      name: bending
+      type: response
+      require-body: true
+      timeout: 10
+    # 女性日记Flo
+    - match: type=http-response,pattern=^https:\/\/api\.owhealth\.com\/subscriptions\/v\d\/apple
+      name: 女性日记Flo
+      type: response
+      require-body: true
+      timeout: 10
+    # 训记
+    - match: ^https:\/\/xunji\.gxzckj\.com\/whole_user_info_v3
+      name: 训记
+      type: response
+      require-body: true
+      timeout: 10
 
 
 
@@ -730,6 +742,9 @@ http:
     - 'calendar.aiyohoo.com'
     - 'www.mymorpholio.com'
     - 'notability.com'
+    - '*.oracle.bendingspoonsapps.com'
+    - 'api.owhealth.com'
+    - 'xunji.gxzckj.com'
 
 
 
@@ -742,9 +757,6 @@ script-providers:
     interval: 86400
   Nicegram:
     url: https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Nicegram/Script/Nicegram.js
-    interval: 86400
-  Focos:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Focos.js
     interval: 86400
   绘影字幕:
     url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/hyzm.js
@@ -1020,5 +1032,14 @@ script-providers:
     url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/MorpholioTrace.js
     interval: 86400
   Notability:
-    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/notability.js
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/notability.js
+    interval: 86400
+  bending:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/bending.js
+    interval: 86400
+  女性日记Flo:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/Flo.js
+    interval: 86400
+  训记:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/xunji.js
     interval: 86400
