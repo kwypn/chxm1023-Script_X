@@ -7,7 +7,7 @@ desc: 作者：chxm1023
 
 # 使用方法：先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
 
-# 更新日期：2023-08-03
+# 更新日期：2023-08-08
 
 # 项目解锁App下载地址：https://too.st/chxm1023
 
@@ -633,6 +633,36 @@ http:
       type: response
       require-body: true
       timeout: 10
+    # 考途大学搜题
+    - match: ^https:\/\/api-service\.tutusouti\.com\/appServiceApi\/(vip\/newUserPayVipData|video\/videoDetail)
+      name: 考途大学搜题
+      type: response
+      require-body: true
+      timeout: 10
+    # Endel
+    - match: type=http-response,pattern=^https?:\/\/api-production\.endel\.io\/v\d\/call
+      name: Endel
+      type: response
+      require-body: true
+      timeout: 10
+    # 格志日记
+    - match: ^https?:\/\/diary-id\.sumi\.io\/api\/profile
+      name: 格志日记
+      type: response
+      require-body: true
+      timeout: 10
+    # Tripsy-旅行规划者
+    - match: ^https?:\/\/firstclass\.tripsy\.app\/api\/.+\/receipt\/update
+      name: Tripsy
+      type: response
+      require-body: true
+      timeout: 10
+    # 泼辣修图
+    - match: ^https?:\/\/api\.polaxiong\.com\/.+\/payments\/(profiles\/.+\/subscription|appleiap\/receipts\/confirmation)
+      name: 泼辣修图
+      type: response
+      require-body: true
+      timeout: 10
 
 
 
@@ -745,6 +775,11 @@ http:
     - '*.oracle.bendingspoonsapps.com'
     - 'api.owhealth.com'
     - 'xunji.gxzckj.com'
+    - 'api-service.tutusouti.com'
+    - 'api-production.endel.io'
+    - 'diary-id.sumi.io'
+    - 'firstclass.tripsy.app'
+    - 'api.polaxiong.com'
 
 
 
@@ -1042,4 +1077,19 @@ script-providers:
     interval: 86400
   训记:
     url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/xunji.js
+    interval: 86400
+  考途大学搜题:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/kaotu.js
+    interval: 86400
+  Endel:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Endel.js
+    interval: 86400
+  格志日记:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/gezhi.js
+    interval: 86400
+  Tripsy:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/tripsy.js
+    interval: 86400
+  泼辣修图:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/pola.js
     interval: 86400
