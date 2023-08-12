@@ -7,7 +7,7 @@ desc: 作者：chxm1023
 
 # 使用方法：先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
 
-# 更新日期：2023-08-10
+# 更新日期：2023-08-13
 
 # 项目解锁App下载地址：https://too.st/chxm1023
 
@@ -37,7 +37,7 @@ http:
     - ^https?:\/\/ljh\.dianxiaoman\.com\/ljh\/api\/home\/getHomeList - reject
     # 墨迹天气横幅广告
     - ^http?:\/\/oss4bpc\.moji\.com\/.\d+\/.\d+\/.\d+\/.+\.jpg - reject
-
+    - ^https:\/\/oxadmin\.cp\.com\.cn\/api\/(hot\/index|advertise\/banner) - reject-dict
 
 
   script:
@@ -125,7 +125,7 @@ http:
       require-body: true
       timeout: 10
     # 阿里云盘 净化/解锁SVIP
-    - match: ^https?:\/\/(api|member)\.aliyundrive\.com
+    - match: ^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user))
       name: 阿里云盘
       type: response
       require-body: true
@@ -674,6 +674,12 @@ http:
       type: request
       require-body: false
       timeout: 10
+    # 牛津高阶词典第十版
+    - match: ^https:\/\/oxfordx\.cp\.com\.cn\/api\/pay\/apple_notify
+      name: 牛津高阶词典
+      type: response
+      require-body: true
+      timeout: 10
 
 
 
@@ -696,6 +702,7 @@ http:
     - '*.intsig.net'
     - 'pan.baidu.com'
     - '*.aliyundrive.com'
+    - '*.alipan.com'
     - 'api.meiease.cn'
     - 'api.risingfalling.com'
     - 'screen-lock.*.com'
@@ -792,6 +799,7 @@ http:
     - 'firstclass.tripsy.app'
     - 'api.polaxiong.com'
     - 'isi.csan.goodnotes.com'
+    - 'oxfordx.cp.com.cn'
 
 
 
@@ -1107,4 +1115,7 @@ script-providers:
     interval: 86400
   Goodnotes:
     url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/goodnotes6.js
+    interval: 86400
+  牛津高阶词典:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/niujin10.js
     interval: 86400
