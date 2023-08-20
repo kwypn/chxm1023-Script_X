@@ -7,7 +7,7 @@ desc: 作者：chxm1023
 
 # 使用方法：先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
 
-# 更新日期：2023-08-13
+# 更新日期：2023-08-19
 
 # 项目解锁App下载地址：https://too.st/chxm1023
 
@@ -37,6 +37,7 @@ http:
     - ^https?:\/\/ljh\.dianxiaoman\.com\/ljh\/api\/home\/getHomeList - reject
     # 墨迹天气横幅广告
     - ^http?:\/\/oss4bpc\.moji\.com\/.\d+\/.\d+\/.\d+\/.+\.jpg - reject
+    # 牛津高阶词典-去除首页下方广告
     - ^https:\/\/oxadmin\.cp\.com\.cn\/api\/(hot\/index|advertise\/banner) - reject-dict
 
 
@@ -663,20 +664,86 @@ http:
       type: response
       require-body: true
       timeout: 10
-    # Goodnotes6
-    - match: ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)
-      name: Goodnotes
+    # gg
+    - match: ^https:\/\/isi\..*\.g.*\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)
+      name: gg
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)
-      name: Goodnotes
+    - match: ^https:\/\/isi\..*\.g.*\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)
+      name: gg
       type: request
       require-body: false
       timeout: 10
     # 牛津高阶词典第十版
     - match: ^https:\/\/oxfordx\.cp\.com\.cn\/api\/pay\/apple_notify
       name: 牛津高阶词典
+      type: response
+      require-body: true
+      timeout: 10
+    # Flightradar24
+    - match: ^https:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|subscribe)
+      name: Flightradar24
+      type: response
+      require-body: true
+      timeout: 10
+    # 时光手帐
+    - match: ^https:\/\/api\.shouzhang\.com\/memcenterlk\/member\/firstpage\.do
+      name: 时光手帐
+      type: response
+      require-body: true
+      timeout: 10
+    # 时光序
+    - match: ^https:\/\/api\.weilaizhushou\.com\/base\/user\/vip\/getUserVip
+      name: 时光序
+      type: response
+      require-body: true
+      timeout: 10
+    # 人人视频
+    - match: ^https?:\/\/api\.hujuvod\.com\/(user\/personal\/information|app\/drama\/page)
+      name: 人人视频
+      type: response
+      require-body: true
+      timeout: 10
+    # Anki记忆卡
+    - match: ^https:\/\/api\.ankichinas\.com\/api\/.+\/users\/vipInfo
+      name: Anki
+      type: response
+      require-body: true
+      timeout: 10
+    # 心脏+
+    - match: ^https:\/\/api\.995120\.cn\/mini\/api\/appleplus
+      name: 心脏+
+      type: response
+      require-body: true
+      timeout: 10
+    # 记乎
+    - match: ^https:\/\/api\.geefoo\.cn\/.+\/account\/userinfo
+      name: 记乎
+      type: response
+      require-body: true
+      timeout: 10
+    # Promova
+    - match: ^https:\/\/api\.panda\.boosters\.company\/.+\/subscription-status
+      name: Promova
+      type: response
+      require-body: true
+      timeout: 10
+    # 音频剪辑大师
+    - match: ^http:\/\/www\.tingniukeji\.com\/audioclip\/queryIosVip
+      name: 音频剪辑大师
+      type: response
+      require-body: true
+      timeout: 10
+    # 刷刷题
+    - match: ^https?:\/\/api\.shuashuati\.com
+      name: Promova
+      type: response
+      require-body: true
+      timeout: 10
+    # 驾考宝典
+    - match: ^https?:\/\/.*\.kakamobi\.cn\/api\/open
+      name: 驾考宝典
       type: response
       require-body: true
       timeout: 10
@@ -798,68 +865,303 @@ http:
     - 'diary-id.sumi.io'
     - 'firstclass.tripsy.app'
     - 'api.polaxiong.com'
-    - 'isi.csan.goodnotes.com'
+    - 'isi.*.g*.com'
     - 'oxfordx.cp.com.cn'
+    - 'mobile.flightradar24.com'
+    - 'api.shouzhang.com'
+    - 'api.weilaizhushou.com'
+    - 'api.hujuvod.com'
+    - 'api.ankichinas.com'
+    - 'api.995120.cn'
+    - 'api.geefoo.cn'
+    - 'api.panda.boosters.company'
+    - 'www.tingniukeji.com'
+    - 'api.shuashuati.com'
+    - '*.kakamobi.cn'
 
 
 
 script-providers:
-  Reheji:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
+  驾考宝典:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/jiakaobaodian.js
     interval: 86400
-  iTunes:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js
+  刷刷题:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/shuashuati.js
+  音频剪辑大师:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/ypjjds.js
     interval: 86400
-  Nicegram:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js
+  Promova:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/Promova.js
+  记乎:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/jihu.js
     interval: 86400
-  绘影字幕:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/hyzm.js
+  心脏+:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/xinzang.js
+  Anki:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/Anki.js
     interval: 86400
-  搜图神器:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/soutu.js
+  人人视频:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/renrenshipin.js
+  时光序:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/shiguangxu.js
     interval: 86400
-  PS 图片编辑:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ps.js
+  时光手帐:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/shiguangshouzhang.js
     interval: 86400
-  彩云天气:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js
+  Flightradar24:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/Flightradar24.js
     interval: 86400
-  一言:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/yiyan.js
+  牛津高阶词典:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/niujin10.js
     interval: 86400
-  网速管家:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wsgj.js
+  gg:
+    url: http://git.yycm.link/chxm1023/Rewrite/raw/main/gg.js
     interval: 86400
-  悟饭掌悦:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wfzy.js
+  泼辣修图:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/pola.js
     interval: 86400
-  Emby:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/embycrack.js
+  Tripsy:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/tripsy.js
     interval: 86400
-  扫描全能王:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js
+  格志日记:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/gezhi.js
     interval: 86400
-  百度系列:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdcloud.js
+  Endel:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Endel.js
     interval: 86400
-  阿里云盘:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js
+  考途大学搜题:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/kaotu.js
     interval: 86400
-  Picsart:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/picsart.js
+  训记:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/xunji.js
     interval: 86400
-  起伏:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/qifu.js
+  女性日记Flo:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/Flo.js
     interval: 86400
-  布丁锁屏:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdsp.js
+  bending:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/bending.js
     interval: 86400
-  Wallcraft:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Wall.js
+  Notability:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/notability.js
     interval: 86400
-  Symbolab:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Syjsq.js
+  MorpholioTrace:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/MorpholioTrace.js
+    interval: 86400
+  日历假期:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/rljq.js
+    interval: 86400
+  TimeTree:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/TimeTree.js
+    interval: 86400
+  Hyperweb:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Hyperweb.js
+    interval: 86400
+  flapp:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/lofo.js
+    interval: 86400
+  过期啦:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/guoqila.js
+    interval: 86400
+  CAD快速看图:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/cad.js
+    interval: 86400
+  有谱么:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/youpume.js
+    interval: 86400
+  经济学人:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjxrsl.js
+    interval: 86400
+  问真排盘:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wenzhenpaipan.js
+    interval: 86400
+  旅途随身听:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/ltsst.js
+    interval: 86400
+  iScreen辅助:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/iscreenfz.js
+    interval: 86400
+  Pixelup:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Pixelup.js
+    interval: 86400
+  墨迹天气:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojitianqi.js
+    interval: 86400
+  WPS:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/WPS.js
+    interval: 86400
+  冥想星球:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/mingxiangxingqiu.js
+    interval: 86400
+  微信听书:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wxts.js
+    interval: 86400
+  Calendars:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/calendars.js
+    interval: 86400
+  图纸通:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/tuzhitong.js
+    interval: 86400
+  yonekura:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/yonekura.js
+    interval: 86400
+  iTranslate:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/itranslate.js
+    interval: 86400
+  VideoShow:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/VideoShow.js
+    interval: 86400
+  DailyArt:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/DailyArt.js
+    interval: 86400
+  网易蜗牛读书:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wywnds.js
+    interval: 86400
+  蜗牛睡眠:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/woniushuimian.js
+    interval: 86400
+  夸克:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/kuake.js
+    interval: 86400
+  野果阅读:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/yeguoyuedu.js
+    interval: 86400
+  挖财记账:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wacaijizhang.js
+    interval: 86400
+  靓机汇:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/liangjihui.js
+    interval: 86400
+  Xmind:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Xmind.js
+    interval: 86400
+  排班日历:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/paibanrili.js
+    interval: 86400
+  菜谱:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/caipu.js
+    interval: 86400
+  薄荷健康:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/bohejiankang.js
+    interval: 86400
+  40sishi:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/40sishi.js
+    interval: 86400
+  小时尚:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/xiaoshishang.js
+    interval: 86400
+  一天阅读:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/yitianyuedu.js
+    interval: 86400
+  蓝基因:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/lanjiyin.js
+    interval: 86400
+  配音秀:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/peiyinxiu.js
+    interval: 86400
+  青柠设计:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/qnsj.js
+    interval: 86400
+  倒数纪念日:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsjnr.js
+    interval: 86400
+  Batched:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Batched.js
+    interval: 86400
+  Moji辞书:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojics.js
+    interval: 86400
+  得间小说:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/dejianxiaoshuo.js
+    interval: 86400
+  Mate:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/mate.js
+    interval: 86400
+  小习惯:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/xxg.js
+    interval: 86400
+  Fimo:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js
+    interval: 86400
+  美图秀秀:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js
+    interval: 86400
+  美颜相机:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/myxj.js
+    interval: 86400
+  美图系列:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxl.js
+    interval: 86400
+  阅读记录:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/ydjl.js
+    interval: 86400
+  番薯小说:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/fanshuxiaoshuo.js
+    interval: 86400
+  AdGuard:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/AdGuard.js
+    interval: 86400
+  极简汇率:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjhl.js
+    interval: 86400
+  TopWidgets:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/widgets.js
+    interval: 86400
+  Collart:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Collart.js
+    interval: 86400
+  爱剪辑:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/ajj.js
+    interval: 86400
+  mtywjgl:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtywj.js
+    interval: 86400
+  PhotoSlip:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/zpqlds.js
+    interval: 86400
+  极简扫描:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjsm.js
+    interval: 86400
+  电视家:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsj.js
+    interval: 86400
+  大神水印:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/dssy.js
+    interval: 86400
+  两个相机:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/lgxj.js
+    interval: 86400
+  iLovePDF:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/ilove.js
+    interval: 86400
+  如期:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/rq.js
+    interval: 86400
+  zhfqjt:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/zhfqjt.js
+    interval: 86400
+  格式转换:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/gszh.js
+    interval: 86400
+  小组件盒子:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/xzjhz.js
+    interval: 86400
+  Cubox:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Cb.js
+    interval: 86400
+  云听:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/yunting.js
+    interval: 86400
+  Agenda:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ag.js
+    interval: 86400
+  aoruan:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/arqjt.js
+    interval: 86400
+  Boom:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/boom.js
+    interval: 86400
+  堆糖:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/duitang.js
     interval: 86400
   smile_spotify:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
@@ -867,255 +1169,60 @@ script-providers:
   smile_spotify_json:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
     interval: 86400
-  堆糖:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/duitang.js
+  Symbolab:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Syjsq.js
     interval: 86400
-  Boom:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/boom.js
+  Wallcraft:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Wall.js
     interval: 86400
-  aoruan:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/arqjt.js
+  布丁锁屏:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdsp.js
     interval: 86400
-  Agenda:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ag.js
+  起伏:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/qifu.js
     interval: 86400
-  云听:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/yunting.js
+  Picsart:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/picsart.js
     interval: 86400
-  Cubox:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Cb.js
+  阿里云盘:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js
     interval: 86400
-  小组件盒子:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/xzjhz.js
+  百度系列:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdcloud.js
     interval: 86400
-  格式转换:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/gszh.js
+  扫描全能王:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js
     interval: 86400
-  zhfqjt:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/zhfqjt.js
+  Emby:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/embycrack.js
     interval: 86400
-  如期:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/rq.js
+  悟饭掌悦:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wfzy.js
     interval: 86400
-  iLovePDF:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/ilove.js
+  网速管家:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wsgj.js
     interval: 86400
-  两个相机:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/lgxj.js
+  一言:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/yiyan.js
     interval: 86400
-  大神水印:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/dssy.js
+  彩云天气:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js
     interval: 86400
-  电视家:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsj.js
+  PS 图片编辑:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ps.js
     interval: 86400
-  极简扫描:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjsm.js
+  搜图神器:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/soutu.js
     interval: 86400
-  PhotoSlip:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/zpqlds.js
+  绘影字幕:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/hyzm.js
     interval: 86400
-  mtywjgl:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtywj.js
+  Nicegram:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js
     interval: 86400
-  爱剪辑:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/ajj.js
+  iTunes:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js
     interval: 86400
-  Collart:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Collart.js
-    interval: 86400
-  TopWidgets:
-    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/widgets.js
-    interval: 86400
-  极简汇率:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjhl.js
-    interval: 86400
-  AdGuard:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/AdGuard.js
-    interval: 86400
-  番薯小说:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/fanshuxiaoshuo.js
-    interval: 86400
-  阅读记录:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/ydjl.js
-    interval: 86400
-  美图系列:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxl.js
-    interval: 86400
-  美颜相机:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/myxj.js
-    interval: 86400
-  美图秀秀:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js
-    interval: 86400
-  Fimo:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js
-    interval: 86400
-  小习惯:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/xxg.js
-    interval: 86400
-  Mate:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/mate.js
-    interval: 86400
-  得间小说:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/dejianxiaoshuo.js
-    interval: 86400
-  Moji辞书:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojics.js
-    interval: 86400
-  Batched:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Batched.js
-    interval: 86400
-  倒数纪念日:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsjnr.js
-    interval: 86400
-  青柠设计:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/qnsj.js
-    interval: 86400
-  配音秀:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/peiyinxiu.js
-    interval: 86400
-  蓝基因:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/lanjiyin.js
-    interval: 86400
-  一天阅读:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/yitianyuedu.js
-    interval: 86400
-  小时尚:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/xiaoshishang.js
-    interval: 86400
-  40sishi:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/40sishi.js
-    interval: 86400
-  薄荷健康:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/bohejiankang.js
-    interval: 86400
-  菜谱:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/caipu.js
-    interval: 86400
-  排班日历:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/paibanrili.js
-    interval: 86400
-  Xmind:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Xmind.js
-    interval: 86400
-  靓机汇:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/liangjihui.js
-    interval: 86400
-  挖财记账:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wacaijizhang.js
-    interval: 86400
-  野果阅读:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/yeguoyuedu.js
-    interval: 86400
-  夸克:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/kuake.js
-    interval: 86400
-  蜗牛睡眠:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/woniushuimian.js
-    interval: 86400
-  网易蜗牛读书:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wywnds.js
-    interval: 86400
-  DailyArt:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/DailyArt.js
-    interval: 86400
-  VideoShow:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/VideoShow.js
-    interval: 86400
-  iTranslate:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/itranslate.js
-    interval: 86400
-  yonekura:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/yonekura.js
-    interval: 86400
-  图纸通:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/tuzhitong.js
-    interval: 86400
-  Calendars:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/calendars.js
-    interval: 86400
-  微信听书:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wxts.js
-    interval: 86400
-  冥想星球:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/mingxiangxingqiu.js
-    interval: 86400
-  WPS:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/WPS.js
-    interval: 86400
-  墨迹天气:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojitianqi.js
-    interval: 86400
-  Pixelup:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Pixelup.js
-    interval: 86400
-  iScreen辅助:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/iscreenfz.js
-    interval: 86400
-  旅途随身听:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/ltsst.js
-    interval: 86400
-  问真排盘:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wenzhenpaipan.js
-    interval: 86400
-  经济学人:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjxrsl.js
-    interval: 86400
-  有谱么:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/youpume.js
-    interval: 86400
-  CAD快速看图:
-    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/cad.js
-    interval: 86400
-  过期啦:
-    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/guoqila.js
-    interval: 86400
-  flapp:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/lofo.js
-    interval: 86400
-  Hyperweb:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Hyperweb.js
-    interval: 86400
-  TimeTree:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/TimeTree.js
-    interval: 86400
-  日历假期:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/rljq.js
-    interval: 86400
-  MorpholioTrace:
-    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/MorpholioTrace.js
-    interval: 86400
-  Notability:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/notability.js
-    interval: 86400
-  bending:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/bending.js
-    interval: 86400
-  女性日记Flo:
-    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/Flo.js
-    interval: 86400
-  训记:
-    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/xunji.js
-    interval: 86400
-  考途大学搜题:
-    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/kaotu.js
-    interval: 86400
-  Endel:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Endel.js
-    interval: 86400
-  格志日记:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/gezhi.js
-    interval: 86400
-  Tripsy:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/tripsy.js
-    interval: 86400
-  泼辣修图:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/pola.js
-    interval: 86400
-  Goodnotes:
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/goodnotes6.js
-    interval: 86400
-  牛津高阶词典:
-    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/niujin10.js
+  Reheji:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
     interval: 86400
