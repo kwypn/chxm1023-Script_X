@@ -7,7 +7,7 @@ desc: 作者：chxm1023
 
 # 使用方法：先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
 
-# 更新日期：2023-08-19
+# 更新日期：2023-08-22
 
 # 项目解锁App下载地址：https://too.st/chxm1023
 
@@ -747,6 +747,12 @@ http:
       type: response
       require-body: true
       timeout: 10
+    # 指尖时光
+    - match: ^https?:\/\/integral2\.dasyibalang\.com\/.+\/User
+      name: 指尖时光
+      type: response
+      require-body: true
+      timeout: 10
 
 
 
@@ -878,30 +884,38 @@ http:
     - 'www.tingniukeji.com'
     - 'api.shuashuati.com'
     - '*.kakamobi.cn'
+    - 'integral2.dasyibalang.com'
 
 
 
 script-providers:
+  指尖时光:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/zjsg.js
+    interval: 86400
   驾考宝典:
     url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/jiakaobaodian.js
     interval: 86400
   刷刷题:
     url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/shuashuati.js
+    interval: 86400
   音频剪辑大师:
     url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/ypjjds.js
     interval: 86400
   Promova:
     url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/Promova.js
+    interval: 86400
   记乎:
     url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/jihu.js
     interval: 86400
   心脏+:
     url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/xinzang.js
+    interval: 86400
   Anki:
     url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/Anki.js
     interval: 86400
   人人视频:
     url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/renrenshipin.js
+    interval: 86400
   时光序:
     url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/shiguangxu.js
     interval: 86400
