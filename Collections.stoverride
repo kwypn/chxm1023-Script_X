@@ -1,6 +1,6 @@
 #SUBSCRIBED https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.stoverride
 name: App解锁合集
-desc: 作者：@chxm1023
+desc: 作者：chxm1023
 # 📢 频道：https://t.me/chxm1023
 # 👥 群组：https://t.me/chxm1023_Chat
 
@@ -9,7 +9,7 @@ desc: 作者：@chxm1023
 
 # 使用方法：先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
 
-# 更新日期：2023-08-22
+# 更新日期：2023-08-31
 
 # 项目解锁App下载地址：https://too.st/chxm1023
 
@@ -755,6 +755,48 @@ http:
       type: response
       require-body: true
       timeout: 10
+    # exping地图标记
+    - match: ^https?:\/\/api\.expingworld\.com\/users
+      name: exping
+      type: response
+      require-body: true
+      timeout: 10
+    # 360相机
+    - match: ^https?:\/\/.*\.camera360\.com\/(api\/(order\/purchase|iap\/check-receipt)|v\d\/operational-positions)
+      name: 360xj
+      type: response
+      require-body: true
+      timeout: 10
+    # 一键抠图
+    - match: ^https?:\/\/api\.mattingm\.com\/receipt_api\/user\/info
+      name: 一键抠图
+      type: response
+      require-body: true
+      timeout: 10
+    # 畅玩空间
+    - match: ^https?:\/\/play\.wo1wan\.com\/nextgame\/igwuser\/userinfo
+      name: 畅玩空间
+      type: response
+      require-body: true
+      timeout: 10
+    # 随手写
+    - match: http:\/\/www\.kkmop\.com\/vipMsg1
+      name: 随手写
+      type: response
+      require-body: true
+      timeout: 10
+    # 悄悄朋友圈
+    - match: ^http?:\/\/qqpyqapi\.app\.xinmaicard\.com\/user\/auth_userinfo.*?
+      name: 悄悄朋友圈
+      type: response
+      require-body: true
+      timeout: 10
+    # 杂志天下
+    - match: ^https?:\/\/www\.fuyoutech\.club\/magworld\/member\/status
+      name: 杂志天下
+      type: response
+      require-body: true
+      timeout: 10
 
 
 
@@ -887,10 +929,38 @@ http:
     - 'api.shuashuati.com'
     - '*.kakamobi.cn'
     - 'integral2.dasyibalang.com'
+    - 'api.expingworld.com'
+    - '*.camera360.com'
+    - 'api.mattingm.com'
+    - 'play.wo1wan.com'
+    - 'www.kkmop.com'
+    - 'qqpyqapi.app.xinmaicard.com'
+    - 'www.fuyoutech.club'
 
 
 
 script-providers:
+  杂志天下:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/zztx.js
+    interval: 86400
+  悄悄朋友圈:
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/pyq.js
+    interval: 86400
+  随手写:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/suishouxie.js
+    interval: 86400
+  畅玩空间:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/changwan.js
+    interval: 86400
+  一键抠图:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/yijiankoutu.js
+    interval: 86400
+  360xj:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/360xj.js
+    interval: 86400
+  exping:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/exping.js
+    interval: 86400
   指尖时光:
     url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/zjsg.js
     interval: 86400
